@@ -16,9 +16,6 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Prevent Photos from opening automatically when devices are plugged in
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
-# Applies dark theme
-sudo defaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark
-
 # Show icons for hard drives, servers, and removable media on the desktop
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
 defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
