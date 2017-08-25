@@ -1,0 +1,6 @@
+[user]
+  name = Mattias Palmgren
+  email = mattiaspalmgren92@gmail.com
+
+[credential]
+  helper = osxkeychain
