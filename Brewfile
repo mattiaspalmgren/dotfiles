@@ -4,6 +4,7 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
+install dockutil 
 install git
 install mongodb
 install mysql
@@ -22,7 +23,6 @@ cask install appcleaner
 cask install flux
 cask install github-desktop
 cask install google-chrome
-cask install google-drive
 cask install iterm2
 cask install java
 cask install postman
