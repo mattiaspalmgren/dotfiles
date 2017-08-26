@@ -15,7 +15,7 @@ curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | 
 # Apply modified osx defaults
 source .osx
 
-# Remove and add applicaitons to dock
+# Remove all applicaitons from dock
 dockutil --no-restart --remove all
 killall Dock
 
