@@ -14,6 +14,7 @@ install npm
 install python
 install python3
 install zsh
+install yarn
 
 tap caskroom/cask
 install brew-cask
