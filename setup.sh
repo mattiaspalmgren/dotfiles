@@ -20,7 +20,6 @@ dockutil --no-restart --remove all
 killall Dock
 
 # Create symlinks for dotfiles
-ln -s ~/DEV/dotfiles/.zshrc ~/.zshrc
 ln -s ~/DEV/dotfiles/sublime/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings
 ln -s ~/DEV/dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 ln -s ~/DEV/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
