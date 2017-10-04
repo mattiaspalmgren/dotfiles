@@ -24,4 +24,5 @@ ln -s ~/DEV/dotfiles/sublime/Package\ Control.sublime-settings ~/Library/Applica
 ln -s ~/DEV/dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap
 ln -s ~/DEV/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ln -s ~/DEV/dotfiles/sublime/console.log.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/console.log.sublime-snippet
+ln -s ~/DEV/dotfiles/.gitconfig ~/.gitconfig
 
