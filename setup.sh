@@ -25,4 +25,6 @@ ln -s ~/DEV/dotfiles/sublime/Default\ \(OSX\).sublime-keymap ~/Library/Applicati
 ln -s ~/DEV/dotfiles/sublime/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings
 ln -s ~/DEV/dotfiles/sublime/console.log.sublime-snippet ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/console.log.sublime-snippet
 ln -s ~/DEV/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/DEV/dotfiles/intellij/keymaps/mattiaspalmgren-keymap.xml ~/Library/Preferences/IdeaIC2017.2/keymaps
+ln -s ~/DEV/dotfiles/intellij/options/macros.xml ~/Library/Preferences/IdeaIC2017.2/options
 
