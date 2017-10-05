@@ -51,6 +51,5 @@
       <action id="EditorUpWithSelection" />
       <action id="EditorUpWithSelection" />
     </macro>
-    <macro name="test" />
   </component>
 </application>

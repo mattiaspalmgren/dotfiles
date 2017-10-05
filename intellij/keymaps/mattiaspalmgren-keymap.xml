@@ -8,12 +8,14 @@
     <keyboard-shortcut first-keystroke="shift meta 7" />
   </action>
   <action id="CompareTwoFiles" />
+  <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
   <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
+  <action id="EditSourceInNewWindow" />
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
@@ -56,6 +58,9 @@
   <action id="IncrementWindowHeight" />
   <action id="IncrementWindowWidth" />
   <action id="JumpToLastWindow" />
+  <action id="Macro.Jump 10 down">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
   <action id="Macro.Jump 10 down select">
     <keyboard-shortcut first-keystroke="shift alt down" />
   </action>
@@ -63,7 +68,7 @@
     <keyboard-shortcut first-keystroke="alt up" />
   </action>
   <action id="Macro.Jump 10 up select">
-    <keyboard-shortcut first-keystroke="alt down" />
+    <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
   <action id="MethodOverloadSwitchDown" />
   <action id="MethodOverloadSwitchUp" />
@@ -114,10 +119,17 @@
   </action>
   <action id="SplitVertically">
     <keyboard-shortcut first-keystroke="meta alt 2" />
-    <keyboard-shortcut first-keystroke="alt 2" />
+  </action>
+  <action id="Switcher" />
+  <action id="Unsplit">
+    <keyboard-shortcut first-keystroke="alt 1" />
   </action>
   <action id="VcsShowNextChangeMarker" />
   <action id="VcsShowPrevChangeMarker" />
+  <action id="ViewSource">
+    <keyboard-shortcut first-keystroke="meta enter" />
+    <keyboard-shortcut first-keystroke="shift f4" />
+  </action>
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
