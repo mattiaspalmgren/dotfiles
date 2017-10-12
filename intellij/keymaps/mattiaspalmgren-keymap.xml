@@ -2,6 +2,9 @@
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
+  <action id="ActivateSonarLintToolWindow">
+    <keyboard-shortcut first-keystroke="meta 0" />
+  </action>
   <action id="Arrangement.Rule.Match.Condition.Move.Down" />
   <action id="Arrangement.Rule.Match.Condition.Move.Up" />
   <action id="CommentByBlockComment">
@@ -93,7 +96,9 @@
     <keyboard-shortcut first-keystroke="shift meta t" />
   </action>
   <action id="ReplaceInPath" />
-  <action id="ResizeToolWindowDown" />
+  <action id="ResizeToolWindowDown">
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  </action>
   <action id="ResizeToolWindowLeft">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
   </action>
@@ -135,9 +140,11 @@
   </action>
   <action id="momomo.com.Intellij.MoveTab.actions.MoveTabLeft">
     <keyboard-shortcut first-keystroke="shift ctrl alt down" />
+    <keyboard-shortcut first-keystroke="shift ctrl page_down" />
   </action>
   <action id="momomo.com.Intellij.MoveTab.actions.MoveTabRight">
     <keyboard-shortcut first-keystroke="shift ctrl alt up" />
+    <keyboard-shortcut first-keystroke="shift ctrl page_up" />
   </action>
   <action id="openAssertEqualsDiff" />
 </keymap>
