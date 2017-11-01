@@ -5,6 +5,9 @@
 [credential]
   helper = osxkeychain
 
+[core]
+  excludesfile = /Users/mattiaspalmgren/.gitignore_global
+
 [merge]
   tool=opendiff
 
