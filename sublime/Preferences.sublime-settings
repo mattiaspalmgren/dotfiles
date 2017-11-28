@@ -17,7 +17,7 @@
 		"*.map",
 		"env"
 	],
-	"font_size": 13,
+	"font_size": 11,
 	"hot_exit": false,
 	"ignored_packages":
 	[
