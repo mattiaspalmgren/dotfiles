@@ -16,6 +16,7 @@ install python3
 install zsh
 install yarn
 install maven
+instal fzfl
 
 tap caskroom/cask
 install brew-cask

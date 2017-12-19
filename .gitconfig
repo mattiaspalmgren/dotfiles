@@ -1,16 +1,23 @@
 [user]
-  name = Mattias Palmgren
-  email = mattiaspalmgren92@gmail.com
+	name = Mattias Palmgren
+	email = mattiaspalmgren92@gmail.com
 
 [credential]
-  helper = osxkeychain
+	helper = osxkeychain
 
 [core]
-  excludesfile = /Users/mattiaspalmgren/.gitignore_global
-
-[merge]
-  tool=opendiff
+	excludesfile = /Users/mattiaspalmgren/.gitignore_global
 
 [mergetool]
-	keepBackup = false
-  
+       keepBackup = false
+
+[merge]
+	tool = opendiff
+
+[alias]
+	pl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
+	rebase-fuzz = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
+	checkout-fuzz = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
+	show-fuzz = !HASH=`git log --pretty=oneline | head | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
+	add-fuzz = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git add --all ${FILES}
+	diff-fuzz = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
