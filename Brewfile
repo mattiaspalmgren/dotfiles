@@ -17,6 +17,7 @@ install zsh
 install yarn
 install maven
 instal fzfl
+install vim --with-lua --with-override-system-vi
 
 tap caskroom/cask
 install brew-cask
