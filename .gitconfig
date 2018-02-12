@@ -15,9 +15,18 @@
 	tool = opendiff
 
 [alias]
-	pl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --branches
 	rebase-fuzz = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
-	checkout-fuzz = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
-	show-fuzz = !HASH=`git log --pretty=oneline | head | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
+	checkout-file-fuzz = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
+	show-fuzz = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
 	add-fuzz = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git add --all ${FILES}
 	diff-fuzz = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
+	checkout-fuzz = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`^
+
+[includeIf "gitdir:~/dev/scila/"]
+	path = .gitconfig-scila
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
