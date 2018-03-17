@@ -1,19 +1,16 @@
-set nocompatible " be iMproved, required
-filetype off " required
+set nocompatible
+filetype off
 
-" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
-" Bundles here:
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'itchyny/lightline.vim'
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call vundle#end()
+filetype plugin indent on
 
 " use osx clipboard
 set clipboard+=unnamed
@@ -21,6 +18,12 @@ set clipboard+=unnamed
 set backspace=2
 " disable folding
 set nofoldenable
+" for lightline
+set laststatus=2
+set noshowmode
+
+set number
+highlight LineNr ctermfg=Grey
 
 nnoremap ' `
 nnoremap ` '
