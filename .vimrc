@@ -12,17 +12,19 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()
 filetype plugin indent on
 
-" use osx clipboard
-set clipboard+=unnamed
-" make backspace work like most other programs
-set backspace=2
-" disable folding
+set clipboard+=unnamed 	" use osx clipboard
+set backspace=2 	" make backspace work like most other programs
+set laststatus=2 	" for lightline
+set noshowmode 		" for lightline
 set nofoldenable
-" for lightline
-set laststatus=2
-set noshowmode
-
 set number
+set incsearch
+set timeoutlen=1000 ttimeoutlen=0 " remove delay when leaving insert mode
+
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 highlight LineNr ctermfg=Grey
 
 nnoremap ' `
