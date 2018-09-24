@@ -30,6 +30,7 @@ ln -s ~/DEV/dotfiles/intellij/keymaps ~/Library/Preferences/IdeaIC2017.2/keymaps
 ln -s ~/DEV/dotfiles/intellij/options ~/Library/Preferences/IdeaIC2017.2/options
 ln -s ~/DEV/dotfiles/intellij/templates ~/Library/Preferences/IdeaIC2017.2/templates
 ln -s ~/DEV/dotfiles/visual-studio-code/keybindings.json ~/Library/Application Support/Code/User/
+ln -s ~/DEV/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
 ln -s ~/DEV/dotfiles/.vimrc ~/.ideavimrc
 ln -s ~/DEV/dotfiles/.vimrc ~/.vimrc
 

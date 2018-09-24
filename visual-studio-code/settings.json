@@ -1,0 +1,9 @@
+{
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.activityBar.visible": false,
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": true,
+    "editor.lineHeight": 25
+}
