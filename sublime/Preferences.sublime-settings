@@ -1,6 +1,6 @@
 {
 	"always_show_path_on_tabs": true,
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme.tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
 	"file_exclude_patterns":
 	[
 		"npm-debug.log",
@@ -18,13 +18,20 @@
 		"env"
 	],
 	"font_size": 11,
+	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"MarkdownPreview",
+		"SublimeLinter"
 	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
 	"open_files_in_new_window": false,
 	"remember_open_files": false,
 	"show_full_path": true,
 	"tab_size": 2,
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
+	"vintage_start_in_command_mode": true,
+	"vintage_use_clipboard": true
 }
