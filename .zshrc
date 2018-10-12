@@ -5,9 +5,30 @@ ZSH_THEME="geoffgarside"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-# Shortcuts
-bindkey "[B" backward-word
-bindkey "[W" forward-word
+# Use vi-mode
+bindkey -v
+export KEYTIMEOUT=1
+bindkey '^R' history-incremental-search-backward
+
+function zle-keymap-select zle-line-init
+{
+    # change cursor shape in iTerm2
+    case $KEYMAP in
+        vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
+        viins|main) print -n -- "\E]50;CursorShape=1\C-G";;  # line cursor
+    esac
+    zle reset-prompt
+    zle -R
+}
+
+function zle-line-finish
+{
+    print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+zle -N zle-line-finish
 
 # Git
 alias git-pull-all='find . -type d -mindepth 1 -maxdepth 1 -print -exec git -C {} pull \;'
