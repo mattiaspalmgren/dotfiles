@@ -5,5 +5,15 @@
     "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "left",
     "editor.minimap.enabled": true,
-    "editor.lineHeight": 25
+    "editor.lineHeight": 20,
+    "editor.renderControlCharacters": false,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "vim.useSystemClipboard": true,
+    "explorer.openEditors.visible": 0,
+    "javascript.updateImportsOnFileMove.enabled": "prompt",
+    "css.validate":false,
+    "workbench.editor.enablePreview": false,
+    "files.trimTrailingWhitespace": true,
+    "breadcrumbs.enabled": true
 }
