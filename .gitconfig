@@ -22,10 +22,7 @@
 	fdiff = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
 	fcheckout = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
 	frevert = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
-	fhash = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
-
-[includeIf "gitdir:~/dev/scila/"]
-	path = .gitconfig-scila
+	fhash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
