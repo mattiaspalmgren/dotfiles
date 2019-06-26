@@ -14,6 +14,9 @@
 [merge]
 	tool = opendiff
 
+[includeIf "gitdir:~/svt/"]
+	path = .gitconfig-svt
+
 [alias]
 	frebase = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
 	ffcheckout = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
