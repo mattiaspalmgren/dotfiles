@@ -47,7 +47,7 @@
         "when": "editorFocus"
     },
     {
-        "key": "ctrl+numpad_add",
+        "key": "cmd+[Minus]",
         "command": "editor.unfold",
         "when": "editorFocus"
     },
@@ -55,5 +55,131 @@
         "key": "ctrl+-",
         "command": "workbench.files.action.collapseExplorerFolders",
         "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+      "key": "shift+cmd+[Minus]",
+      "command": "editor.unfoldAll",
+      "when": "editorFocus"
+    },
+    {
+      "key": "enter",
+      "command": "macros.selectAndCloseExplorer",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsFolder"
+    },
+    {
+      "key": "enter",
+      "command": "list.toggleExpand",
+      "when": "explorerViewletVisible && filesExplorerFocus && explorerResourceIsFolder"
+    },
+    {
+      "key": "escape",
+      "command": "workbench.action.toggleSidebarVisibility",
+      "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+      "key": "cmd+1",
+      "command": "workbench.action.toggleSidebarVisibility",
+      "when": "explorerViewletVisible && filesExplorerFocus"
+    },
+    {
+      "key": "cmd+0",
+      "command": "workbench.action.terminal.focus",
+      "when": "!terminalFocus"
+    },
+    {
+      "key": "cmd+0",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "escape",
+      "command": "workbench.action.terminal.toggleTerminal",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "cmd+1",
+      "command": "workbench.view.explorer",
+      "when": "!filesExplorerFocus"
+    },
+    {
+      "key": "f9",
+      "command": "workbench.action.debug.continue",
+      "when": "inDebugMode"
+    },
+    // ------ DISABLE ------
+    {
+      "key": "shift+cmd+a",
+      "command": "-workbench.action.showCommands"
+    },
+    {
+      "key": "shift+cmd+0",
+      "command": "-editor.unfold",
+      "when": "editorFocus"
+    },
+    {
+      "key": "cmd+[Minus]",
+      "command": "-editor.unfoldAll",
+      "when": "editorFocus"
+    },
+    {
+      "key": "cmd+k",
+      "command": "-git.commitAll",
+      "when": "!inDebugMode && !terminalFocus"
+    },
+    {
+      "key": "cmd+1",
+      "command": "-workbench.action.toggleSidebarVisibility",
+      "when": "!editorFocus"
+    },
+    {
+      "key": "cmd+1",
+      "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+      "key": "shift+enter",
+      "command": "-editor.action.insertLineAfter",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "shift+enter",
+      "command": "-settings.action.focusPreviousSetting",
+      "when": "inSettingsSearch"
+    },
+    {
+      "key": "cmd+numpad1",
+      "command": "-workbench.view.explorer",
+      "when": "editorFocus"
+    },
+    {
+      "key": "shift+cmd+e",
+      "command": "-workbench.view.explorer"
+    },
+    {
+      "key": "cmd+1",
+      "command": "-workbench.view.explorer",
+      "when": "editorFocus"
+    },
+    {
+      "key": "cmd+0",
+      "command": "-workbench.actions.view.problems"
+    },
+    {
+      "key": "alt+f12",
+      "command": "-workbench.action.terminal.focus",
+      "when": "!terminalFocus"
+    },
+    {
+      "key": "cmd+0",
+      "command": "-workbench.action.focusSideBar"
+    },
+    {
+      "key": "f9",
+      "command": "-editor.debug.action.toggleBreakpoint",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "alt+cmd+r",
+      "command": "-workbench.action.debug.continue",
+      "when": "inDebugMode"
     }
 ]

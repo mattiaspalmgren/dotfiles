@@ -1,19 +1,140 @@
 {
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    // WORKBENCH
     "workbench.startupEditor": "newUntitledFile",
     "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "left",
-    "editor.minimap.enabled": true,
-    "editor.lineHeight": 20,
+    "workbench.editor.enablePreview": false,
+    // EDITOR
+    "editor.fontSize": 11,
+    "editor.tabSize": 2,
+    "editor.minimap.enabled": false,
+    "editor.lineHeight": 22,
     "editor.renderControlCharacters": false,
+    "editor.renderIndentGuides": false,
+    "editor.highlightActiveIndentGuide": false,
+    "editor.matchBrackets": false,
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "none",
+    "editor.selectionHighlight": false,
+    "editor.detectIndentation": false,
+    "editor.parameterHints.cycle": true,
+    "editor.parameterHints.enabled": false,
+    "editor.smoothScrolling": false,
+    "editor.lightbulb.enabled": false,
+    "editor.codeLens": true,
+
+    // EXPLORER
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "vim.useSystemClipboard": true,
     "explorer.openEditors.visible": 0,
-    "javascript.updateImportsOnFileMove.enabled": "prompt",
+    // OTHER
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "css.validate":false,
-    "workbench.editor.enablePreview": false,
     "files.trimTrailingWhitespace": true,
-    "breadcrumbs.enabled": true
-}
+    "outline.icons": false,
+    "window.zoomLevel": 0,
+    "react-native.packager.port": 19001,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.external.osxExec": "iTerm.app",
+    "telemetry.enableTelemetry": false,
+    // MACROS
+    "macros": {
+      "selectAndCloseExplorer": [
+        "list.select",
+        "workbench.action.toggleSidebarVisibility",
+      ]
+    },
+    "telemetry.enableCrashReporter": false,
+    // VIM
+    "vim.foldfix": true,
+    "vim.useSystemClipboard": true,
+    "vim.leader": "<space>",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>","w"],
+        "commands": ["workbench.action.files.saveAll"]
+      },
+      {
+        "before": ["<leader>","q"],
+        "commands": ["workbench.action.closeActiveEditor"]
+      },
+      {
+        "before": ["<leader>","tab"],
+        "commands": ["workbench.action.nextEditor"]
+      },
+      {
+        "before": ["<leader>","f"],
+        "commands": ["workbench.action.findInFiles"]
+      },
+      {
+        "before": ["<leader>","a"],
+        "commands": ["workbench.action.showCommands"]
+      },
+      {
+        "before": ["g","t"],
+        "commands": ["editor.action.goToDeclaration"]
+      },
+      {
+        "before": ["g","h"],
+        "commands": ["editor.action.showHover"]
+      },
+      {
+        "before": ["<leader>","1"],
+        "commands": ["editor.foldLevel1"]
+      },
+      {
+        "before": ["<leader>","2"],
+        "commands": ["editor.foldLevel2"]
+      },
+      {
+        "before": ["<leader>","v"],
+        "commands": ["workbench.files.action.showActiveFileInExplorer"]
+      },
+      {
+        "before": ["<leader>","b"],
+        "commands": ["workbench.action.navigateBack"]
+      },
+      {
+        "before": ["g","r"],
+        "commands": ["git.revertSelectedRanges"]
+      },
+      {
+        "before": ["<leader>","t"],
+        "commands": ["extension.jumpToTest"]
+      },
+      {
+        "before": ["<leader>","r"],
+        "commands": ["extension.runJest"]
+      },
+      {
+        "before": ["<leader>","d"],
+        "commands": ["extension.debugJest"]
+      }
+    ],
+    // ZEN
+    "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "breadcrumbs.enabled": false,
+    // GIT
+    "gitlens.menus": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.hovers.enabled": false,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "gitlens.views.repositories.enabled": false,
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "gitlens.views.search.enabled": false,
+    "gitlens.views.compare.enabled": false,
+    "gitlens.mode.statusBar.enabled": false,
+    "gitlens.views.repositories.location": "gitlens",
+    "gitlens.views.fileHistory.location": "gitlens",
+    "gitlens.views.lineHistory.location": "gitlens",
+    "gitlens.views.compare.location": "gitlens",
+    "gitlens.views.search.location": "gitlens",
+    // TEST
+    "jestrunner.configPath": "./packages/svtlib-videoplayer-react/package.json",
+  }
