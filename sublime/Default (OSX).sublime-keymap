@@ -1,8 +1,0 @@
-[
-  { "keys": ["ctrl+tab"], "command": "next_view" },
-  { "keys": ["ctrl+shift+tab"], "command": "prev_view" },
-  { "keys": ["super+plus"], "command": "unfold" },
-  { "keys": ["super+minus"], "command": "fold" },  
-  { "keys": ["super+shift+7"], "command": "toggle_comment", "args": { "block": true } },
-  { "keys": ["super+1"], "command": "focus_side_bar" }
-]
