@@ -4,6 +4,7 @@
     "workbench.activityBar.visible": false,
     "workbench.sideBar.location": "left",
     "workbench.editor.enablePreview": false,
+    "workbench.tree.renderIndentGuides": "none",
     // EDITOR
     "editor.fontSize": 11,
     "editor.tabSize": 2,
@@ -109,6 +110,14 @@
       {
         "before": ["<leader>","d"],
         "commands": ["extension.debugJest"]
+      },
+      {
+        "before": ["<leader>", "m"],
+        "commands": ["bookmarks.toggle"]
+      },
+      {
+        "before": ["<leader>", "g"],
+        "commands": ["bookmarks.list"]
       }
     ],
     // ZEN
@@ -125,16 +134,16 @@
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.enabled": false,
     "gitlens.views.repositories.enabled": false,
-    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.fileHistory.enabled": true,
     "gitlens.views.lineHistory.enabled": false,
     "gitlens.views.search.enabled": false,
-    "gitlens.views.compare.enabled": false,
+    "gitlens.views.compare.enabled": true,
     "gitlens.mode.statusBar.enabled": false,
-    "gitlens.views.repositories.location": "gitlens",
-    "gitlens.views.fileHistory.location": "gitlens",
-    "gitlens.views.lineHistory.location": "gitlens",
-    "gitlens.views.compare.location": "gitlens",
-    "gitlens.views.search.location": "gitlens",
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.location": "scm",
+    "gitlens.views.lineHistory.location": "scm",
+    "gitlens.views.compare.location": "scm",
+    "gitlens.views.search.location": "scm",
     // TEST
     "jestrunner.configPath": "./packages/svtlib-videoplayer-react/package.json",
   }
