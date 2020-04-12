@@ -24,17 +24,16 @@ install brew-cask
 
 cask install 1password
 cask install appcleaner
-cask install flux
-cask install github-desktop
 cask install google-chrome
 cask install iterm2
 cask install java
 cask install postman
 cask install slack
-cask install skype
 cask install spotify
 cask install sublime-text3
 cask install the-unarchiver
+cask install intellij-idea-ce
+cast install visual-studio-code
 
 tap homebrew/versions
 
