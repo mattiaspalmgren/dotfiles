@@ -1,0 +1,323 @@
+<application>
+  <component name="VimLocalSettings">
+    <state version="5" />
+    <globalmarks />
+    <filemarks>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.md" timestamp="1586414891975">
+        <mark key="[" line="0" column="3" />
+        <mark key="]" line="0" column="15" />
+        <mark key="^" line="0" column="15" />
+        <mark key="." line="0" column="15" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/components/LanguageGroup.tsx" timestamp="1586352093805">
+        <mark key="[" line="18" column="0" />
+        <mark key="]" line="18" column="0" />
+        <mark key="." line="18" column="0" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/components/LanguageControl.tsx" timestamp="1586352589760">
+        <mark key="'" line="114" column="25" />
+        <mark key="[" line="81" column="0" />
+        <mark key="]" line="81" column="0" />
+        <mark key="." line="81" column="0" />
+        <mark key="^" line="88" column="30" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/manifest/local/parse_local_manifest.ts" timestamp="1586434241664">
+        <mark key="[" line="126" column="0" />
+        <mark key="]" line="129" column="3" />
+      </file>
+      <file name="$USER_HOME$/svt/barebone-subtitles/hls/master-multiple-audio.m3u8" timestamp="1586355605173">
+        <mark key="[" line="19" column="51" />
+        <mark key="]" line="20" column="0" />
+        <mark key="." line="20" column="0" />
+        <mark key="^" line="20" column="0" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/node_modules/rx-player/src/core/api/track_choice_manager.ts" timestamp="1586351485845">
+        <mark key="[" line="74" column="50" />
+        <mark key="]" line="74" column="71" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" timestamp="1586354286214">
+        <mark key="'" line="205" column="12" />
+        <mark key="[" line="205" column="31" />
+        <mark key="]" line="205" column="34" />
+        <mark key="." line="205" column="34" />
+        <mark key="^" line="205" column="34" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/native/set_settings_on_cue.ts" timestamp="1586434431935">
+        <mark key="[" line="71" column="0" />
+        <mark key="]" line="72" column="62" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" timestamp="1586413968717">
+        <mark key="[" line="30" column="35" />
+        <mark key="]" line="30" column="30" />
+        <mark key="." line="30" column="30" />
+        <mark key="^" line="30" column="30" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" timestamp="1586433865082">
+        <mark key="[" line="61" column="27" />
+        <mark key="]" line="61" column="27" />
+        <mark key="^" line="61" column="27" />
+        <mark key="." line="61" column="27" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/pr.md" timestamp="1586433918572">
+        <mark key="[" line="14" column="20" />
+        <mark key="]" line="14" column="20" />
+        <mark key="^" line="14" column="20" />
+        <mark key="." line="14" column="20" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" timestamp="1586441676723">
+        <mark key="'" line="120" column="22" />
+        <mark key="[" line="127" column="21" />
+        <mark key="]" line="127" column="34" />
+        <mark key="^" line="127" column="34" />
+        <mark key="." line="127" column="34" />
+      </file>
+      <file name="$USER_HOME$/svt/barebone-subtitles/hls/master.m3u8" timestamp="1586355193075">
+        <mark key="^" line="1" column="0" />
+        <mark key="." line="1" column="0" />
+      </file>
+      <file name="$USER_HOME$/svt/barebone-subtitles/subtitles/closed.vtt" timestamp="1586433264032">
+        <mark key="[" line="2" column="43" />
+        <mark key="]" line="2" column="43" />
+        <mark key="." line="2" column="43" />
+        <mark key="^" line="2" column="42" />
+      </file>
+      <file name="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/__tests__/create_style_attribute.test.ts" timestamp="1586441261674">
+        <mark key="'" line="38" column="21" />
+        <mark key="[" line="49" column="20" />
+        <mark key="]" line="49" column="20" />
+        <mark key="." line="49" column="20" />
+        <mark key="^" line="49" column="20" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" timestamp="1586351698893">
+        <mark key="[" line="82" column="0" />
+        <mark key="]" line="82" column="0" />
+        <mark key="." line="82" column="0" />
+      </file>
+      <file name="$APPLICATION_CONFIG_DIR$/scratches/scratch_4.txt" timestamp="1586354717472">
+        <mark key="]" line="4" column="0" />
+        <mark key="." line="4" column="0" />
+        <mark key="^" line="4" column="0" />
+      </file>
+      <file name="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svt-videoplayer-examples/src/simple.jsx" timestamp="1586354239012">
+        <mark key="[" line="166" column="0" />
+        <mark key="]" line="166" column="0" />
+        <mark key="." line="166" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="102" column="21" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/__tests__/create_settings_attributes.test.ts" />
+      <jump line="107" column="47" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/__tests__/create_settings_attributes.test.ts" />
+      <jump line="24" column="43" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="26" column="41" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="28" column="23" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="29" column="14" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="73" column="4" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="90" column="40" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="99" column="13" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="103" column="24" filename="$USER_HOME$/svt/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="17" column="7" filename="$USER_HOME$/dev/rx-player/src/core/abr/pending_requests_store.ts" />
+      <jump line="31" column="0" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="27" column="9" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="54" column="6" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="55" column="14" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="56" column="4" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="70" column="48" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="62" column="20" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" />
+      <jump line="65" column="8" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" />
+      <jump line="73" column="2" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" />
+      <jump line="83" column="2" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" />
+      <jump line="87" column="6" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/to_html.ts" />
+      <jump line="20" column="6" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_settings_attributes.ts" />
+      <jump line="15" column="246" filename="$USER_HOME$/svt/barebone-subtitles/dash/manifest-sign.mpd" />
+      <jump line="29" column="244" filename="$USER_HOME$/svt/barebone-subtitles/dash/manifest-sign.mpd" />
+      <jump line="37" column="244" filename="$USER_HOME$/svt/barebone-subtitles/dash/manifest-sign.mpd" />
+      <jump line="51" column="244" filename="$USER_HOME$/svt/barebone-subtitles/dash/manifest-sign.mpd" />
+      <jump line="7" column="116" filename="$USER_HOME$/svt/barebone-subtitles/dash/manifest-sign.mpd" />
+      <jump line="270" column="35" filename="$USER_HOME$/svt/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="277" column="32" filename="$USER_HOME$/svt/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="94" column="9" filename="$USER_HOME$/svt/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="287" column="0" filename="$USER_HOME$/svt/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="105" column="9" filename="$USER_HOME$/svt/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="1582" column="22" filename="$USER_HOME$/dev/rx-player/src/core/api/public_api.ts" />
+      <jump line="89" column="80" filename="$USER_HOME$/dev/rx-player/src/manifest/adaptation.ts" />
+      <jump line="90" column="9" filename="$USER_HOME$/dev/rx-player/src/manifest/adaptation.ts" />
+      <jump line="161" column="11" filename="$USER_HOME$/dev/rx-player/src/manifest/adaptation.ts" />
+      <jump line="166" column="25" filename="$USER_HOME$/dev/rx-player/src/manifest/adaptation.ts" />
+      <jump line="167" column="36" filename="$USER_HOME$/dev/rx-player/src/manifest/adaptation.ts" />
+      <jump line="124" column="2" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/types.ts" />
+      <jump line="279" column="8" filename="$USER_HOME$/dev/rx-player/doc/api/plugins.md" />
+      <jump line="228" column="14" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/metaplaylist/metaplaylist_parser.ts" />
+      <jump line="299" column="39" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="585" column="55" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="314" column="0" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="131" column="1" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="784" column="17" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="787" column="22" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="792" column="21" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="793" column="14" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="798" column="29" filename="$USER_HOME$/dev/rx-player/src/core/api/track_choice_manager.ts" />
+      <jump line="13" column="4" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/utils/createRxPlayerLoadOptions.ts" />
+      <jump line="5" column="30" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/utils/createRxPlayerLoadOptions.ts" />
+      <jump line="41" column="5" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/utils/createRxPlayerLoadOptions.ts" />
+      <jump line="62" column="12" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/utils/createRxPlayerLoadOptions.ts" />
+      <jump line="2" column="9" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="60" column="14" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/components/LanguageControl.tsx" />
+      <jump line="87" column="25" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/components/LanguageControl.tsx" />
+      <jump line="2" column="12" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-types/src/IVideoTrack.ts" />
+      <jump line="8" column="15" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-types/src/IVideoTrack.ts" />
+      <jump line="24" column="4" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerController.ts" />
+      <jump line="53" column="43" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="79" column="12" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="78" column="19" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="77" column="88" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="59" column="14" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/backends/rxplayer/RxPlayerDashController.ts" />
+      <jump line="380" column="12" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/components/FullUi.tsx" />
+      <jump line="252" column="28" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="385" column="54" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="444" column="37" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="461" column="32" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="462" column="47" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="205" column="12" filename="$USER_HOME$/svt/svtlib-videoplayer-web/packages/svtlib-videoplayer-react/src/VideoPlayer.tsx" />
+      <jump line="76" column="9" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="291" column="14" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="304" column="55" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="316" column="12" filename="$USER_HOME$/dev/rx-player/src/parsers/manifest/dash/parse_adaptation_sets.ts" />
+      <jump line="30" column="30" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="132" column="0" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="93" column="24" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="82" column="1" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="157" column="6" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="35" column="0" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/__tests__/create_style_attribute.test.ts" />
+      <jump line="38" column="21" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/__tests__/create_style_attribute.test.ts" />
+      <jump line="105" column="33" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="17" column="0" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="49" column="24" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="50" column="18" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="51" column="26" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="130" column="5" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="57" column="17" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="70" column="40" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="72" column="59" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="76" column="31" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="83" column="23" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="86" column="44" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="113" column="34" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="98" column="35" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="112" column="22" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+      <jump line="120" column="22" filename="$USER_HOME$/dev/rx-player/src/parsers/texttracks/webvtt/html/create_style_attribute.ts" />
+    </jumps>
+    <registers>
+      <register name="*" type="2">
+        <text encoding="base64">ICBjb25zdCBoYXNQb3NpdGlvbkFsaWdubWVudCA9IDsK</text>
+      </register>
+      <register name="-" type="4">
+        <text>hasPositionAlignment</text>
+      </register>
+      <register name="/" type="4">
+        <text>'</text>
+      </register>
+      <register name="0" type="4">
+        <text>baseStyle + baseWidth + baseLeft + baseTransform</text>
+      </register>
+      <register name="1" type="2">
+        <text encoding="base64">ICBjb25zdCBoYXNQb3NpdGlvbkFsaWdubWVudCA9IDsK</text>
+      </register>
+      <register name="q" type="4">
+        <keys>
+          <key char="100" code="0" mods="0" />
+          <key char="119" code="0" mods="0" />
+          <key char="105" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="36" code="0" mods="0" />
+          <key char="120" code="0" mods="0" />
+          <key char="97" code="0" mods="0" />
+          <key char="44" code="0" mods="0" />
+          <key char="65535" code="27" mods="0" />
+          <key char="106" code="0" mods="0" />
+          <key char="48" code="0" mods="0" />
+        </keys>
+      </register>
+      <register name="2" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="3" type="2">
+        <text encoding="base64">ICBpdCgic2hvdWxkIHNldCBob3Jpem9udGFsIHBvc2l0aW9uIGFuZCBhbGlnbiB0byBjZW50ZXIgYXMgZGVmYXVsdCIsICgpID0+IHsKICAgIGNvbnN0IHNldHRpbmdzID0gewogICAgICBwb3NpdGlvbjogIjUwJSIsCiAgICB9OwoKICAgIGNvbnN0IGF0dHJpYnV0ZXMgPSBjcmVhdGVTdHlsZUF0dHJpYnV0ZShzZXR0aW5ncyk7CgogICAgY29uc3QgZXhwZWN0ZWQgPSBiYXNlU3R5bGUgKyBiYXNlVHJhbnNmb3JtICsgImxlZnQ6NjAlOyI7CiAgICBpc0VxdWFsU3R5bGUoYXR0cmlidXRlcy52YWx1ZSwgZXhwZWN0ZWQpOwogIH0pOwo=</text>
+      </register>
+      <register name="4" type="2">
+        <text encoding="base64">ICAgICAgcG9zaXRpb246ICIxMDAlIiwK</text>
+      </register>
+      <register name="5" type="2">
+        <text encoding="base64">aW1wb3J0IHNldCA9IFJlZmxlY3Quc2V0Owo=</text>
+      </register>
+      <register name="6" type="2">
+        <text encoding="base64">Cg==</text>
+      </register>
+      <register name="7" type="2">
+        <text encoding="base64">ZW51bSBBbGlnbiB7CiAgTEVGVCA9ICJsZWZ0IiwKICBDRU5URVIgPSAiY2VudGVyIiwKICBSSUdIVCA9ICJyaWdodCIKfQo=</text>
+      </register>
+      <register name="8" type="2">
+        <text>enum Align {
+  LEFT = &quot;left&quot;,
+  CENTER = &quot;center&quot;,
+  RIGHT = &quot;right&quot;
+}</text>
+      </register>
+      <register name="9" type="2">
+        <text encoding="base64">ICBjb25zdCBwb3NpdGlvbkRlZmF1bHQgPSA1MDsK</text>
+      </register>
+      <register name=":" type="4">
+        <text>action Back</text>
+      </register>
+    </registers>
+    <search>
+      <last-search>'</last-search>
+      <last-offset />
+      <last-pattern>'</last-pattern>
+      <last-replace>&quot;</last-replace>
+      <last-substitute encoding="base64">XDxzaG91bGRQcm9jZWVkV2l0aEV2ZW50XD4=</last-substitute>
+      <last-dir>1</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search>
+        <entry encoding="base64">XDx0aGVDdXJyZW50WWVhclw+</entry>
+        <entry encoding="base64">XDxhcGlfcmVzXD4=</entry>
+        <entry>cmaf</entry>
+        <entry encoding="base64">XDxpc1NpZ25JbnRlcnByZXRlZFw+</entry>
+        <entry encoding="base64">XDxpc0hhcmRPZkhlYXJpbmdcPg==</entry>
+        <entry encoding="base64">XDxpc0hlYXJpbmdJbXBhaXJlZFw+</entry>
+        <entry encoding="base64">XDxpc0Nsb3NlZENhcHRpb25cPg==</entry>
+        <entry encoding="base64">XDxpc0R1Ylw+</entry>
+        <entry>video</entry>
+        <entry encoding="base64">XDxJTG9hZFZpZGVvT3B0aW9uc1w+</entry>
+        <entry encoding="base64">XDxJUnhQbGF5ZXJMb2FkVmlkZW9PcHRpb25zXD4=</entry>
+        <entry encoding="base64">XDxJVE1BdWRpb1RyYWNrTGlzdEl0ZW1cPg==</entry>
+        <entry encoding="base64">XDxoYXNNdWx0aXBsZUF1ZGlvVHJhY2tzXD4=</entry>
+        <entry encoding="base64">XDxJVmlkZW9UcmFja1w+</entry>
+        <entry encoding="base64">XDxoYXNBdWRpb1RyYWNrc1w+</entry>
+        <entry encoding="base64">XDx1c2VOYXRpdmVDb250cm9sc1w+</entry>
+        <entry encoding="base64">XDxpc1Zpc3VhbGx5SW1wYWlyZWRcPg==</entry>
+        <entry encoding="base64">XDxpc0F1ZGlvRGVzY3JpcHRpb25cPg==</entry>
+        <entry encoding="base64">XDxnZXRQZXJjZW50YWdlVmFsdWVPckRlZmF1bHRcPg==</entry>
+        <entry>'</entry>
+      </history-search>
+      <history-cmd>
+        <entry>%s/'/&quot;/</entry>
+        <entry>action Macro.next-change</entry>
+        <entry>action Macro.previous-change</entry>
+        <entry>action FindInPath</entry>
+        <entry>action CloseEditor</entry>
+        <entry>action SelectInProjectView</entry>
+        <entry>action GotoAction</entry>
+        <entry>action ShowErrorDescription</entry>
+        <entry>action GotoNextError</entry>
+        <entry>action Vcs.RollbackChangedLines</entry>
+        <entry>action Macro.run-context-test</entry>
+        <entry>action SaveAll</entry>
+        <entry>action Back</entry>
+      </history-cmd>
+      <history-expr />
+      <history-input />
+    </history>
+  </component>
+</application>

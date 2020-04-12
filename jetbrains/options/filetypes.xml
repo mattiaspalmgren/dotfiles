@@ -1,0 +1,14 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="klib" type="ARCHIVE" />
+      <mapping ext="mpd" type="PLAIN_TEXT" />
+      <mapping ext="vtt" type="PLAIN_TEXT" />
+      <mapping ext="m3u8" type="PLAIN_TEXT" />
+      <mapping pattern="manifest.mpd" type="XML" />
+      <mapping pattern="manifest-sign.mpd" type="XML" />
+      <mapping ext="authentication" type="XML" />
+      <mapping ext="gui" type="XML" />
+    </extensionMap>
+  </component>
+</application>

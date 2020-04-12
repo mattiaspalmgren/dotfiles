@@ -1,0 +1,32 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Jump10">
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+      <action id="EditorDown" />
+    </macro>
+    <macro name="run-context-test">
+      <action id="RunClass" />
+      <shortuct text="ESCAPE" />
+      <shortuct text="ESCAPE" />
+      <shortuct text="ESCAPE" />
+      <shortuct text="ESCAPE" />
+      <action id="ActivateRunToolWindow" />
+    </macro>
+    <macro name="next-change">
+      <action id="VcsShowNextChangeMarker" />
+      <typing text-keycode="75:0;74:0">kj</typing>
+    </macro>
+    <macro name="previous-change">
+      <action id="VcsShowPrevChangeMarker" />
+      <typing text-keycode="75:0;74:0">kj</typing>
+    </macro>
+  </component>
+</application>

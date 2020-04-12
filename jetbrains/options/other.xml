@@ -1,0 +1,151 @@
+<application>
+  <component name="CodeStyleSchemesUIConfiguration">
+    <option name="RECENT_IMPORT_FILE_LOCATION" value="file:$USER_HOME$/DEV/scila/scila-idea-editor-code-style-java.xml" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/local/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/13.3.0/bin/node" />
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v12.13.0/bin/node">
+      <version-cache version="12.13.0" last-modified="1571643958000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v12.9.1/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/11.2.0/bin/node" />
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v10.16.0/bin/node">
+      <version-cache version="10.16.0" last-modified="1559078728000" />
+    </local-interpreter>
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v10.15.3/bin/node" />
+    <local-interpreter path="$USER_HOME$/.nvm/versions/node/v10.13.0/bin/node" />
+    <local-interpreter path="/usr/local/Cellar/node/10.12.0/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/10.11.0/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/10.9.0/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/8.7.0/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+    <local-interpreter path="/usr/local/Cellar/node/8.4.0/bin/node">
+      <version-cache last-modified="0" />
+    </local-interpreter>
+  </component>
+  <component name="NotRoamableUiSettings">
+    <option name="fontFace" value=".SFNS-Regular" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="AFTER.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="0" />
+    <property name="AFTER.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="true" />
+    <property name="AFTER.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="false" />
+    <property name="AFTER.DISTRACTION.MODE.SHOW_STATUS_BAR" value="false" />
+    <property name="ActionMacroConfigurationPanel.SPLITTER_PROPORTION" value="0.5" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_GUTTER_ICONS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.ARE_LINE_NUMBERS_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.EDITOR_TAB_PLACEMENT" value="1" />
+    <property name="BEFORE.DISTRACTION.MODE.HIDE_TOOL_STRIPES" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_FOLDING_OUTLINE_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_INDENT_GUIDES_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_RIGHT_MARGIN_SHOWN" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.IS_WHITESPACES_SHOWN" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_BREADCRUMBS" value="true" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_MAIN_TOOLBAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_METHOD_SEPARATORS" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_NAVIGATION_BAR" value="false" />
+    <property name="BEFORE.DISTRACTION.MODE.SHOW_STATUS_BAR" value="false" />
+    <property name="CUSTOMIZE_ACTIONS" value="run" />
+    <property name="ColorChooser.RecentColors" value="99-99-99-255,,,54-54-55-255,,,38-38-39-255,,,75-75-75-255,,,104-151-187-255,,,133-133-133-255,,,23-23-23-255,,,28-28-28-255,,,30-30-30-255,,,40-40-40-255,,,42-42-42-255,,,38-38-38-255" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.625538" />
+    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.4226804" />
+    <property name="CommittedChanges.SplitterProportions.0" value="700" />
+    <property name="CommittedChanges.SplitterProportions.1" value="500" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="Default.SavedEditorTheme" value="_@user_Default" />
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="FileColorsEnabled" value="false" />
+    <property name="FileColorsForProjectViewEnabled" value="false" />
+    <property name="FileColorsForTabsEnabled" value="true" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="GeneralSettings.initiallyConfigured" value="true" />
+    <property name="INSPECTION_FILTER_HISTORY" value="unresolved variable" />
+    <property name="InstalledPluginsSearchHistory" value="call block&#10;call b&#10;folding&#10;fold&#10;fo" />
+    <property name="JUnitSupport.hidePassedTests" value="false" />
+    <property name="JestJavaScriptTestRunner.Splitter.Proportion" value="0.4989027" />
+    <property name="JestJavaScriptTestRunnerSupport.hideIgnoredTests" value="true" />
+    <property name="JestJavaScriptTestRunnerSupport.hidePassedTests" value="false" />
+    <property name="JestJavaScriptTestRunnerSupport.scrollToSource" value="true" />
+    <property name="JestJavaScriptTestRunnerSupport.selectFirtsDefect" value="true" />
+    <property name="JestJavaScriptTestRunnerSupport.showInlineStatistics" value="false" />
+    <property name="KEYMAP" value="rename&#10;close&#10;next ch&#10;next diff&#10;next change" />
+    <property name="MarketplacePluginsSearchHistory" value="fold&#10;folding&#10;javascript fold&#10;javascript fol&#10;javascript f" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="PACKAGE_FILTER" value="node-fe" />
+    <property name="PLUGIN_FILTER" value="lom&#10;git" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
+    <property name="SHELLCHECK.PATH" value="I do mind" />
+    <property name="SettingsSearchHistory" value="file&#10;plugins&#10;call block&#10;call b&#10;fold" />
+    <property name="TrendingPluginsSearchHistory" value="syntax&#10;dot&#10;Ini4Idea&#10;config&#10;terraform" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="WebStorm.disableSafeWrite" value="true" />
+    <property name="WebStorm.enableDefaultTooltipFixes" value="true" />
+    <property name="WebStorm.enableSmartQuotes" value="true" />
+    <property name="WebStorm.initialConfigurationShown" value="true" />
+    <property name="android-component-compatibility-check" value="1505715146948" />
+    <property name="appcds.runOnSecondStart" value="WS-201.6668.106-cd15fc9dc38b0110d701936d5ba14cfa81f86d75c7802f4f1ee212eed891d991" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="300" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.1" value="800" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
+    <property name="create.project.preferred.importer" value="Existing Sources" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+    <property name="defaultJdkConfigured" value="true" />
+    <property name="evlsprt.172" value="15eb4b752fc" />
+    <property name="evlsprt.183" value="167e548a33e" />
+    <property name="evlsprt.193" value="17197ab8b00" />
+    <property name="evlsprt2.172" value="15e6f812518" />
+    <property name="evlsprt2.183" value="167b22e2e69" />
+    <property name="evlsprt2.193" value="1713af93afe" />
+    <property name="evlsprt3.172" value="14" />
+    <property name="evlsprt3.183" value="12" />
+    <property name="evlsprt3.191" value="10" />
+    <property name="evlsprt3.193" value="18" />
+    <property name="evlsprt3.201" value="14" />
+    <property name="export.settings.marked" value="abbreviations.xml|code.style.schemes.xml|codestyles|databaseDrivers.xml|databaseSettings.xml|debugger.xml|project.default.xml|colors.scheme.xml|editor.xml|fileTemplates|filetypes.xml|find.xml|git.xml|applicationLibraries.xml|inspection|keymap.xml|keymaps|lombok-plugin.xml|laf.xml|macros.xml|markdown.xml|ide.general.xml|ui.lnf.xml|vim_settings.xml|" />
+    <property name="file.gist.reindex.count" value="174269" />
+    <property name="fileTypeChangedCounter" value="12" />
+    <property name="find.popup.splitter" value="0.56707317" />
+    <property name="ide.memory.adjusted" value="true" />
+    <property name="ide.self.update.started.for.build" value="WS-193.6911.28" />
+    <property name="ideavim.statistics.timestamp" value="1586415781140" />
+    <property name="installed.kotlin.plugin.version" value="1.3.10-release-IJ2018.3-1" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="js.overrides.completion" value="true" />
+    <property name="js.rename.search.for.text.occurrences" value="false" />
+    <property name="js.rename.search.in.comments" value="true" />
+    <property name="js.var.names.completion" value="false" />
+    <property name="last.imported.location" value="$USER_HOME$/dev/cygni-talent-database" />
+    <property name="lastTip" value="1" />
+    <property name="mt.showStatisticsAgreement" value="true" />
+    <property name="org.intellij.images.editor.actions.BackgroundImageDialog#recent" value="" />
+    <property name="org.intellij.plugins.hcl.LAST_UPDATE" value="1549725074904" />
+    <property name="org.intellij.plugins.hcl.LAST_VERSION" value="0.6.13" />
+    <property name="plugins.preselection.path" value="$USER_HOME$/dev/mapa-theme" />
+    <property name="project.wizard.group" value="JAVA_MODULE" />
+    <property name="project.wizard.template" value="Java" />
+    <property name="search.everywhere.max.popup.width" value="949" />
+    <property name="selected.color.option.type" value="FOLDED_TEXT_ATTRIBUTES" />
+    <property name="settings.code.style.selected.tab.JavaScript" value="Tabs and Indents" />
+    <property name="ts.lib.d.ts.version" value="3.8.2" />
+  </component>
+</application>
