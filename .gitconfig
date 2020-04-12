@@ -7,6 +7,8 @@
 
 [core]
 	excludesfile = /Users/mattiaspalmgren/.gitignore_global
+	ignorecase = false
+	sshCommand = ssh -i ~/.ssh/id_rsa
 
 [mergetool]
        keepBackup = false
@@ -26,6 +28,7 @@
 	fcheckout = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
 	frevert = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
 	fhash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
+	fpop = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME} 
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
