@@ -2,7 +2,7 @@ export ZSH=/Users/mattiaspalmgren/.oh-my-zsh
 
 ZSH_THEME="geoffgarside"
 
-plugins=(git)
+plugins=(git, z)
 source $ZSH/oh-my-zsh.sh
 
 # Use vi-mode
@@ -40,13 +40,13 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} *"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 PROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $ '
 
-# Java
+# Aliases
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
+alias linked="find node_modules -type l -maxdepth 3 | grep -v .bin"
 
 # PATH
 export PATH=~/Library/Python/3.7/bin:$PATH
-
 
 # For fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
