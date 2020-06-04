@@ -2,22 +2,22 @@
   <component name="libraryTable">
     <library name="@types/isomorphic-fetch" type="javaScript">
       <CLASSES />
-      <JAVADOC />
       <SOURCES />
     </library>
     <library name="@types/jest" type="javaScript">
       <CLASSES />
-      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="@types/node" type="javaScript">
+      <CLASSES />
       <SOURCES />
     </library>
     <library name="@types/node-fetch" type="javaScript">
       <CLASSES />
-      <JAVADOC />
       <SOURCES />
     </library>
     <library name="@types/react-native" type="javaScript">
       <CLASSES />
-      <JAVADOC />
       <SOURCES />
     </library>
   </component>
