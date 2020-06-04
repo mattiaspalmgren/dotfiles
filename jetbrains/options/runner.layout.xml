@@ -38,15 +38,35 @@
         <option name="minimizedInGrid" value="true" />
         <option name="placeInGrid" value="right" />
       </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="SCRIPTS_CONTENT" />
+        <option name="placeInGrid" value="bottom" />
+        <option name="tabIndex" value="2" />
+      </ViewImpl>
+      <ViewImpl>
+        <option name="ID" value="js.language.debugger.console" />
+        <option name="placeInGrid" value="bottom" />
+        <option name="tabIndex" value="3" />
+      </ViewImpl>
       <TabImpl>
         <option name="displayName" value="Debugger" />
-        <option name="leftProportion" value="0.1987225" />
+        <option name="leftProportion" value="0.46567717" />
         <option name="rightProportion" value="0.19943222" />
       </TabImpl>
       <TabImpl>
         <option name="bottomProportion" value="0.0" />
         <option name="defaultIndex" value="1" />
         <option name="index" value="1" />
+      </TabImpl>
+      <TabImpl>
+        <option name="bottomProportion" value="0.0" />
+        <option name="defaultIndex" value="2" />
+        <option name="index" value="2" />
+      </TabImpl>
+      <TabImpl>
+        <option name="bottomProportion" value="0.0" />
+        <option name="defaultIndex" value="3" />
+        <option name="index" value="3" />
       </TabImpl>
     </runner>
   </component>
