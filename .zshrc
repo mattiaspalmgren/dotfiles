@@ -44,8 +44,13 @@ PROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $ '
 alias j11="export JAVA_HOME=`/usr/libexec/java_home -v 11`; java -version"
 alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 alias linked="find node_modules -type l -maxdepth 3 | grep -v .bin"
+alias copy="history | tail -1 | cut -c8-999 | pbcopy"
 
-# PATH
+if type nvim > /dev/null 2>&1; then
+  alias vim='nvim'
+fi
+
+# Path
 export PATH=~/Library/Python/3.7/bin:$PATH
 
 # For fuzzy search
@@ -56,5 +61,10 @@ source ~/.svt-env
 # Nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
+export NODE_PATH=$(npm root -g)
+
+# Settings
+export LC_ALL=en_US.UTF-8
 
 source ~/.iterm2_shell_integration.zsh
