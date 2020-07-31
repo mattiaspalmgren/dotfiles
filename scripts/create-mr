@@ -1,0 +1,69 @@
+SOURCE_BRANCH=$(git symbolic-ref --short -q HEAD)
+TARGET_BRANCH="develop"
+REMOVE_SOURCE_BRANCH="true"
+
+# Check if branch exists on remote
+BRANCH_REMOTE_REF=$(git ls-remote --heads origin ${SOURCE_BRANCH})
+if [[ -z ${BRANCH_REMOTE_REF} ]]; then
+    echo "Branch: $SOURCE_BRANCH does not exist on remote. Push it and run script again." >&2
+    exit 1
+fi
+
+usage() {
+    echo "Usage: open-mr [-t <target branch>]"
+}
+
+# Handle input arguments
+while getopts ":t:h" opt; do
+  case "$opt" in
+    t) TARGET_BRANCH=$OPTARG;;
+    h)
+        usage
+        exit
+    ;;
+    \?)
+        echo "Invalid option $OPTARG" >&2
+        usage >&2
+        exit 1
+    ;;
+  esac
+done
+
+# Read text input via vim
+temp_file=$(mktemp)
+vim $temp_file
+content=$(cat $temp_file)
+TITLE=$(head -n 1 $temp_file)
+DESCRIPTION=$(tail -n +3 $temp_file)
+
+# Post to gitlab api
+JSON_DATA=$( jq -n \
+  --arg source_branch "$SOURCE_BRANCH" \
+  --arg target_branch "$TARGET_BRANCH" \
+  --arg title "$TITLE" \
+  --arg description "$DESCRIPTION" \
+  --arg remove_source_branch "$REMOVE_SOURCE_BRANCH" \
+  '{
+    source_branch: $source_branch,
+    target_branch: $target_branch,
+    title: $title,
+    description: $description,
+    remove_source_branch: $remove_source_branch
+  }'
+)
+
+# Validate reponse
+GITLAB_MERGE_REQUESTS_API_URL="${GITLAB_API_VIDEOPLAYER_URL:?}/merge_requests"
+RESPONSE=$(curl --write-out "HTTPSTATUS:%{http_code}" --silent --header "Content-Type: application/json" --header "PRIVATE-TOKEN: ${GITLAB_PERSONAL_ACCESS_TOKEN:?}" \
+     --data "$JSON_DATA" \
+     --request POST "$GITLAB_MERGE_REQUESTS_API_URL")
+RESPONSE_BODY=$(echo $RESPONSE | tr -d '\n' | sed -e 's/HTTPSTATUS\:.*//g')
+RESPONSE_STATUS=$(echo $RESPONSE | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+
+if [[ $RESPONSE_STATUS == "201" ]]; then
+    printf '%s' "$RESPONSE_BODY" | jq --raw-output '.web_url' | pbcopy
+    echo "MR created. The web URL is in the clipboard."
+else
+  echo "Error occurred, $RESPONSE_STATUS status received" >&2
+  exit 1
+fi

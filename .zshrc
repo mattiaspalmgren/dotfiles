@@ -52,6 +52,7 @@ fi
 
 # Path
 export PATH=~/Library/Python/3.7/bin:$PATH
+export PATH=~/dev/dotfiles/scripts:$PATH
 
 # For fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
