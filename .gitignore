@@ -10,3 +10,7 @@ jetbrains/options/baseRefactoring.xml
 jetbrains/options/filetypes.xml
 jetbrains/options/scratches.xml
 jetbrains/options/find.xml
+jetbrains/options/customization.xml
+jetbrains/options/fileEditorProviderManager.xml
+jetbrains/options/vcs.xml
+jetbrains/options/vim_settings_local.xml
