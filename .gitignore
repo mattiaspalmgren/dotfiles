@@ -14,3 +14,9 @@ jetbrains/options/customization.xml
 jetbrains/options/fileEditorProviderManager.xml
 jetbrains/options/vcs.xml
 jetbrains/options/vim_settings_local.xml
+jetbrains/options/extensionsRootType.xml
+jetbrains/options/jdk.table.xml
+jetbrains/options/debugger.xml
+jetbrains/options/path.macros.xml
+jetbrains/options/runner.layout.xml
+jetbrains/options/textmate_os.xml
