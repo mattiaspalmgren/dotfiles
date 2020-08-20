@@ -132,7 +132,9 @@
   <action id="ResizeToolWindowUp">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
-  <action id="Run" />
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="ctrl meta alt r" />
+  </action>
   <action id="RunClass">
     <keyboard-shortcut first-keystroke="shift meta r" />
   </action>
