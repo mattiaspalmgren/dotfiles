@@ -16,6 +16,9 @@
 [merge]
 	tool = opendiff
 
+[pull]
+	rebase = true
+
 [includeIf "gitdir:~/svt/"]
 	path = .gitconfig-svt
 
@@ -29,6 +32,8 @@
 	frevert = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
 	fhash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
 	fpop = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
+	fdtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
+	fdrtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
 	camnefp = !git commit --amend --no-edit && git push -f
 	camne = !git commit --amend --no-edit
 
