@@ -27,6 +27,7 @@ let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 highlight LineNr ctermfg=Grey
+
 let mapleader=" "
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
@@ -41,10 +42,14 @@ nmap <leader>r :action Macro.run-context-test<CR>
 nmap <leader>s :action Stop<CR>
 nmap <leader>b :action Back<CR>
 nmap <leader>c :action Vcs.Show.Local.Changes<CR>
+
 nmap gp :action ReformatWithPrettierAction<CR>
 nmap gh :action ShowErrorDescription<CR>
 nmap gr :action Vcs.RollbackChangedLines<CR>
 vmap gr :action Vcs.RollbackChangedLines<CR>
+
+nmap <c-l> :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
+nmap <c-r> :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
 nnoremap ' `
 nnoremap ` '
