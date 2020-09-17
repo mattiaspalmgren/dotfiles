@@ -1,0 +1,16 @@
+{
+  "name": "mapa-theme",
+  "dark": true,
+  "author": "",
+  "editorScheme": "/mapa_theme.xml",
+  "ui": {
+    "*": {
+      "background": "#252525"
+    }
+  },
+  "icons": {
+    "ColorPalette": {
+      "Objects.Red": "#858585"
+    }
+  }
+}
