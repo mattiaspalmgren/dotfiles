@@ -21,6 +21,9 @@ Symlinc other config files:
 `rm -r ~/Library/Application\ Support/JetBrains/<PRODUCT>/options`
 `ln -s ~/dev/dotfiles/jetbrains/options ~/Library/Application\ Support/JetBrains/<PRODUCT>/`
 
+## Add plugins 
+* Preferences -> Plugins -> Add `IdeaVim`
+
 ## Customize coloring of editor ui
 * Preferences -> Plugins -> GearIcon -> Install Plugin from disk -> `mapa-theme.jar`
 * Reset your IDE -> Preferences -> Appearance -> Theme -> Select `mapa-theme`
