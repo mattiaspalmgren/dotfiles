@@ -34,6 +34,7 @@
 	fpop = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
 	fdtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
 	fdrtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
+	fapply = !STASH=`git stash list | fzf | awk '{ print $1 }' | sed 's/://'` && git stash apply ${STASH}
 	camnefp = !git commit --amend --no-edit && git push -f
 	camne = !git commit --amend --no-edit
 
