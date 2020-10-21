@@ -1,0 +1,6 @@
+# Functions for interfacing with kubectl conviniently
+
+function kubl() {
+  POD=$(kubectl get pods --output name | fzf)
+  kubectl logs $POD
+}

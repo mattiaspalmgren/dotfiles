@@ -20,10 +20,13 @@ dockutil --no-restart --remove all
 killall Dock
 
 # Create symlinks for dotfiles
-ln -s ~/DEV/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/DEV/dotfiles/.gitignore_global ~/.gitignore_global
-ln -s ~/DEV/dotfiles/visual-studio-code/keybindings.json ~/Library/Application Support/Code/User/
-ln -s ~/DEV/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
-ln -s ~/DEV/dotfiles/.vimrc ~/.ideavimrc
-ln -s ~/DEV/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/dev/dotfiles/.gitignore_global ~/.gitignore_global
+ln -s ~/dev/dotfiles/visual-studio-code/keybindings.json ~/Library/Application Support/Code/User/
+ln -s ~/dev/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
+ln -s ~/dev/dotfiles/.vimrc ~/.ideavimrc
+ln -s ~/dev/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dev/dotfiles/utils/.git-utils ~/.git-utils
+ln -s ~/dev/dotfiles/utils/.docker-utils ~/.docker-utils
+ln -s ~/dev/dotfiles/utils/.kublectl-utils ~/.kublectl-utils
 

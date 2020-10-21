@@ -48,18 +48,24 @@ alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 alias linked="find node_modules -type l -maxdepth 3 | grep -v .bin"
 alias copy="history | tail -1 | cut -c8-999 | pbcopy"
 
+# Utils
+source ~/.git-utils
+source ~/.docker-utils
+source ~/.kublectl-utils
+
+# Environment variables
+source ~/.svt-env
+
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
 
 # Path
 export PATH=~/Library/Python/3.7/bin:$PATH
-export PATH=~/dev/dotfiles/scripts:$PATH
+export PATH=~/dev/dotfiles/utils:$PATH
 
 # For fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-source ~/.svt-env
 
 # Nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
