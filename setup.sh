@@ -24,7 +24,7 @@ ln -s ~/dev/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/dev/dotfiles/.gitignore_global ~/.gitignore_global
 ln -s ~/dev/dotfiles/visual-studio-code/keybindings.json ~/Library/Application Support/Code/User/
 ln -s ~/dev/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
-ln -s ~/dev/dotfiles/.vimrc ~/.ideavimrc
+ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/.ideavimrc
 ln -s ~/dev/dotfiles/.vimrc ~/.vimrc
 ln -s ~/dev/dotfiles/utils/.git-utils ~/.git-utils
 ln -s ~/dev/dotfiles/utils/.docker-utils ~/.docker-utils
