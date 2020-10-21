@@ -20,3 +20,5 @@ jetbrains/options/debugger.xml
 jetbrains/options/path.macros.xml
 jetbrains/options/runner.layout.xml
 jetbrains/options/textmate_os.xml
+jetbrains/options/cachedDictionary.xml
+jetbrains/options/packages.xml
