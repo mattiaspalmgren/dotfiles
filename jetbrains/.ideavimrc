@@ -48,8 +48,10 @@ nmap gh :action ShowErrorDescription<CR>
 nmap gr :action Vcs.RollbackChangedLines<CR>
 vmap gr :action Vcs.RollbackChangedLines<CR>
 
-nmap <c-l> :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
-nmap <c-r> :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
+nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
+nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
+
+nmap <c-r> :action $Redo<CR>
 
 nnoremap ' `
 nnoremap ` '
