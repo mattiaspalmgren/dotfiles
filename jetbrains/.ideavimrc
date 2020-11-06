@@ -43,6 +43,9 @@ nmap <leader>s :action Stop<CR>
 nmap <leader>b :action Back<CR>
 nmap <leader>c :action Vcs.Show.Local.Changes<CR>
 
+nmap tl :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
+nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
+
 nmap gp :action ReformatWithPrettierAction<CR>
 nmap gh :action ShowErrorDescription<CR>
 nmap gr :action Vcs.RollbackChangedLines<CR>
