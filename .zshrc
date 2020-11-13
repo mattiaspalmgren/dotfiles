@@ -7,6 +7,30 @@ source $ZSH/oh-my-zsh.sh
 
 # Use vi-mode
 bindkey -v
+
+function vi-yank-x-selection () {
+  zle vi-yank
+  echo $CUTBUFFER | pbcopy
+}
+zle -N vi-yank-x-selection
+bindkey -M vicmd "y" vi-yank-x-selection
+bindkey -M visual "y" vi-yank-x-selection
+
+function vi-yank-dd-selection () {
+  zle kill-whole-line
+  echo $CUTBUFFER | pbcopy
+}
+zle -N vi-yank-dd-selection
+bindkey -M vicmd "dd" vi-yank-dd-selection
+bindkey -M visual "dd" vi-yank-dd-selection
+
+function vi-yank-d-selection () {
+  zle kill-region
+  echo $CUTBUFFER | pbcopy
+}
+zle -N vi-yank-d-selection
+bindkey -M visual "d" vi-yank-d-selection
+
 export KEYTIMEOUT=1
 bindkey '^R' history-incremental-search-backward
 
