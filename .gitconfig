@@ -23,20 +23,22 @@
 	path = .gitconfig-svt
 
 [alias]
-	frebase = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
-	ffcheckout = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
-	fshow = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
-	fadd = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git add --all ${FILES}
-	fdiff = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
-	fcheckout = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
-	frevert = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
-	fhash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
-	fpop = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
-	fdtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
-	fdrtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
-	fapply = !STASH=`git stash list | fzf | awk '{ print $1 }' | sed 's/://'` && git stash apply ${STASH}
-	camnefp = !git commit --amend --no-edit && git push -f
-	camne = !git commit --amend --no-edit
+	rb = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
+	rf = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
+	sh = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
+	af = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git add --all ${FILES}
+	di = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
+	co = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
+	rev = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
+	hash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
+	po = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
+	app = !STASH=`git stash list | fzf | awk '{ print $1 }' | sed 's/://'` && git stash apply ${STASH}
+	can = !git commit --amend --no-edit
+	ca = !git commit --amend
+	sw = !BRANCH=`git branch | head -n 50 | fzf` && git switch `echo ${BRANCH} | awk '{ print $1 }'`
+	dbra = !BRANCH=`git branch | head -n 50 | fzf` && git branch `echo ${BRANCH} | awk '{ print $1 }'` -D
+	dtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
+	drtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
