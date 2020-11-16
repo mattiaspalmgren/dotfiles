@@ -54,6 +54,10 @@ vmap gr :action Vcs.RollbackChangedLines<CR>
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
+" Marks
+nmap <leader>m :action GotoNextBookmark<CR>
+nmap ma :action ToggleBookmark<CR>
+
 nmap <c-r> :action $Redo<CR>
 
 nnoremap ' `
