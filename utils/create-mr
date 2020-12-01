@@ -29,9 +29,14 @@ while getopts ":t:h" opt; do
   esac
 done
 
+
 # Read text input via vim
 temp_file=$(mktemp)
+# Prefill the file with the contents of the concerned commits
+COMMITS_CONTENT=$(git log --pretty=format:"## %s%n%b" ${TARGET_BRANCH}..HEAD)
+echo "$COMMITS_CONTENT" > $temp_file
 vim $temp_file
+
 content=$(cat $temp_file)
 TITLE=$(head -n 1 $temp_file)
 DESCRIPTION=$(tail -n +3 $temp_file)
