@@ -39,6 +39,8 @@
 	dbra = !BRANCH=`git branch | head -n 50 | fzf` && git branch `echo ${BRANCH} | awk '{ print $1 }'` -D
 	dtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
 	drtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
+    branch-name = "!git rev-parse --abbrev-ref HEAD"
+    publish = "!git push -u origin $(git branch-name)"
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
