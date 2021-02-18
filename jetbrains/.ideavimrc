@@ -21,6 +21,7 @@ set incsearch
 set timeoutlen=1000 ttimeoutlen=0 " remove delay when leaving insert mode
 set visualbell
 set noerrorbells
+set surround
 
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
@@ -47,9 +48,11 @@ nmap tl :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR
 nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
 nmap gp :action ReformatWithPrettierAction<CR>
+nmap gb :action Tool_External Tools_Black<CR>
 nmap gh :action ShowErrorDescription<CR>
 nmap gr :action Vcs.RollbackChangedLines<CR>
 vmap gr :action Vcs.RollbackChangedLines<CR>
+nmap gl :action Vcs.Show.Log<CR>
 
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
