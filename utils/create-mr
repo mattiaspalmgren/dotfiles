@@ -34,7 +34,16 @@ done
 temp_file=$(mktemp)
 # Prefill the file with the contents of the concerned commits
 COMMITS_CONTENT=$(git log --pretty=format:"## %s%n%b" ${TARGET_BRANCH}..HEAD)
-echo "$COMMITS_CONTENT" > $temp_file
+echo "$COMMITS_CONTENT" >> $temp_file
+# Also prefill the file with type information
+echo "_Type: Type_
+<!-- Any of:
+      Add - for new features.
+      Fix - for any bug fixes.
+      Change - for changes in existing functionality.
+      Deprecate - for soon-to-be removed features.
+      Remove - for now removed features.
+ -->" >> $temp_file
 vim $temp_file
 
 content=$(cat $temp_file)
