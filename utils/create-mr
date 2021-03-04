@@ -5,8 +5,8 @@ REMOVE_SOURCE_BRANCH="true"
 # Check if branch exists on remote
 BRANCH_REMOTE_REF=$(git ls-remote --heads origin ${SOURCE_BRANCH})
 if [[ -z ${BRANCH_REMOTE_REF} ]]; then
-    echo "Branch: $SOURCE_BRANCH does not exist on remote. Push it and run script again." >&2
-    exit 1
+    echo "Branch: $SOURCE_BRANCH does not exist on remote. Publishing it..."
+    git publish
 fi
 
 usage() {
