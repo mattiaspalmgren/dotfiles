@@ -103,4 +103,7 @@ export NODE_PATH=$(npm root -g)
 # Settings
 export LC_ALL=en_US.UTF-8
 
+# Disable auto cd
+unsetopt AUTO_CD
+
 source ~/.iterm2_shell_integration.zsh
