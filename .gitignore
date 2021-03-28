@@ -22,5 +22,15 @@ jetbrains/options/runner.layout.xml
 jetbrains/options/textmate_os.xml
 jetbrains/options/cachedDictionary.xml
 jetbrains/options/packages.xml
+jetbrains/options/images.support.xml
+jetbrains/options/emmet.xml
+jetbrains/options/features.usage.statistics.xml
+jetbrains/options/ide-features-trainer.xml
+jetbrains/options/lightEdit.xml
+jetbrains/options/pluginAdvertiser.xml
+jetbrains/options/profilerRunConfigurations.xml
+jetbrains/options/pySdk.xml
+jetbrains/options/templates.xml
+jetbrains/options/web-browsers.xml
 
 utils/svt
