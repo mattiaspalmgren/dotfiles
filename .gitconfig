@@ -26,7 +26,6 @@
 	rb = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
 	rf = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
 	sh = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
-	af = !bash -c 'source $HOME/.git-utils && add-file'
 	di = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
 	co = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
 	rev = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
@@ -41,7 +40,8 @@
 	drtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish = "!git push -u origin $(git branch-name)"
-	browse = !bash -c 'source $HOME/.git-utils && browse-log'
+	af = !zsh -c 'source $HOME/.git-utils && add-file'
+	browse = !zsh -c 'source $HOME/.git-utils && browse-log'
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

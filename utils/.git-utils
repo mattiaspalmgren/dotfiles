@@ -1,12 +1,49 @@
 # Functions for interfacing with git conviniently
 
 browse-log() {
-    git log --format='%C(auto)%h %s' --color=always "$@" |  \
-    fzf --ansi --reverse --tiebreak=index --no-sort --bind=ctrl-s:toggle-sort \
-    --preview 'f() { set -- $(echo -- "$@" | grep -o "[a-f0-9]\{7\}"); [ $# -eq 0 ] || git show --color=always $1; }; f {}'
+    local LOG PREVIEW FZF
+
+    LOG=$(git log --format='%C(auto)%h %s' --color=always "$@")
+    PREVIEW='f() { set -- $(echo -- "$@" | grep -o "[a-f0-9]\{7\}"); [ $# -eq 0 ] || git show --color=always $1; }; f {}'
+    FZF=(
+        fzf
+        --ansi
+        --reverse
+        --tiebreak=index
+        --no-sort
+        --bind=ctrl-j:preview-down
+        --bind=ctrl-k:preview-up
+        --preview "$PREVIEW"
+    )
+
+    echo $LOG | $FZF
 }
 
 add-file() {
-    FILE=$(git status  --short | grep '^\W.' | awk '{print $2}' | fzf --ansi --preview 'git diff --color=always {}')
+    local UNSTAGED_FILES FILE PREVIEW
+
+    UNSTAGED_FILES=$(get-unstaged-files)
+    PREVIEW='git diff --color=always {}'
+    FZF=(
+        fzf
+        --ansi
+        --bind=ctrl-j:preview-down
+        --bind=ctrl-k:preview-up
+        --preview "$PREVIEW"
+    )
+    FILE=$(echo $UNSTAGED_FILES | $FZF)
+
     [[ -n "$FILE" ]] && git add $FILE
+}
+
+get-unstaged-files() {
+    local CHANGED UNMERGED UNTRACKED FILES FILE_NAMES
+
+    CHANGED=$(git config --get-color color.status.changed red)
+    UNMERGED=$(git config --get-color color.status.unmerged red)
+    UNTRACKED=$(git config --get-color color.status.untracked red)
+    FILES=$(git -c color.status=always status --short | grep -F -e "$CHANGED" -e "$UNMERGED" -e "$UNTRACKED")
+    FILE_NAMES=$(echo $FILES | awk '{print $2}')
+
+    echo $FILE_NAMES
 }
