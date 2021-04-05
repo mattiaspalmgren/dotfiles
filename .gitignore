@@ -32,5 +32,4 @@ jetbrains/options/profilerRunConfigurations.xml
 jetbrains/options/pySdk.xml
 jetbrains/options/templates.xml
 jetbrains/options/web-browsers.xml
-
-utils/svt
+scripts/svt

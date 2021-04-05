@@ -90,6 +90,8 @@ export PATH=~/Library/Python/3.7/bin:$PATH
 export PATH=~/Library/Python/3.8/bin:$PATH
 export PATH=~/dev/dotfiles/utils:$PATH
 export PATH=~/dev/dotfiles/utils/svt:$PATH
+export PATH=~/dev/dotfiles/scripts:$PATH
+export PATH=~/dev/dotfiles/scripts/svt:$PATH
 
 # For fuzzy search
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
