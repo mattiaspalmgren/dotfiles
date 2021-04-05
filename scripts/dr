@@ -1,0 +1,12 @@
+DIRECTORY="/Users/mattiaspalmgren/dev/knowledge"
+DIRECTORY_ESCAPED="${DIRECTORY//\//\\/}"
+
+find_in_directory() {
+  local GREP
+
+  HITS=$(grep -RHn 'regex' $DIRECTORY --exclude-dir={.git,.idea})
+  PERL_REGEXP="s/^${DIRECTORY_ESCAPED}\/(.*):(\d{1,4}):.*$/ \1 : \2/"
+  echo "$HITS" | perl -pe "$PERL_REGEXP" | fzf
+}
+
+find_in_directory
