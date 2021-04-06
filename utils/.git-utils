@@ -23,7 +23,14 @@ add-file() {
     local UNSTAGED_FILES FILE PREVIEW
 
     UNSTAGED_FILES=$(get-unstaged-files)
-    PREVIEW='git diff --color=always {}'
+    PREVIEW='
+      FILE=$(echo {} | awk '\''{print $2}'\'')
+      if (echo {} | grep "^??") &>/dev/null; then
+          git diff --color=always --no-index /dev/null $FILE
+      else
+          git diff --color=always $FILE
+      fi
+    '
     FZF=(
         fzf
         --ansi
@@ -32,8 +39,9 @@ add-file() {
         --preview "$PREVIEW"
     )
     FILE=$(echo $UNSTAGED_FILES | $FZF)
+    FILE_NAME=$(echo $FILE | awk '{print $2}')
 
-    [[ -n "$FILE" ]] && git add $FILE
+    [[ -n "$FILE_NAME" ]] && git add $FILE_NAME
 }
 
 get-unstaged-files() {
@@ -43,7 +51,6 @@ get-unstaged-files() {
     UNMERGED=$(git config --get-color color.status.unmerged red)
     UNTRACKED=$(git config --get-color color.status.untracked red)
     FILES=$(git -c color.status=always status --short | grep -F -e "$CHANGED" -e "$UNMERGED" -e "$UNTRACKED")
-    FILE_NAMES=$(echo $FILES | awk '{print $2}')
 
-    echo $FILE_NAMES
+    echo $FILES
 }
