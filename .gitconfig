@@ -41,6 +41,7 @@
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish = "!git push -u origin $(git branch-name)"
 	af = !zsh -c 'source $HOME/.git-utils && add-file'
+	afp = !zsh -c 'source $HOME/.git-utils && add-file -p'
 	browse = !zsh -c 'source $HOME/.git-utils && browse-log'
 
 [filter "lfs"]

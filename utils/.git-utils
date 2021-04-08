@@ -41,7 +41,7 @@ add-file() {
     FILE=$(echo $UNSTAGED_FILES | $FZF)
     FILE_NAME=$(echo $FILE | awk '{print $2}')
 
-    [[ -n "$FILE_NAME" ]] && git add $FILE_NAME
+    [[ -n "$FILE_NAME" ]] && git add $FILE_NAME $@
 }
 
 get-unstaged-files() {
