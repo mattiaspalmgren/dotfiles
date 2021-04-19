@@ -4,7 +4,7 @@ update
 # Upgrade any already-installed formulae
 upgrade
 
-install dockutil 
+install dockutil
 install git
 install mongodb
 install mysql
@@ -16,7 +16,8 @@ install python3
 install zsh
 install yarn
 install maven
-instal fzfl
+instal fzf
+install bat
 install vim --with-lua --with-override-system-vi
 
 tap caskroom/cask
@@ -27,13 +28,16 @@ cask install appcleaner
 cask install google-chrome
 cask install iterm2
 cask install java
-cask install postman
 cask install slack
 cask install spotify
 cask install sublime-text3
 cask install the-unarchiver
 cask install intellij-idea-ce
+cast install pycharm
+cast install webstorm
 cast install visual-studio-code
+cask install daisydisk
+cask install docker
 
 tap homebrew/versions
 
