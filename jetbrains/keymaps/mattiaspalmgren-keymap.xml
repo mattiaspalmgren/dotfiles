@@ -65,6 +65,9 @@
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
   <action id="FileChooser.GotoDesktop" />
+  <action id="Git.CompareWithBranch">
+    <keyboard-shortcut first-keystroke="f19" />
+  </action>
   <action id="GotoBookmark2" />
   <action id="GotoRelated" />
   <action id="GotoTest">

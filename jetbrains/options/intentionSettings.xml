@@ -8,5 +8,6 @@
     <ignoreAction name="TypeScript/Implement in derived classes" />
     <ignoreAction name="TypeScript/Make 'private'" />
     <ignoreAction name="TypeScript/Make 'protected'" />
+    <ignoreAction name="JavaScript/ECMAScript 6/Propagate to destructuring declaration" />
   </component>
 </application>
