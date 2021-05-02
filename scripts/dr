@@ -1,12 +1,88 @@
-DIRECTORY="/Users/mattiaspalmgren/dev/knowledge"
-DIRECTORY_ESCAPED="${DIRECTORY//\//\\/}"
+BASE_DIRECTORY="/Users/"$USER
+BASE_DIRECTORY_ESCAPED="${BASE_DIRECTORY//\//\\/}"
+CONFIG_FILE=~/dev/dotfiles/scripts/.drrc
+IGNORE_FILE=~/dev/dotfiles/scripts/.drignore
 
-find_in_directory() {
-  local GREP
-
-  HITS=$(grep -RHn 'regex' $DIRECTORY --exclude-dir={.git,.idea})
-  PERL_REGEXP="s/^${DIRECTORY_ESCAPED}\/(.*):(\d{1,4}):.*$/ \1 : \2/"
-  echo "$HITS" | perl -pe "$PERL_REGEXP" | fzf
+usage() {
+  echo "Usage: dr [
+      -s <string to search for>
+      -f <file pattern to search for>
+  ]
+  "
 }
 
-find_in_directory
+while getopts ":s:f:h" opt; do
+  case "$opt" in
+  s) SEARCH_STRING=$OPTARG ;;
+  f) FILE_PATTERN=$OPTARG ;;
+  h)
+    usage
+    exit
+    ;;
+  \?)
+    echo "Invalid option $OPTARG" >&2
+    usage >&2
+    exit 1
+    ;;
+  esac
+done
+
+directories() {
+  DIRS=$(cat $CONFIG_FILE)
+  # Prefix with base directory
+  printf $BASE_DIRECTORY"%s\n" $DIRS
+}
+
+ignore_patterns() {
+  DIRS=$(cat $IGNORE_FILE)
+  printf -- "-g !%s " $DIRS
+}
+
+_fzf() {
+  PREVIEW='
+    FILE_NAME=$(echo {} | awk '\''{print $1}'\'')
+    FILE='$BASE_DIRECTORY'/$FILE_NAME
+    LINE_NUMBER=$(echo {} | awk '\''{print $3}'\'')
+
+    if [[ ! -z ${LINE_NUMBER} ]]; then
+      RANGE=30
+      LOWER_RANGE=$(($LINE_NUMBER-$RANGE))
+      [[ LOWER_RANGE -lt 0 ]] && LOWER_RANGE=0
+      UPPER_RANGE=$(($LINE_NUMBER+$RANGE))
+      bat --style=numbers --color=always --highlight-line $LINE_NUMBER --line-range $LOWER_RANGE:$UPPER_RANGE $FILE
+    else
+      bat --style=numbers --color=always $FILE
+    fi
+  '
+
+  FILE=$(fzf --ansi --bind=ctrl-j:preview-down --bind=ctrl-k:preview-up --preview "$PREVIEW" $1)
+  echo $FILE
+}
+
+SEARCH_DIRECTORIES=$(directories)
+IGNORE=$(ignore_patterns)
+
+if [[ ${SEARCH_STRING+x} ]]; then
+  HITS=$(rg $SEARCH_STRING $SEARCH_DIRECTORIES $IGNORE --vimgrep --no-column --ignore-case)
+elif [[ ${FILE_PATTERN+x} ]]; then
+  HITS=$(rg $SEARCH_DIRECTORIES --ignore-case --files --iglob "*$FILE_PATTERN*")
+else
+    echo "dr: Must provide atleast one option! \n" >&2
+    usage >&2
+    exit 1
+fi
+
+if [[ -z ${HITS} ]]; then
+    echo "dr: No mathching hits found..." >&2
+    exit 0
+fi
+
+[[ ${SEARCH_STRING+x} ]] &&
+  FORMAT_HITS_WITHOUT_BASE_DIRECTORY="s/^${BASE_DIRECTORY_ESCAPED}\/(.*):(\d{1,4}):.*$/ \1 : \2/" ||
+  FORMAT_HITS_WITHOUT_BASE_DIRECTORY="s/^${BASE_DIRECTORY_ESCAPED}\/(.*)$/ \1/"
+FILE=$(echo "$HITS" | perl -pe "$FORMAT_HITS_WITHOUT_BASE_DIRECTORY" | _fzf)
+
+if [[ -n "$FILE" ]]; then
+  FILE_PATH=$(echo "$BASE_DIRECTORY/$FILE" | awk '{print $1}')
+  vim "$FILE_PATH"
+fi

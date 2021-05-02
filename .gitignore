@@ -33,3 +33,5 @@ jetbrains/options/pySdk.xml
 jetbrains/options/templates.xml
 jetbrains/options/web-browsers.xml
 scripts/svt
+scripts/.drrc
+scripts/.drignore
