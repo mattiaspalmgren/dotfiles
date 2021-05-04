@@ -11,8 +11,8 @@ install mysql
 install node
 install redis
 install npm
-install python
-install python3
+install pyenv
+install pipenv
 install zsh
 install yarn
 install maven
