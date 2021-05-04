@@ -109,4 +109,8 @@ export LC_ALL=en_US.UTF-8
 # Disable auto cd
 unsetopt AUTO_CD
 
+# pyenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 source ~/.iterm2_shell_integration.zsh
