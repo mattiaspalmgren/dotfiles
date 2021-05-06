@@ -1,3 +1,4 @@
 # Settings
-- Update `Rearrange Tabs` shortcuts via: `chrome://extensions/shortcuts`.
-- Disable permission to ask to send notifications via: `chrome://settings/content/notifications`.
+- Update `Rearrange Tabs` shortcuts: `chrome://extensions/shortcuts`.
+- Disable permission to ask to send notifications: `chrome://settings/content/notifications`.
+- Disable to save passwords: `chrome://settings/passwords`.
