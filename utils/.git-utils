@@ -50,7 +50,7 @@ get-unstaged-files() {
     CHANGED=$(git config --get-color color.status.changed red)
     UNMERGED=$(git config --get-color color.status.unmerged red)
     UNTRACKED=$(git config --get-color color.status.untracked red)
-    FILES=$(git -c color.status=always status --short | grep -F -e "$CHANGED" -e "$UNMERGED" -e "$UNTRACKED")
+    FILES=$(git -c color.status=always status --short -uall | grep -F -e "$CHANGED" -e "$UNMERGED" -e "$UNTRACKED")
 
     echo $FILES
 }
