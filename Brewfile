@@ -18,6 +18,7 @@ install yarn
 install maven
 instal fzf
 install bat
+install protobuf
 install vim --with-lua --with-override-system-vi
 
 tap caskroom/cask
@@ -33,7 +34,7 @@ cask install spotify
 cask install sublime-text3
 cask install the-unarchiver
 cask install intellij-idea-ce
-cast install pycharm
+cask install pycharm
 cast install webstorm
 cast install visual-studio-code
 cask install daisydisk
