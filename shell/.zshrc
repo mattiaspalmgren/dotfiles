@@ -7,8 +7,8 @@ export DOTFILES_SHELL_DIR=~/dev/dotfiles/shell
 
 SHELL_FILES=(
     envars.sh
-    vendor.sh
-    config.sh
+    vendor.zsh
+    config.zsh
     aliases.sh
     functions.sh
 )
