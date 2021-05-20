@@ -3,14 +3,14 @@
 # Install Homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Bundle and cask
 brew tap Homebrew/bundle
 
 # Install tools
 brew bundle Brewfile
-
-# Install oh-my-zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | shit
 
 # Apply modified osx defaults
 source .osx
