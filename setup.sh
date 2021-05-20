@@ -6,14 +6,11 @@
 # Install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Bundle and cask
-brew tap Homebrew/bundle
-
 # Install tools
 brew bundle Brewfile
 
 # Apply modified osx defaults
-./macos
+bash macos
 
 # Remove all applicaitons from dock
 dockutil --no-restart --remove all
