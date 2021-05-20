@@ -7,7 +7,7 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Save screenshots to the desktop
-defaults write com.apple.screencapture location -string “$HOME/Desktop”
+defaults write com.apple.screencapture location -string "$HOME/Desktop"
 
 # Bottom left screen corner → Start screen saver
 defaults write com.apple.dock wvous-bl-corner -int 5
