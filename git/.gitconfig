@@ -8,7 +8,6 @@
 [core]
 	excludesfile = /Users/mattiaspalmgren/.gitignore_global
 	ignorecase = false
-	sshCommand = ssh -i ~/.ssh/id_rsa
 
 [mergetool]
        keepBackup = false
