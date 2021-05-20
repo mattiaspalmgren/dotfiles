@@ -40,9 +40,9 @@
 	drtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish = "!git push -u origin $(git branch-name)"
-	af = !zsh -c 'source $HOME/.git-utils && add-file'
-	afp = !zsh -c 'source $HOME/.git-utils && add-file -p'
-	browse = !zsh -c 'source $HOME/.git-utils && browse-log'
+	af = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file'
+	afp = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file -p'
+	browse = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && browse-log'
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

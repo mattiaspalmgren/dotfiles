@@ -1,6 +1,16 @@
-# Functions for interfacing with git conviniently
+# Functions
 
-browse-log() {
+function docstop() {
+  CONTAINER=$(docker ps --format "{{.Names}}" | fzf)
+  docker stop $CONTAINER
+}
+
+function kubl() {
+  POD=$(kubectl get pods --output name | fzf)
+  kubectl logs $POD
+}
+
+function browse-log() {
     local LOG PREVIEW FZF
 
     LOG=$(git log --format='%C(auto)%h %s' --color=always "$@")
@@ -19,7 +29,7 @@ browse-log() {
     echo $LOG | $FZF
 }
 
-add-file() {
+function add-file() {
     local UNSTAGED_FILES FILE PREVIEW
 
     UNSTAGED_FILES=$(get-unstaged-files)
@@ -44,7 +54,7 @@ add-file() {
     [[ -n "$FILE_NAME" ]] && git add $FILE_NAME $@
 }
 
-get-unstaged-files() {
+function get-unstaged-files() {
     local CHANGED UNMERGED UNTRACKED FILES FILE_NAMES
 
     CHANGED=$(git config --get-color color.status.changed red)

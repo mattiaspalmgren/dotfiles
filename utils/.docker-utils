@@ -1,6 +1,0 @@
-# Functions for interfacing with docker conviniently
-
-function docstop() {
-  CONTAINER=$(docker ps --format "{{.Names}}" | fzf)
-  docker stop $CONTAINER
-}
