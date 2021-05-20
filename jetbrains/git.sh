@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Use as git executable in order to prevent jetbrains to add stuff to staging area
 # From: https://gist.github.com/gcollic/f6f093ec3805979669d0bf744e22c72a
 
 inner() {

@@ -1,5 +1,5 @@
 <application>
   <component name="Git.Application.Settings">
-    <option name="myPathToGit" value="$USER_HOME$/dev/dotfiles/jetbrains/git_for_jetbrains.sh" />
+    <option name="myPathToGit" value="$USER_HOME$/dev/dotfiles/jetbrains/git.sh" />
   </component>
 </application>
