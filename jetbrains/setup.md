@@ -5,21 +5,8 @@ Symlinc vim run config:
 `ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/`
 
 ## Product
-Symlinc other config files:
-
-`export PRODUCT=WebStorm2020.1` etc.
-
-`rm ~/Library/Application\ Support/JetBrains/$PRODUCT/codestyles`
-`ln -s ~/dev/dotfiles/jetbrains/codestyles ~/Library/Application\ Support/JetBrains/$PRODUCT/`
-
-`rm -r ~/Library/Application\ Support/JetBrains/$PRODUCT/colors`
-`ln -s ~/dev/dotfiles/jetbrains/colors ~/Library/Application\ Support/JetBrains/$PRODUCT/`
-
-`rm -r ~/Library/Application\ Support/JetBrains/$PRODUCT/keymaps`
-`ln -s ~/dev/dotfiles/jetbrains/keymaps ~/Library/Application\ Support/JetBrains/$PRODUCT/`
-
-`rm -r ~/Library/Application\ Support/JetBrains/$PRODUCT/options`
-`ln -s ~/dev/dotfiles/jetbrains/options ~/Library/Application\ Support/JetBrains/$PRODUCT/`
+Symlinc config files via running:
+`bash setup.sh` in this directory
 
 ## Add plugins 
 Plugins:
