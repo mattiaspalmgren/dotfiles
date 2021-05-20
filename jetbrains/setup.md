@@ -22,7 +22,11 @@ Symlinc other config files:
 `ln -s ~/dev/dotfiles/jetbrains/options ~/Library/Application\ Support/JetBrains/<PRODUCT>/`
 
 ## Add plugins 
-* Preferences -> Plugins -> Add `IdeaVim`
+Plugins:
+- IdeaVim, 
+- A move tab left and right using the keyboard plugin...
+
+Preferences -> Plugins -> Add *PLUGIN*
 
 ## Customize coloring of editor ui
 * Preferences -> Plugins -> GearIcon -> Install Plugin from disk -> `mapa-theme.jar`
