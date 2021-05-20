@@ -13,7 +13,7 @@ brew tap Homebrew/bundle
 brew bundle Brewfile
 
 # Apply modified osx defaults
-source .osx
+./macos
 
 # Remove all applicaitons from dock
 dockutil --no-restart --remove all
