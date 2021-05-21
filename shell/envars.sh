@@ -10,3 +10,5 @@ export PATH=~/dev/dotfiles/scripts/svt:$PATH
 # Settings
 export LC_ALL=en_US.UTF-8
 export KEYTIMEOUT=1
+export VISUAL=nvim
+export EDITOR="$VISUAL"
