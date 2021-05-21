@@ -10,6 +10,7 @@ brew "pipenv"
 brew "fzf"
 brew "bat"
 brew "neovim"
+brew "ripgrep"
 
 cask "1password"
 cask "appcleaner"
