@@ -14,6 +14,7 @@ SHELL_FILES=(
     vendor.zsh
     aliases.sh
     functions.sh
+    arm.sh
 )
 
 for FILE in $SHELL_FILES; do
