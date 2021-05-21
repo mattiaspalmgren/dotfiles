@@ -18,8 +18,8 @@
 [pull]
 	rebase = true
 
-[includeIf "gitdir:~/svt/"]
-	path = .gitconfig-svt
+[includeIf "gitdir:~/alva/"]
+	path = .gitconfig-alva
 
 [alias]
 	rb = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
