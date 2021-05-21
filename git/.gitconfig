@@ -51,3 +51,9 @@
 
 [init]
 	defaultBranch = main
+
+[rebase]
+	autostash = true
+
+[remote "origin"]
+	prune = true
