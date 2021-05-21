@@ -34,5 +34,4 @@ jetbrains/options/templates.xml
 jetbrains/options/web-browsers.xml
 scripts/svt
 scripts/.drrc
-scripts/.drignore
 git/.gitconfig-alva
