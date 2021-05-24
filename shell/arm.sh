@@ -1,5 +1,5 @@
 brew-arm() {
-  HOMEBREW_NO_ENV_FILTERING=1 /opt/homebrew/bin/brew $@
+ /opt/homebrew/bin/brew $@
 }
 
 brew() {
