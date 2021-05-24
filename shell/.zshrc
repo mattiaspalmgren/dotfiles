@@ -15,6 +15,7 @@ SHELL_FILES=(
     aliases.sh
     functions.sh
     arm.sh
+    alva.sh
 )
 
 for FILE in $SHELL_FILES; do

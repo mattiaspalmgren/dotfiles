@@ -36,3 +36,4 @@ scripts/svt
 scripts/.drrc
 git/.gitconfig-alva
 Brewfile-alva
+shell/alva.sh
