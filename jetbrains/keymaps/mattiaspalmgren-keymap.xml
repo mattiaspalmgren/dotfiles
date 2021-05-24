@@ -11,6 +11,10 @@
   </action>
   <action id="Arrangement.Rule.Match.Condition.Move.Down" />
   <action id="Arrangement.Rule.Match.Condition.Move.Up" />
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="meta alt left" />
+    <mouse-shortcut keystroke="button4" />
+  </action>
   <action id="CloseProject">
     <keyboard-shortcut first-keystroke="shift meta w" />
   </action>
@@ -23,8 +27,11 @@
     <keyboard-shortcut first-keystroke="meta 7" />
   </action>
   <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.CompareCells" />
+  <action id="DatabaseView.CopyAction" />
   <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
+  <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
@@ -33,9 +40,7 @@
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
-  <action id="EditorDuplicate">
-    <keyboard-shortcut first-keystroke="shift meta d" />
-  </action>
+  <action id="EditorDuplicate" />
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="meta right" />
   </action>
@@ -65,6 +70,10 @@
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
   <action id="FileChooser.GotoDesktop" />
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="meta alt right" />
+    <mouse-shortcut keystroke="button5" />
+  </action>
   <action id="Git.CompareWithBranch">
     <keyboard-shortcut first-keystroke="f19" />
   </action>
@@ -100,15 +109,13 @@
   <action id="MoveStatementDown" />
   <action id="MoveStatementUp" />
   <action id="NextSplitter">
-    <keyboard-shortcut first-keystroke="alt tab" />
-    <keyboard-shortcut first-keystroke="ctrl meta right" />
+    <keyboard-shortcut first-keystroke="meta close_bracket" />
   </action>
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="ctrl tab" />
   </action>
   <action id="PrevSplitter">
-    <keyboard-shortcut first-keystroke="shift alt tab" />
-    <keyboard-shortcut first-keystroke="ctrl meta left" />
+    <keyboard-shortcut first-keystroke="meta open_bracket" />
   </action>
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
@@ -141,6 +148,7 @@
   <action id="RunClass">
     <keyboard-shortcut first-keystroke="shift meta r" />
   </action>
+  <action id="RunDashboard.CopyConfiguration" />
   <action id="SearchEverywhere">
     <keyboard-shortcut first-keystroke="ctrl meta f" />
   </action>
@@ -154,9 +162,11 @@
     <keyboard-shortcut first-keystroke="alt home" />
     <keyboard-shortcut first-keystroke="shift ctrl up" />
   </action>
+  <action id="SplitHorizontally">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
   <action id="SplitVertically">
-    <keyboard-shortcut first-keystroke="meta alt 2" />
-    <keyboard-shortcut first-keystroke="ctrl alt 2" />
+    <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="Switcher" />
   <action id="TabShiftActions.StretchDown" />
@@ -167,13 +177,12 @@
     <keyboard-shortcut first-keystroke="ctrl alt right" />
   </action>
   <action id="TabShiftActions.StretchUp" />
-  <action id="UnsplitAll">
-    <keyboard-shortcut first-keystroke="alt 1" />
-  </action>
+  <action id="Uml.ShowDiff" />
   <action id="ViewSource">
     <keyboard-shortcut first-keystroke="meta enter" />
     <keyboard-shortcut first-keystroke="shift f4" />
   </action>
+  <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
