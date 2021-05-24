@@ -18,4 +18,3 @@ source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.
 
 # Postgres
 export PATH=/Applications/Postgres.app/Contents/Versions/10/bin:$PATH
-export PATH="/usr/local/opt/node@14/bin:$PATH"
