@@ -58,5 +58,12 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} *"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 PROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $ '
 
+# Title
+DISABLE_AUTO_TITLE="true"
+precmd() {
+  # Sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
+
 # Options
 unsetopt AUTO_CD
