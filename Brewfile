@@ -11,6 +11,7 @@ brew "fzf"
 brew "bat"
 brew "neovim"
 brew "ripgrep"
+brew "tldr"
 
 cask "1password"
 cask "appcleaner"
