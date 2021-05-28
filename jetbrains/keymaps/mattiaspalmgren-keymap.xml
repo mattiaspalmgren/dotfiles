@@ -31,7 +31,6 @@
   <action id="DatabaseView.CopyAction" />
   <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
-  <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
