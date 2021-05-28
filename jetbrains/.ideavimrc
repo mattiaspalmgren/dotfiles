@@ -51,8 +51,8 @@ nmap gp :action ReformatWithPrettierAction<CR>
 nmap gb :action Tool_External Tools_Black<CR>
 nmap gh :action ShowErrorDescription<CR>
 nmap gr :action Vcs.RollbackChangedLines<CR>
-vmap gr :action Vcs.RollbackChangedLines<CR>
 nmap gl :action Vcs.Show.Log<CR>
+nmap ge :action Javascript.Linters.EsLint.Fix<CR>
 
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
