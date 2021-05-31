@@ -38,3 +38,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Place dock on left side of screen
 defaults write com.apple.dock "orientation" -string "left"
+
+# Do not recommend Safari via notifications
+defaults write com.apple.coreservices.uiagent CSUIHasSafariBeenLaunched -bool YES
+defaults write com.apple.coreservices.uiagent CSUIRecommendSafariNextNotificationDate -date 2050-01-01T00:00:00Z
+defaults write com.apple.coreservices.uiagent CSUILastOSVersionWhereSafariRecommendationWasMade -float 10.99
