@@ -84,5 +84,5 @@ FILE=$(echo "$HITS" | perl -pe "$FORMAT_HITS_WITHOUT_BASE_DIRECTORY" | _fzf)
 
 if [[ -n "$FILE" ]]; then
   FILE_PATH=$(echo "$BASE_DIRECTORY/$FILE" | awk '{print $1}')
-  vim "$FILE_PATH"
+  nvim "$FILE_PATH"
 fi
