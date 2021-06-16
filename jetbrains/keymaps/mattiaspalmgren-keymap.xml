@@ -52,6 +52,7 @@
   <action id="EditorLineStartWithSelection">
     <keyboard-shortcut first-keystroke="shift meta left" />
   </action>
+  <action id="EditorRight" />
   <action id="EditorSelectWord" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta down" />
@@ -176,6 +177,7 @@
     <keyboard-shortcut first-keystroke="ctrl alt right" />
   </action>
   <action id="TabShiftActions.StretchUp" />
+  <action id="TodoViewGroupByFlattenPackage" />
   <action id="Uml.ShowDiff" />
   <action id="ViewSource">
     <keyboard-shortcut first-keystroke="meta enter" />
