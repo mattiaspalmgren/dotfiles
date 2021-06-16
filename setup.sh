@@ -23,6 +23,7 @@ ln -s ~/dev/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -s ~/dev/dotfiles/visual-studio-code/keybindings.json ~/Library/Application Support/Code/User/
 ln -s ~/dev/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
 ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/.ideavimrc
+ln -s ~/dev/dotfiles/git/gh/config.yml ~/.config/gh
 
 # Create dirs
 mkdir ~/.nvm
