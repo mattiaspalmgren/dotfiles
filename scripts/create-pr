@@ -17,6 +17,6 @@ content=$(cat $temp_file)
 TITLE=$(head -n 1 $temp_file)
 DESCRIPTION=$(tail -n +3 $temp_file)
 
-URL=$(gh pr create --title "$TITLE" --body "$DESCRIPTION")
+URL=$(gh pr create --title "$TITLE" --body "$DESCRIPTION" --draft)
 echo $URL | pbcopy
 echo "PR created. The web URL is in the clipboard."
