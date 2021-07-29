@@ -12,4 +12,5 @@ aliases:
     v: '!id="$(gh pr list -L100 | fzf --preview "gh pr view {+1}" | cut -f1)"; [ -n "$id" ] && gh pr view "$id"'
     e: pr edit
     vw: pr view --web
+    c: pr create --draft
 
