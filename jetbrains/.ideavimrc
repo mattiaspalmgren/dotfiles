@@ -32,7 +32,7 @@ highlight LineNr ctermfg=Grey
 let mapleader=" "
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
-nmap <leader>q :action CloseEditor<CR>
+map <leader>q :action CloseEditor<CR>
 nmap <leader>e :action GotoNextError<CR>
 nmap <leader>n :action Macro.next-change<CR>
 nmap <leader>p :action Macro.previous-change<CR>
@@ -50,11 +50,18 @@ nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<C
 nmap gp :action ReformatWithPrettierAction<CR>
 nmap gb :action Tool_External Tools_Black<CR>
 nmap gh :action ShowErrorDescription<CR>
-nmap gr :action Vcs.RollbackChangedLines<CR>
+
+" Git operations
+map gr :action Vcs.RollbackChangedLines<CR>
 nmap gl :action Vcs.Show.Log<CR>
 nmap ge :action Javascript.Linters.EsLint.Fix<CR>
 nmap gf :action Vcs.ShowTabbedFileHistory<CR>
 nmap gs :action Vcs.ShowHistoryForBlock<CR>
+nmap ga :action Annotate<CR>
+nmap gd :action ShowAnnotateOperationsPopupGroup<CR>
+
+" String manipulation
+vmap ,c :action osmedile.intellij.stringmanip.SwitchCasePopup<CR>
 
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
