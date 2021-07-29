@@ -12,6 +12,7 @@ Symlinc config files via running:
 Plugins:
 - IdeaVim, 
 - A move tab left and right using the keyboard plugin...
+- String Manipulation
 
 Preferences -> Plugins -> Add *PLUGIN*
 
