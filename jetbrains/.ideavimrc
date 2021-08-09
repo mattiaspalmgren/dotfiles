@@ -60,6 +60,11 @@ nmap gs :action Vcs.ShowHistoryForBlock<CR>
 nmap ga :action Annotate<CR>
 nmap gd :action ShowAnnotateOperationsPopupGroup<CR>
 
+nmap za :action CollapseAllRegions<CR>
+nmap zo :action ExpandRegionRecursively<CR>
+nmap z1 :action ExpandAllToLevel1<CR>
+nmap z2 :action ExpandAllToLevel2<CR>
+
 " String manipulation
 vmap ,c :action osmedile.intellij.stringmanip.SwitchCasePopup<CR>
 
