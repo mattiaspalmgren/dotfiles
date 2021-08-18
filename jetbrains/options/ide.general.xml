@@ -6,6 +6,23 @@
     <option name="showTipsOnStartup" value="false" />
   </component>
   <component name="Registry">
+    <entry key="projectView.showHierarchyErrors" value="false" />
     <entry key="editor.distraction.free.mode" value="true" />
+  </component>
+  <component name="StatusBar">
+    <option name="widgets">
+      <map>
+        <entry key="Encoding" value="false" />
+        <entry key="GridPosition" value="false" />
+        <entry key="InsertOverwrite" value="false" />
+        <entry key="JSONSchemaSelector" value="false" />
+        <entry key="LineSeparator" value="false" />
+        <entry key="Position" value="false" />
+        <entry key="ReadOnlyAttribute" value="false" />
+        <entry key="TypeScriptInfo" value="false" />
+        <entry key="com.intellij.psi.codeStyle.statusbar.CodeStyleStatusBarWidget" value="false" />
+        <entry key="pythonInterpreterWidget" value="false" />
+      </map>
+    </option>
   </component>
 </application>
