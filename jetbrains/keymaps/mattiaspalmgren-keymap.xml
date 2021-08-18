@@ -15,9 +15,11 @@
     <keyboard-shortcut first-keystroke="meta alt left" />
     <mouse-shortcut keystroke="button4" />
   </action>
+  <action id="CheckinProject" />
   <action id="CloseProject">
     <keyboard-shortcut first-keystroke="shift meta w" />
   </action>
+  <action id="CollapseSelection" />
   <action id="CommentByBlockComment">
     <keyboard-shortcut first-keystroke="shift meta 7" />
   </action>
@@ -28,7 +30,15 @@
   </action>
   <action id="CompareTwoFiles" />
   <action id="Console.TableResult.CompareCells" />
+  <action id="CopyAbsolutePath" />
+  <action id="CopyPaths" />
+  <action id="CopySourceRootPath">
+    <keyboard-shortcut first-keystroke="shift meta c" />
+  </action>
   <action id="DatabaseView.CopyAction" />
+  <action id="DatabaseView.CopyDdlAction">
+    <keyboard-shortcut first-keystroke="shift meta alt g" />
+  </action>
   <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
   <action id="Diff.ShowSettingsPopup" />
@@ -53,6 +63,7 @@
     <keyboard-shortcut first-keystroke="shift meta left" />
   </action>
   <action id="EditorRight" />
+  <action id="EditorScrollToCenter" />
   <action id="EditorSelectWord" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta down" />
@@ -120,9 +131,14 @@
   <action id="PreviousTab">
     <keyboard-shortcut first-keystroke="shift ctrl tab" />
   </action>
+  <action id="PreviousWindow">
+    <keyboard-shortcut first-keystroke="shift meta back_quote" />
+    <keyboard-shortcut first-keystroke="meta period" />
+  </action>
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="alt space" />
   </action>
+  <action id="RemoteHostView.CopyPaths" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift circumflex" />
   </action>
@@ -178,11 +194,16 @@
   </action>
   <action id="TabShiftActions.StretchUp" />
   <action id="TodoViewGroupByFlattenPackage" />
+  <action id="TypeHierarchy" />
   <action id="Uml.ShowDiff" />
+  <action id="Vcs.Operations.Popup.Annotate">
+    <keyboard-shortcut first-keystroke="f18" />
+  </action>
   <action id="ViewSource">
     <keyboard-shortcut first-keystroke="meta enter" />
     <keyboard-shortcut first-keystroke="shift f4" />
   </action>
+  <action id="WelcomeScreen.CopyProjectPath" />
   <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f4" />
@@ -196,4 +217,5 @@
     <keyboard-shortcut first-keystroke="shift ctrl page_up" />
   </action>
   <action id="openAssertEqualsDiff" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction" />
 </keymap>
