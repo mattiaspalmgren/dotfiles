@@ -32,6 +32,9 @@ jetbrains/options/profilerRunConfigurations.xml
 jetbrains/options/pySdk.xml
 jetbrains/options/templates.xml
 jetbrains/options/web-browsers.xml
+jetbrains/options/plantuml.xml
+jetbrains/options/web-types-npm-loader.xml
+
 scripts/svt
 scripts/.drrc
 git/.gitconfig-alva
