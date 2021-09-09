@@ -84,8 +84,6 @@ nmap <c-r> :action $Redo<CR>
 nnoremap ' `
 nnoremap ` '
 
-map <M-1> :action SelectInProjectView<CR>
-
 " Colors {{{
 syntax enable
 " }}}

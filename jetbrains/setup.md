@@ -20,6 +20,9 @@ Preferences -> Plugins -> Add *PLUGIN*
 * Preferences -> Plugins -> GearIcon -> Install Plugin from disk -> `mapa-theme.jar`
 * Reset your IDE -> Preferences -> Appearance -> Theme -> Select `mapa-theme`
 
+## Exclude directories and files
+* Preferences -> Project -> Project strucute -> Excluded
+
 ## Create command line launcher
 Tools -> Create command line launcher
 

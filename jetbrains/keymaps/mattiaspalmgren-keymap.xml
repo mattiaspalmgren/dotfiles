@@ -42,6 +42,7 @@
   <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
   <action id="Diff.ShowSettingsPopup" />
+  <action id="DuplicatesForm.SendToLeft" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
@@ -81,6 +82,7 @@
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
   <action id="FileChooser.GotoDesktop" />
+  <action id="FileChooser.GotoHome" />
   <action id="Forward">
     <keyboard-shortcut first-keystroke="meta alt right" />
     <mouse-shortcut keystroke="button5" />
@@ -145,7 +147,6 @@
   <action id="ReopenClosedTab">
     <keyboard-shortcut first-keystroke="shift meta t" />
   </action>
-  <action id="ReplaceInPath" />
   <action id="ResizeToolWindowDown">
     <keyboard-shortcut first-keystroke="ctrl alt down" />
   </action>
