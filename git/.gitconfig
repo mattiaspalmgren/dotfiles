@@ -26,7 +26,8 @@
 	rf = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
 	sh = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
 	di = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
-	co = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git checkout `echo ${HASH} | awk '{ print $1 }'`
+	fe = "!git fetch"
+	co = !NAME=`git branch -r | head -n 50 | fzf` && git checkout --track `echo ${NAME} | awk '{ print $1 }'`
 	rev = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
 	hash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
 	po = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
