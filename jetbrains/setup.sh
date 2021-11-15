@@ -11,6 +11,7 @@ DIRS=(
   colors
   keymaps
   options
+  templates
 )
 
 for DIR in "${DIRS[@]}"; do

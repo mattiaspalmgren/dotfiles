@@ -1,0 +1,11 @@
+<templateSet group="user">
+  <template name="rcomp" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;export const $ComponentName$ = (props) =&gt; {&#10;    const { id } = props;&#10;&#10;    return (&#10;        &lt;&gt;{id}&lt;/&gt;&#10;    );&#10;};&#10;&#10;$ComponentName$.propTypes = {&#10;    id: PropTypes.number.isRequired&#10;};&#10;" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="ComponentName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="ES6_STATEMENT" value="true" />
+      <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

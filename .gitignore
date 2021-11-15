@@ -2,7 +2,6 @@ jetbrains/options/actionSummary.xml
 jetbrains/options/other.xml
 jetbrains/options/recentProjects.xml
 jetbrains/options/vim_settings.xml
-jetbrains/options/window.state.xml
 jetbrains/options/updates.xml
 jetbrains/options/usage.statistics.xml
 jetbrains/options/grazie_global.xml
@@ -10,7 +9,6 @@ jetbrains/options/baseRefactoring.xml
 jetbrains/options/filetypes.xml
 jetbrains/options/scratches.xml
 jetbrains/options/find.xml
-jetbrains/options/customization.xml
 jetbrains/options/fileEditorProviderManager.xml
 jetbrains/options/vcs.xml
 jetbrains/options/vim_settings_local.xml
@@ -34,6 +32,25 @@ jetbrains/options/templates.xml
 jetbrains/options/web-browsers.xml
 jetbrains/options/plantuml.xml
 jetbrains/options/web-types-npm-loader.xml
+jetbrains/options/blaze.user.settings.xml
+jetbrains/options/blaze.wizard.settings.xml
+jetbrains/options/databaseDrivers.xml
+jetbrains/options/databaseSettings.xml
+jetbrains/options/recentProjectDirectories.xml
+jetbrains/options/feature.usage.statistics.xml
+jetbrains/templates/Angular.xml
+jetbrains/templates/AngularJS.xml
+jetbrains/templates/Django.xml
+jetbrains/templates/HTML_XML.xml
+jetbrains/templates/HTTP Request.xml
+jetbrains/templates/Zen CSS.xml
+jetbrains/templates/Zen HTML.xml
+jetbrains/templates/Zen XSL.xml
+jetbrains/templates/flask.xml
+jetbrains/templates/JavaScript.xml
+jetbrains/templates/JavaScript Testing.xml
+jetbrains/templates/Shell Script.xml
+jetbrains/templates/SQL.xml
 
 scripts/svt
 scripts/.drrc
