@@ -1,0 +1,71 @@
+usage() {
+  echo "Usage: gcp [
+      -s <staging project>
+      -l <local project>
+      -f <open firestore>
+      -c <open cloud run>
+      -d <dry run, print url>
+  ]
+  "
+}
+
+STAGE=false
+LOCAL=false
+FIRESTORE=false
+CLOUD_RUN=false
+DRY_RUN=false
+
+while getopts ":slfcdh" opt; do
+  case "$opt" in
+  's') STAGE=true ;;
+  'l') LOCAL=true ;;
+  'f') FIRESTORE=true ;;
+  'c') CLOUD_RUN=true ;;
+  'd') DRY_RUN=true ;;
+  'h')
+    usage
+    exit
+    ;;
+  '?')
+    echo "Invalid option $OPTARG" >&2
+    usage >&2
+    exit 1
+    ;;
+  esac
+done
+
+project() {
+  [[ $STAGE == true ]] && VARIABLES_FILE=$TERRAFORM_STAGING_VARIABLES || VARIABLES_FILE=$TERRAFORM_PRODUCTION_VARIABLES
+  PROJECT_NAME=$(find $PWD -name $VARIABLES_FILE | xargs grep --extended-regexp "^project_id" | cut -f3 -d' ' |  tr -d '"')
+
+  if [[ $LOCAL == true ]]; then
+    PROJECT_NAME="$PROJECT_NAME-local"
+  fi
+
+  echo $PROJECT_NAME
+}
+
+url_path() {
+  URL_PATH="home/dashboard"
+
+  if [[ $FIRESTORE == true ]]; then
+    URL_PATH="firestore/data"
+  fi
+
+  if [[ $CLOUD_RUN == true ]]; then
+    URL_PATH="run"
+  fi
+
+  echo $URL_PATH
+}
+
+PROJECT=$(project)
+URL_PATH=$(url_path)
+URL="${GCP_URL}${URL_PATH}?project=$PROJECT"
+
+if [[ $DRY_RUN == true ]]; then
+  echo $URL
+  exit 0
+fi
+
+open -a "Google Chrome" $URL

@@ -6,3 +6,4 @@ alias copy="history | tail -1 | cut -c8-999 | pbcopy"
 alias ws="webstorm ."
 alias ch="charm ."
 alias ~="cd ~"
+unalias gcp
