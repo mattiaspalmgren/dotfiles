@@ -64,3 +64,22 @@ function get-unstaged-files() {
 
     echo $FILES
 }
+
+function pylint-ch() {
+  pipenv run pylint src --msg-template='{path}' | grep '^src.*$' | xargs charm
+}
+
+function pytest-local() {
+  pipenv run pytest $(git diff --diff-filter=AMR --name-only master..HEAD src)
+}
+
+function pylint-local() {
+  pipenv run pylint $(git diff --diff-filter=AMR --name-only master..HEAD src)
+}
+
+function pylint-local-ch() {
+  ERRORS=$(pipenv run pylint $(git diff --name-only master..HEAD src))
+  PATHS=$(echo $ERRORS | grep -oE '^src.*.py')
+  echo $PATHS | xargs charm
+  echo $ERRORS
+}
