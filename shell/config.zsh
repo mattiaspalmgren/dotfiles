@@ -67,3 +67,4 @@ precmd() {
 
 # Options
 unsetopt AUTO_CD
+ulimit -n 1000
