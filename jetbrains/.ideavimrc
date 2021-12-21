@@ -18,10 +18,12 @@ set noshowmode          " for lightline
 set nofoldenable
 set number
 set incsearch
+set nohlsearch
 set timeoutlen=1000 ttimeoutlen=0 " remove delay when leaving insert mode
 set visualbell
 set noerrorbells
 set surround
+set multiple-cursors
 
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
 let &t_SR = "\<Esc>]50;CursorShape=2\x7"
@@ -33,16 +35,19 @@ let mapleader=" "
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
 map <leader>q :action CloseEditor<CR>
-nmap <leader>e :action GotoNextError<CR>
+nmap <leader>en :action GotoNextError<CR>
+nmap <leader>ep :action GotoPreviousError<CR>
 nmap <leader>n :action Macro.next-change<CR>
 nmap <leader>p :action Macro.previous-change<CR>
 nmap <leader>v :action SelectInProjectView<CR>
 nmap <leader>f :action FindInPath<CR>
 nmap <leader>r :action Macro.run-context-test<CR>
-# nmap <leader>r :action Macro.run-latest<CR>
 nmap <leader>s :action Stop<CR>
 nmap <leader>b :action Back<CR>
 nmap <leader>c :action Vcs.Show.Local.Changes<CR>
+nmap <leader>l :action ToggleLineBreakpoint<CR>
+nmap <leader>d :action DebugClass<CR>
+nmap <leader>u :action FindUsages<CR>
 
 nmap tl :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
@@ -58,7 +63,7 @@ map gr :action Vcs.RollbackChangedLines<CR>
 nmap gl :action Vcs.Show.Log<CR>
 nmap ge :action Javascript.Linters.EsLint.Fix<CR>
 nmap gf :action Vcs.ShowTabbedFileHistory<CR>
-nmap gs :action Vcs.ShowHistoryForBlock<CR>
+map gs :action Vcs.ShowHistoryForBlock<CR>
 nmap ga :action Annotate<CR>
 nmap gd :action ShowAnnotateOperationsPopupGroup<CR>
 
@@ -71,11 +76,14 @@ nmap z2 :action ExpandAllToLevel2<CR>
 vmap ,c :action osmedile.intellij.stringmanip.SwitchCasePopup<CR>
 nmap ,v :source ~/.ideavimrc<CR>
 nmap ,i :action Macro.init-import<CR>
+nmap ,r :action Replace<CR>
+
+nmap ,w :action EditorNextWordInDifferentHumpsMode<CR>
+vmap ,w :action EditorNextWordInDifferentHumpsModeWithSelection<CR>
 
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
-" Marks
 nmap <leader>m :action GotoNextBookmark<CR>
 nmap ma :action ToggleBookmark<CR>
 
