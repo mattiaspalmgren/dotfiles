@@ -147,6 +147,8 @@
   <action id="ReopenClosedTab">
     <keyboard-shortcut first-keystroke="shift meta t" />
   </action>
+  <action id="Replace" />
+  <action id="ReplaceInPath" />
   <action id="ResizeToolWindowDown">
     <keyboard-shortcut first-keystroke="ctrl alt down" />
   </action>
@@ -171,6 +173,10 @@
   </action>
   <action id="SelectNextOccurrence" />
   <action id="SendEOF" />
+  <action id="ShowContent">
+    <keyboard-shortcut first-keystroke="shift ctrl down" />
+    <keyboard-shortcut first-keystroke="ctrl f" />
+  </action>
   <action id="ShowErrorDescription">
     <keyboard-shortcut first-keystroke="meta f1" />
     <keyboard-shortcut first-keystroke="f12" />
@@ -186,6 +192,9 @@
     <keyboard-shortcut first-keystroke="meta d" />
   </action>
   <action id="Switcher" />
+  <action id="TW.ViewModeGroup">
+    <keyboard-shortcut first-keystroke="alt v" />
+  </action>
   <action id="TabShiftActions.StretchDown" />
   <action id="TabShiftActions.StretchLeft">
     <keyboard-shortcut first-keystroke="ctrl alt left" />
