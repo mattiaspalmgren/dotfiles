@@ -51,6 +51,7 @@ jetbrains/templates/JavaScript.xml
 jetbrains/templates/JavaScript Testing.xml
 jetbrains/templates/Shell Script.xml
 jetbrains/templates/SQL.xml
+jetbrains/options/overrideFileTypes.xml
 
 scripts/svt
 scripts/.drrc
