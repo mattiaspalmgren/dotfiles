@@ -1,0 +1,130 @@
+<application>
+  <component name="DimensionService">
+    <location key="find.popup.0.0.2560.1440" x="589" y="96" />
+    <location key="find.popup.0.0.2880.1800@192dpi" x="520" y="228" />
+    <location key="find.popup.0.0.1920.1080" x="204" y="25" />
+    <location key="find.popup.-568.-1440.2560.1440" x="78" y="-1181" />
+    <location key="find.popup.-560.-1440.2560.1440" x="138" y="-1147" />
+    <location key="find.popup.0.0.3360.2100@192dpi" x="702" y="240" />
+    <location key="find.popup.-570.-1440.2560.1440" x="21" y="-1367" />
+    <size key="find.popup.0.0.2560.1440" width="1494" height="1126" />
+    <size key="GridCell.Tab.0.left.0.0.2560.1440" width="1237" height="1359" />
+    <size key="GridCell.Tab.0.center.0.0.2560.1440" width="1237" height="1359" />
+    <size key="GridCell.Tab.0.right.0.0.2560.1440" width="1237" height="1359" />
+    <size key="GridCell.Tab.0.bottom.0.0.2560.1440" width="1237" height="1359" />
+    <size key="GridCell.Tab.2.left.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.2.center.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.2.right.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.2.bottom.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.3.left.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.3.center.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.3.right.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.3.bottom.0.0.2560.1440" width="2560" height="537" />
+    <size key="GridCell.Tab.1.left.0.0.2560.1440" width="1534" height="1359" />
+    <size key="GridCell.Tab.1.center.0.0.2560.1440" width="1534" height="1359" />
+    <size key="GridCell.Tab.1.right.0.0.2560.1440" width="1534" height="1359" />
+    <size key="GridCell.Tab.1.bottom.0.0.2560.1440" width="1534" height="1359" />
+    <size key="find.popup.0.0.2880.1800@192dpi" width="1962" height="1530" />
+    <size key="GridCell.Tab.0.left.0.0.2880.1800@192dpi" width="1390" height="1638" />
+    <size key="GridCell.Tab.0.center.0.0.2880.1800@192dpi" width="1390" height="1638" />
+    <size key="GridCell.Tab.0.right.0.0.2880.1800@192dpi" width="1390" height="1638" />
+    <size key="GridCell.Tab.0.bottom.0.0.2880.1800@192dpi" width="1390" height="1638" />
+    <size key="find.popup.0.0.1920.1080" width="1107" height="1042" />
+    <size key="find.popup.-568.-1440.2560.1440" width="1328" height="991" />
+    <size key="GridCell.Tab.0.left.-568.-1440.2560.1440" width="1052" height="1359" />
+    <size key="GridCell.Tab.0.center.-568.-1440.2560.1440" width="1052" height="1359" />
+    <size key="GridCell.Tab.0.right.-568.-1440.2560.1440" width="1052" height="1359" />
+    <size key="GridCell.Tab.0.bottom.-568.-1440.2560.1440" width="1052" height="1359" />
+    <size key="GridCell.Tab.1.left.0.0.2880.1800@192dpi" width="1724" height="1638" />
+    <size key="GridCell.Tab.1.center.0.0.2880.1800@192dpi" width="1724" height="1638" />
+    <size key="GridCell.Tab.1.right.0.0.2880.1800@192dpi" width="1724" height="1638" />
+    <size key="GridCell.Tab.1.bottom.0.0.2880.1800@192dpi" width="1724" height="1638" />
+    <size key="GridCell.Tab.1.left.-568.-1440.2560.1440" width="1360" height="1359" />
+    <size key="GridCell.Tab.1.center.-568.-1440.2560.1440" width="1360" height="1359" />
+    <size key="GridCell.Tab.1.right.-568.-1440.2560.1440" width="1360" height="1359" />
+    <size key="GridCell.Tab.1.bottom.-568.-1440.2560.1440" width="1360" height="1359" />
+    <size key="GridCell.Tab.0.left.-560.-1440.2560.1440" width="1217" height="1359" />
+    <size key="GridCell.Tab.0.center.-560.-1440.2560.1440" width="1217" height="1359" />
+    <size key="GridCell.Tab.0.right.-560.-1440.2560.1440" width="1217" height="1359" />
+    <size key="GridCell.Tab.0.bottom.-560.-1440.2560.1440" width="1217" height="1359" />
+    <size key="find.popup.-560.-1440.2560.1440" width="1112" height="908" />
+    <size key="GridCell.Tab.1.left.-560.-1440.2560.1440" width="1002" height="1359" />
+    <size key="GridCell.Tab.1.center.-560.-1440.2560.1440" width="1002" height="1359" />
+    <size key="GridCell.Tab.1.right.-560.-1440.2560.1440" width="1002" height="1359" />
+    <size key="GridCell.Tab.1.bottom.-560.-1440.2560.1440" width="1002" height="1359" />
+    <size key="find.popup.0.0.3360.2100@192dpi" width="1880" height="1632" />
+    <size key="GridCell.Tab.0.left.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.0.center.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.0.right.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.0.bottom.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.0.left.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.0.center.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.0.right.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.0.bottom.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="find.popup.-570.-1440.2560.1440" width="1518" height="1316" />
+    <size key="GridCell.Tab.1.left.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.1.center.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.1.right.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.1.bottom.-570.-1440.2560.1440" width="847" height="1359" />
+    <size key="GridCell.Tab.1.left.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.1.center.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.1.right.0.0.3360.2100@192dpi" width="1694" height="1938" />
+    <size key="GridCell.Tab.1.bottom.0.0.3360.2100@192dpi" width="1694" height="1938" />
+  </component>
+  <component name="WindowManager">
+    <frame x="0" y="25" width="2560" height="1415" extendedState="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" type="SLIDING" weight="0.309375" />
+      <window_info id="Structure" order="1" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Commit" order="3" />
+      <window_info id="Pull Requests" order="4" />
+      <window_info id="Learn" order="5" />
+      <window_info id="Space Code Reviews" order="6" />
+      <window_info active="true" anchor="bottom" x="0" y="25" width="2560" height="1415" id="Version Control" maximized="true" order="0" type="WINDOWED" weight="0.3298486" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.329682" />
+      <window_info anchor="bottom" id="TODO" order="3" />
+      <window_info anchor="bottom" id="Problems View" order="4" weight="0.734629" />
+      <window_info anchor="bottom" id="Internal Method Tracing" order="5" />
+      <window_info anchor="bottom" id="Pylint" order="6" weight="0.329682" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="File Transfer" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329682" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="11" />
+      <window_info anchor="bottom" id="Python Packages" order="12" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Flow" order="14" />
+      <window_info anchor="bottom" id="Services" order="15" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="SciView" order="1" />
+      <window_info anchor="right" id="Run" order="2" type="SLIDING" weight="0.4837891" />
+      <window_info anchor="right" id="make" order="3" side_tool="true" />
+      <window_info anchor="right" id="PlantUML" order="4" />
+      <window_info anchor="right" id="Space Automation" order="5" />
+      <window_info anchor="right" id="Debug" order="6" weight="0.59965277" />
+    </layout>
+  </component>
+  <component name="WindowStateApplicationService">
+    <state width="914" height="125" key="ShowUsagesActions.dimensionServiceKey" timestamp="1640005708129">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state width="515" height="191" key="ShowUsagesActions.dimensionServiceKey/0.25.1440.875" timestamp="1632319171431" />
+    <state width="515" height="103" key="ShowUsagesActions.dimensionServiceKey/0.25.1440.875/-568.-1415.2560.1415" timestamp="1632309332305" />
+    <state width="515" height="125" key="ShowUsagesActions.dimensionServiceKey/0.25.1440.875/-570.-1415.2560.1415" timestamp="1637324771598" />
+    <state width="914" height="125" key="ShowUsagesActions.dimensionServiceKey/0.25.2560.1415" timestamp="1640005708129" />
+    <state x="1280" y="610" width="800" height="683" key="WELCOME_SCREEN" timestamp="1638348304162">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="720" y="430" width="800" height="683" key="WELCOME_SCREEN/0.25.1440.875" timestamp="1635175234005" />
+    <state x="895" y="475" width="800" height="600" key="WELCOME_SCREEN/0.25.1440.875/-560.-1415.2560.1415" timestamp="1636359601100" />
+    <state x="1280" y="610" width="800" height="683" key="WELCOME_SCREEN/0.25.2560.1415" timestamp="1638348304162" />
+    <state x="1364" y="348" width="864" height="349" key="bookmarks" timestamp="1639668692895">
+      <screen x="0" y="25" width="2560" height="1415" />
+    </state>
+    <state x="767" y="-216" width="486" height="216" key="bookmarks/0.25.1440.875/-560.-1415.2560.1415" timestamp="1636372368631" />
+    <state x="746" y="-134" width="274" height="134" key="bookmarks/0.25.1440.875/-570.-1415.2560.1415" timestamp="1637326493417" />
+    <state x="1364" y="348" width="864" height="349" key="bookmarks/0.25.2560.1415" timestamp="1639668692895" />
+  </component>
+</application>
