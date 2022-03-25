@@ -83,3 +83,14 @@ function pylint-local-ch() {
   echo $PATHS | xargs charm
   echo $ERRORS
 }
+
+function prettier-local() {
+  ISSUES=$(prettier --check $(git diff --diff-filter=AMR --name-only master..HEAD src))
+  echo $ISSUES
+}
+
+function prettier-local-ch() {
+  ISSUES=$(prettier --list-different $(git diff --diff-filter=AMR --name-only master..HEAD src))
+  echo $ISSUES | xargs charm
+  echo $ISSUES
+}
