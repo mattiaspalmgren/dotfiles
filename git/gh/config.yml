@@ -17,3 +17,4 @@ aliases:
     vt: '![[ $(git branch-name) = "master" ]] && LOCATION="" || LOCATION="/pull_requests"; open -a "Google Chrome" "${TRAVIS_URL}/${PWD##*/}${LOCATION}"'
     vp: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}/pulls"'
     vpc: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}/pulls?q=is%3Apr+is%3Aclosed+author%3Amattiaspalmgren"'
+    br: browse
