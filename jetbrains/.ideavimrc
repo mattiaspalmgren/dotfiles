@@ -54,7 +54,6 @@ nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<C
 
 nmap gp :action ReformatWithPrettierAction<CR>
 nmap gb :action Tool_External Tools_Black<CR>
-nmap gh :action ShowErrorDescription<CR>
 
 nmap QQ :action StartStopMacroRecording<CR>
 
@@ -66,6 +65,7 @@ nmap gf :action Vcs.ShowTabbedFileHistory<CR>
 map gs :action Vcs.ShowHistoryForBlock<CR>
 nmap ga :action Annotate<CR>
 nmap gd :action ShowAnnotateOperationsPopupGroup<CR>
+nmap gh :action Github.Open.In.Browser<CR>
 
 nmap za :action CollapseAllRegions<CR>
 nmap zo :action ExpandRegionRecursively<CR>
@@ -77,9 +77,11 @@ vmap ,c :action osmedile.intellij.stringmanip.SwitchCasePopup<CR>
 nmap ,v :source ~/.ideavimrc<CR>
 nmap ,i :action Macro.init-import<CR>
 nmap ,r :action Replace<CR>
-
 nmap ,w :action EditorNextWordInDifferentHumpsMode<CR>
 vmap ,w :action EditorNextWordInDifferentHumpsModeWithSelection<CR>
+nmap ,h :action ShowErrorDescription<CR>
+
+nmap @f :g/def/t$<CR>
 
 nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
