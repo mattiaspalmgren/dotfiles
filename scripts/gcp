@@ -5,6 +5,7 @@ usage() {
       -f <open firestore>
       -c <open cloud run>
       -k <open kubernetes engine>
+      -p <open pubsub>
       -d <dry run, print url>
   ]
   "
@@ -16,8 +17,9 @@ FIRESTORE=false
 CLOUD_RUN=false
 DRY_RUN=false
 KUBERNETES=false
+PUBSUB=false
 
-while getopts ":slfrktdh" opt; do
+while getopts ":slfrktpdh" opt; do
   case "$opt" in
   's') STAGE=true ;;
   'l') LOCAL=true ;;
@@ -25,6 +27,7 @@ while getopts ":slfrktdh" opt; do
   'r') CLOUD_RUN=true ;;
   'k') KUBERNETES=true ;;
   't') CLOUD_TASKS=true ;;
+  'p') PUBSUB=true ;;
   'd') DRY_RUN=true ;;
   'h')
     usage
@@ -70,6 +73,10 @@ url_path() {
 
   if [[ $CLOUD_TASKS == true ]]; then
     URL_PATH="cloudtasks"
+  fi
+
+  if [[ $PUBSUB == true ]]; then
+    URL_PATH="cloudpubsub"
   fi
 
   echo $URL_PATH
