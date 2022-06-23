@@ -12,7 +12,7 @@ aliases:
     v: '!id="$(gh pr list -L100 | fzf --preview "gh pr view {+1}" | cut -f1)"; [ -n "$id" ] && gh pr view "$id"'
     e: pr edit
     vw: pr view --web
-    c: pr create --draft
+    c: '!zsh -c "source $DOTFILES_SHELL_DIR/functions.sh && get-commit-titles-and-body && gh pr create --draft"'
     r: pr ready
     vt: '![[ $(git branch-name) = "master" ]] && LOCATION="" || LOCATION="/pull_requests"; open -a "Google Chrome" "${TRAVIS_URL}/${PWD##*/}${LOCATION}"'
     vp: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}/pulls"'

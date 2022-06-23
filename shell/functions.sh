@@ -65,6 +65,10 @@ function get-unstaged-files() {
     echo $FILES
 }
 
+function get-commit-titles-and-body() {
+  git log --format="* %s%n%b" master..HEAD src | pbcopy
+}
+
 function pylint-ch() {
   pipenv run pylint src --msg-template='{path}' | grep '^src.*$' | xargs charm
 }
