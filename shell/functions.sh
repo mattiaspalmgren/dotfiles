@@ -5,6 +5,12 @@ function docstop() {
   docker stop $CONTAINER
 }
 
+function dockill() {
+  CONTAINERS_TO_KILL=$(docker ps --format "{{.Names}}" | grep --invert --extended-regexp "firestore|pubsub")
+  echo "Removing containers:"
+  echo $CONTAINERS_TO_KILL | xargs docker rm --force
+}
+
 function kubl() {
   POD=$(kubectl get pods --output name | fzf)
   kubectl logs $POD
