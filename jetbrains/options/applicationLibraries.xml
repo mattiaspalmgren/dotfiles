@@ -16,8 +16,23 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/react" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
     <library name="@types/react-native" type="javaScript">
       <CLASSES />
+      <SOURCES />
+    </library>
+    <library name="testing-library-jest-dom" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$USER_HOME$/.nvm/versions/node/v14.17.0/lib/node_modules/@types/testing-library__jest-dom" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$USER_HOME$/.nvm/versions/node/v14.17.0/lib/node_modules/@types/testing-library__jest-dom" />
+      </CLASSES>
       <SOURCES />
     </library>
   </component>
