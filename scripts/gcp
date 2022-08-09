@@ -1,33 +1,36 @@
 usage() {
   echo "Usage: gcp [
       -s <staging project>
-      -l <local project>
       -f <open firestore>
       -c <open cloud run>
       -k <open kubernetes engine>
       -p <open pubsub>
+      -l <open runtime logs>
+      -e <show only error logs>
       -d <dry run, print url>
   ]
   "
 }
 
 STAGE=false
-LOCAL=false
 FIRESTORE=false
 CLOUD_RUN=false
 DRY_RUN=false
 KUBERNETES=false
 PUBSUB=false
+LOGS=false
+ERRORS=false
 
-while getopts ":slfrktpdh" opt; do
+while getopts ":sfrktpledh" opt; do
   case "$opt" in
   's') STAGE=true ;;
-  'l') LOCAL=true ;;
   'f') FIRESTORE=true ;;
   'r') CLOUD_RUN=true ;;
   'k') KUBERNETES=true ;;
   't') CLOUD_TASKS=true ;;
   'p') PUBSUB=true ;;
+  'l') LOGS=true ;;
+  'e') ERRORS=true ;;
   'd') DRY_RUN=true ;;
   'h')
     usage
@@ -41,23 +44,53 @@ while getopts ":slfrktpdh" opt; do
   esac
 done
 
+is_kubernetes_service() {
+  if grep --quiet "kubernetes" "${PWD}/${INFRA_PATH}"; then
+    echo true
+  else
+    echo false
+  fi
+}
+
+IS_KUBERNETES_SERVICE=$(is_kubernetes_service)
+
 project() {
   [[ $STAGE == true ]] && VARIABLES_FILE=$TERRAFORM_STAGING_VARIABLES || VARIABLES_FILE=$TERRAFORM_PRODUCTION_VARIABLES
   PROJECT_NAME=$(find $PWD -name $VARIABLES_FILE | xargs grep --extended-regexp "^project_id" | cut -f3 -d' ' |  tr -d '"')
 
-  if [[ $LOCAL == true ]]; then
-    PROJECT_NAME="$PROJECT_NAME-local"
-  fi
-
-  if [[ $KUBERNETES == true ]]; then
+  if [[ $KUBERNETES == true || $LOGS == true && $IS_KUBERNETES_SERVICE == true ]]; then
     [[ $STAGE == true ]] && PROJECT_NAME="$KUBERNETES_PROJECT-staging" || PROJECT_NAME="$KUBERNETES_PROJECT"
   fi
 
   echo $PROJECT_NAME
 }
 
+service_name() {
+  SERVICE_NAME=$(find $PWD -name $CONFIG_FILE | xargs grep --extended-regexp --max-count 1 --no-filename "^.*SERVICE_NAME" | xargs echo | cut -f3 -d' ' | tr -d '"' )
+  echo $SERVICE_NAME
+}
+
+region() {
+  REGION=$(find $PWD -name $CONFIG_FILE | xargs grep --extended-regexp "^.*GCP_REGION" | xargs echo | cut -f3 -d' ' | tr -d '"' )
+  echo $REGION
+}
+
+log_resource_url_parameters() {
+  SERVICE_NAME=$1
+  [[ $STAGE == true ]] && CONTAINER_POSTFIX="staging" || CONTAINER_POSTFIX="production"
+  KUBERNETES_RESOURCE="resource.labels.container_name%3D%22${SERVICE_NAME}-${CONTAINER_POSTFIX}%22%0A"
+  CLOUD_RUN_RESOURCE="resource.labels.service_name%20%3D%20%22${SERVICE_NAME}%22%0A"
+  if [[ $IS_KUBERNETES_SERVICE == true ]]; then
+    echo $KUBERNETES_RESOURCE
+  else
+    echo $CLOUD_RUN_RESOURCE
+  fi
+}
+
 url_path() {
   URL_PATH="home/dashboard"
+  SERVICE_NAME=$1
+  REGION=$2
 
   if [[ $FIRESTORE == true ]]; then
     URL_PATH="firestore/data"
@@ -79,11 +112,19 @@ url_path() {
     URL_PATH="cloudpubsub"
   fi
 
+  if [[ $LOGS == true ]]; then
+    [[ $ERRORS == true ]] && SEVERITY="severity%3E%3D%22ERROR%22" || SEVERITY="severity%3E%3DDEFAULT"
+    RESOURCE=$(log_resource_url_parameters $SERVICE_NAME)
+    URL_PATH="logs/query;query=${RESOURCE}${SEVERITY}"
+  fi
+
   echo $URL_PATH
 }
 
 PROJECT=$(project)
-URL_PATH=$(url_path)
+SERVICE_NAME=$(service_name)
+REGION=$(region)
+URL_PATH=$(url_path $SERVICE_NAME $REGION)
 URL="${GCP_URL}${URL_PATH}?project=$PROJECT"
 
 if [[ $DRY_RUN == true ]]; then
