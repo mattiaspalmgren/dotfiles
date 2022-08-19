@@ -58,6 +58,9 @@
               <Step>
                 <option name="style" value="PASCAL_CASE" />
               </Step>
+              <Step>
+                <option name="style" value="CAPITALIZED_SNAKE_CASE" />
+              </Step>
             </list>
           </option>
         </CustomActionModel>
@@ -116,6 +119,9 @@
               <Step>
                 <option name="enabled" value="false" />
                 <option name="style" value="PASCAL_CASE" />
+              </Step>
+              <Step>
+                <option name="style" value="CAPITALIZED_SNAKE_CASE" />
               </Step>
             </list>
           </option>
@@ -176,10 +182,18 @@
                 <option name="enabled" value="false" />
                 <option name="style" value="PASCAL_CASE" />
               </Step>
+              <Step>
+                <option name="style" value="CAPITALIZED_SNAKE_CASE" />
+              </Step>
             </list>
           </option>
         </CustomActionModel>
       </list>
+    </option>
+    <option name="lastAction">
+      <UniversalActionModel>
+        <option name="actionClassName" value="osmedile.intellij.stringmanip.styles.ToSnakeCaseAction" />
+      </UniversalActionModel>
     </option>
   </component>
 </application>

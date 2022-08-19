@@ -1,62 +1,17 @@
-jetbrains/options/actionSummary.xml
-jetbrains/options/other.xml
-jetbrains/options/recentProjects.xml
-jetbrains/options/vim_settings.xml
-jetbrains/options/updates.xml
-jetbrains/options/usage.statistics.xml
-jetbrains/options/grazie_global.xml
-jetbrains/options/baseRefactoring.xml
-jetbrains/options/filetypes.xml
-jetbrains/options/scratches.xml
-jetbrains/options/find.xml
-jetbrains/options/fileEditorProviderManager.xml
-jetbrains/options/vcs.xml
-jetbrains/options/vim_settings_local.xml
-jetbrains/options/extensionsRootType.xml
-jetbrains/options/jdk.table.xml
-jetbrains/options/debugger.xml
-jetbrains/options/path.macros.xml
-jetbrains/options/runner.layout.xml
-jetbrains/options/textmate_os.xml
-jetbrains/options/cachedDictionary.xml
-jetbrains/options/packages.xml
-jetbrains/options/images.support.xml
-jetbrains/options/emmet.xml
-jetbrains/options/features.usage.statistics.xml
-jetbrains/options/ide-features-trainer.xml
-jetbrains/options/lightEdit.xml
-jetbrains/options/pluginAdvertiser.xml
-jetbrains/options/profilerRunConfigurations.xml
-jetbrains/options/pySdk.xml
-jetbrains/options/templates.xml
-jetbrains/options/web-browsers.xml
-jetbrains/options/plantuml.xml
-jetbrains/options/web-types-npm-loader.xml
-jetbrains/options/blaze.user.settings.xml
-jetbrains/options/blaze.wizard.settings.xml
-jetbrains/options/databaseDrivers.xml
-jetbrains/options/databaseSettings.xml
-jetbrains/options/recentProjectDirectories.xml
-jetbrains/options/feature.usage.statistics.xml
-jetbrains/templates/Angular.xml
-jetbrains/templates/AngularJS.xml
-jetbrains/templates/Django.xml
-jetbrains/templates/HTML_XML.xml
-jetbrains/templates/HTTP Request.xml
-jetbrains/templates/Zen CSS.xml
-jetbrains/templates/Zen HTML.xml
-jetbrains/templates/Zen XSL.xml
-jetbrains/templates/flask.xml
-jetbrains/templates/JavaScript.xml
-jetbrains/templates/JavaScript Testing.xml
-jetbrains/templates/Shell Script.xml
-jetbrains/templates/SQL.xml
-jetbrains/options/overrideFileTypes.xml
-jetbrains/options/trusted-paths.xml
+jetbrains/options/*
+!jetbrains/options/editor.xml
+!jetbrains/options/ide.general.xml
+!jetbrains/options/macros.xml
+!jetbrains/options/stringManipulation.xml
+!jetbrains/options/ui.lnf.xml
+
+jetbrains/templates/*
+!jetbrains/templates/user.xml
+
+jetbrains/.excluded-files
 
 scripts/svt
 scripts/.drrc
 git/.gitconfig-alva
 Brewfile-alva
 shell/alva.sh
-jetbrains/.excluded-files
