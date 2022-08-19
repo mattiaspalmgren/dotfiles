@@ -14,7 +14,8 @@ aliases:
     vw: pr view --web
     c: '!zsh -c "source $DOTFILES_SHELL_DIR/functions.sh && get-commit-titles-and-body && gh pr create --draft"'
     r: pr ready
-    vt: '![[ $(git branch-name) = "master" ]] && LOCATION="" || LOCATION="/pull_requests"; open -a "Google Chrome" "${TRAVIS_URL}/${PWD##*/}${LOCATION}"'
+    vt: '!open -a "Google Chrome" "${TRAVIS_URL}/${PWD##*/}"'
+    vr: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}"'
     vp: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}/pulls"'
     vpc: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}/pulls?q=is%3Apr+is%3Aclosed+author%3Amattiaspalmgren"'
     br: browse
