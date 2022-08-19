@@ -2,12 +2,16 @@
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
+  <action id="ActivateServicesToolWindow" />
   <action id="ActivateSonarLintToolWindow">
     <keyboard-shortcut first-keystroke="meta 0" />
   </action>
   <action id="ActivateStructureToolWindow" />
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="meta 0" />
+  </action>
+  <action id="ActivateVcsChangesToolWindow">
+    <keyboard-shortcut first-keystroke="meta 8" />
   </action>
   <action id="Arrangement.Rule.Match.Condition.Move.Down" />
   <action id="Arrangement.Rule.Match.Condition.Move.Up" />
@@ -30,6 +34,10 @@
   </action>
   <action id="CompareTwoFiles" />
   <action id="Console.TableResult.CompareCells" />
+  <action id="Console.TableResult.EditFilterCriteria">
+    <keyboard-shortcut first-keystroke="shift meta alt f" />
+    <keyboard-shortcut first-keystroke="f19" />
+  </action>
   <action id="CopyAbsolutePath" />
   <action id="CopyPaths" />
   <action id="CopySourceRootPath">
@@ -87,8 +95,8 @@
     <keyboard-shortcut first-keystroke="meta alt right" />
     <mouse-shortcut keystroke="button5" />
   </action>
-  <action id="Git.CompareWithBranch">
-    <keyboard-shortcut first-keystroke="f19" />
+  <action id="Github.Open.In.Browser">
+    <keyboard-shortcut first-keystroke="f17" />
   </action>
   <action id="GotoBookmark2" />
   <action id="GotoRelated" />
@@ -140,10 +148,10 @@
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="alt space" />
   </action>
-  <action id="RemoteHostView.CopyPaths" />
-  <action id="RenameElement">
+  <action id="RefactoringMenu">
     <keyboard-shortcut first-keystroke="shift circumflex" />
   </action>
+  <action id="RemoteHostView.CopyPaths" />
   <action id="ReopenClosedTab">
     <keyboard-shortcut first-keystroke="shift meta t" />
   </action>
@@ -184,6 +192,9 @@
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="alt home" />
     <keyboard-shortcut first-keystroke="shift ctrl up" />
+  </action>
+  <action id="ShowPopupMenu">
+    <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="SplitHorizontally">
     <keyboard-shortcut first-keystroke="shift meta d" />
