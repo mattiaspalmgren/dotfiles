@@ -6,6 +6,7 @@ usage() {
       -k <open kubernetes engine>
       -p <open pubsub>
       -l <open runtime logs>
+      -v <open vertex dashboard>
       -e <show only error logs>
       -d <dry run, print url>
   ]
@@ -18,10 +19,11 @@ CLOUD_RUN=false
 DRY_RUN=false
 KUBERNETES=false
 PUBSUB=false
+VERTEX=true
 LOGS=false
 ERRORS=false
 
-while getopts ":sfrktpledh" opt; do
+while getopts ":sfrktplvedh" opt; do
   case "$opt" in
   's') STAGE=true ;;
   'f') FIRESTORE=true ;;
@@ -30,6 +32,7 @@ while getopts ":sfrktpledh" opt; do
   't') CLOUD_TASKS=true ;;
   'p') PUBSUB=true ;;
   'l') LOGS=true ;;
+  'v') VERTEX=true ;;
   'e') ERRORS=true ;;
   'd') DRY_RUN=true ;;
   'h')
@@ -110,6 +113,10 @@ url_path() {
 
   if [[ $PUBSUB == true ]]; then
     URL_PATH="cloudpubsub"
+  fi
+
+  if [[ $VERTEX == true ]]; then
+    URL_PATH="vertex-ai"
   fi
 
   if [[ $LOGS == true ]]; then
