@@ -12,7 +12,7 @@ aliases:
     v: '!id="$(gh pr list -L100 | fzf --preview "gh pr view {+1}" | cut -f1)"; [ -n "$id" ] && gh pr view "$id"'
     e: pr edit
     vw: pr view --web
-    c: '!zsh -c "source $DOTFILES_SHELL_DIR/functions.sh && get-commit-titles-and-body && gh pr create --draft"'
+    c: '!source $DOTFILES_DIR/git/gh/utils.sh && create_pr'
     r: pr ready
     vt: '!open -a "Google Chrome" "${TRAVIS_URL}/${PWD##*/}"'
     vr: '!open -a "Google Chrome" "${GITHUB_URL}/${PWD##*/}"'
