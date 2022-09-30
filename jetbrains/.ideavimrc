@@ -7,6 +7,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'itchyny/lightline.vim'
+Plug 'easymotion/vim-easymotion'
+set multiple-cursors
 
 call vundle#end()
 filetype plugin indent on
@@ -31,6 +33,8 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 highlight LineNr ctermfg=Grey
 
 let mapleader=" "
+map s <Plug>(easymotion-s)
+
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
 map <leader>q :action CloseEditor<CR>
