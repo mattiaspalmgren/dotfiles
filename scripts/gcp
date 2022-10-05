@@ -7,6 +7,7 @@ usage() {
       -p <open pubsub>
       -l <open runtime logs>
       -v <open vertex dashboard>
+      -o <open traces>
       -e <show only error logs>
       -d <dry run, print url>
   ]
@@ -19,11 +20,12 @@ CLOUD_RUN=false
 DRY_RUN=false
 KUBERNETES=false
 PUBSUB=false
-VERTEX=true
+VERTEX=false
+TRACES=false
 LOGS=false
 ERRORS=false
 
-while getopts ":sfrktplvedh" opt; do
+while getopts ":sfrktplvoedh" opt; do
   case "$opt" in
   's') STAGE=true ;;
   'f') FIRESTORE=true ;;
@@ -33,6 +35,7 @@ while getopts ":sfrktplvedh" opt; do
   'p') PUBSUB=true ;;
   'l') LOGS=true ;;
   'v') VERTEX=true ;;
+  'o') TRACES=true ;;
   'e') ERRORS=true ;;
   'd') DRY_RUN=true ;;
   'h')
@@ -119,6 +122,10 @@ url_path() {
     URL_PATH="vertex-ai"
   fi
 
+  if [[ $TRACES == true ]]; then
+    URL_PATH="traces"
+  fi
+
   if [[ $LOGS == true ]]; then
     [[ $ERRORS == true ]] && SEVERITY="severity%3E%3D%22ERROR%22" || SEVERITY="severity%3E%3DDEFAULT"
     RESOURCE=$(log_resource_url_parameters $SERVICE_NAME)
@@ -128,11 +135,28 @@ url_path() {
   echo $URL_PATH
 }
 
+params() {
+  PARAMS=""
+
+  if [[ $TRACES == true ]]; then
+    SPAN_NAME=$(cat $TRACES_FILE | fzf)
+    LATENCY="1000"
+    PARAMS=(
+      "&pageState=(%22traceFilter%22:(%22chips%22:%22%255B%257B_22k_22_3A_22"
+      "SpanName_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22${SPAN_NAME}_5C_22_22%257D_2C%257B_22k_22_3A_22"
+      "MinLatency_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22${LATENCY}_5C_22_22%257D%255D%22))"
+    )
+  fi
+
+  echo $(IFS=; echo "${PARAMS[*]}")
+}
+
 PROJECT=$(project)
 SERVICE_NAME=$(service_name)
 REGION=$(region)
+PARAMS=$(params)
 URL_PATH=$(url_path $SERVICE_NAME $REGION)
-URL="${GCP_URL}${URL_PATH}?project=$PROJECT"
+URL="${GCP_URL}${URL_PATH}?project=$PROJECT$PARAMS"
 
 if [[ $DRY_RUN == true ]]; then
   echo $URL
