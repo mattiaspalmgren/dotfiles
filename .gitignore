@@ -4,7 +4,7 @@ jetbrains/options/*
 !jetbrains/options/macros.xml
 !jetbrains/options/stringManipulation.xml
 !jetbrains/options/ui.lnf.xml
-
+!jetbrains/options/notifications.xml
 jetbrains/templates/*
 !jetbrains/templates/user.xml
 
