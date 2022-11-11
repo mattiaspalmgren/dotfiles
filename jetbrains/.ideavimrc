@@ -33,7 +33,7 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 highlight LineNr ctermfg=Grey
 
 let mapleader=" "
-map s <Plug>(easymotion-s)
+map / <Plug>(easymotion-s)
 
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
