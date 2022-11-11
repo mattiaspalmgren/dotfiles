@@ -43,7 +43,7 @@
 	af = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file'
 	afp = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file -p'
 	browse = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && browse-log'
-	message = !MSG=`git log --pretty='format:%Creset%s' --no-merges | head -n 300 | fzf` && echo ${MSG} | pbcopy
+	message = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && git show --no-patch --format=%B `echo ${HASH} | awk '{ print $1 }'` | pbcopy
 	merge-commits = "!funct() { git log --merges --reverse --oneline --ancestry-path $1..origin | grep 'Merge pull request';  }; funct"
 	pr-number = "!funct() { git merge-commits $1 | head -n1 | sed -n 's/^.*Merge pull request #\\s*\\([0-9]*\\).*$/\\1/p'; }; funct"
 	web-url = "!funct() { git config remote.origin.url | sed -e\"s/git@/https:\\/\\//\" -e\"s/\\.git$//\" | sed -E \"s/(\\/\\/[^:]*):/\\1\\//\"; }; funct"
