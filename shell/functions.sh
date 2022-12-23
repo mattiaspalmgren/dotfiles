@@ -11,6 +11,54 @@ function dockill() {
   echo $CONTAINERS_TO_KILL | xargs docker rm --force
 }
 
+function dcstop() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose stop $CONTAINER
+  )
+}
+
+function dcup() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose up -d --build $CONTAINER
+  )
+}
+
+function dclogs() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose logs --follow $CONTAINER
+  )
+}
+
+function dcrun() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose exec -it $CONTAINER bash
+  )
+}
+
+function dcpull() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose pull $CONTAINER
+  )
+}
+
+function dcrestart() {
+  (
+    set -e
+    CONTAINER=$(docker-compose ps --services | fzf)
+    docker-compose restart $CONTAINER
+  )
+}
+
 function kubl() {
   POD=$(kubectl get pods --output name | fzf)
   kubectl logs $POD
