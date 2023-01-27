@@ -28,7 +28,7 @@ function dcup() {
   (
     set -e
     CONTAINER=$(docker-compose ps --services | fzf)
-    docker-compose up -d --build $CONTAINER
+    docker-compose up --detach --build $CONTAINER
   )
 }
 
@@ -56,10 +56,11 @@ function dcpull() {
   )
 }
 
-function dcrestart() {
+function dcrs() {
   (
     set -e
     CONTAINER=$(docker-compose ps --services | fzf)
-    docker-compose restart $CONTAINER
+    docker-compose stop $CONTAINER
+    docker-compose up --detach --build $CONTAINER
   )
 }
