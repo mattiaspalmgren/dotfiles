@@ -19,6 +19,7 @@ Preferences -> Plugins -> Add *PLUGIN*
 ## Customize coloring of editor ui
 * Preferences -> Plugins -> GearIcon -> Install Plugin from disk -> `mapa-theme.jar`
 * Reset your IDE -> Preferences -> Appearance -> Theme -> Select `mapa-theme`
+* Appereance & Behaviour -> File Colors -> Non-project Files
 
 ## Exclude directories and files
 * Preferences -> Project -> Project strucute -> Excluded
