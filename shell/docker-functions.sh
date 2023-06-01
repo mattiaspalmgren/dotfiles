@@ -4,7 +4,7 @@ function dstop() {
   (
     set -e
     CONTAINER=$(docker ps --format "{{.Names}}" | fzf)
-    docker stop $CONTAINER
+    docker stop $CONTAINER | xargs docker rm
   )
 }
 
