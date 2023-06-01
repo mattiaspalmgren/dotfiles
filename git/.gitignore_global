@@ -1,7 +1,6 @@
 .DS_Store
 .idea
-_scratch
-NOTES.md
-TASK.md
-PR.md
 .traces
+scratch_*
+scratch
+PR.md
