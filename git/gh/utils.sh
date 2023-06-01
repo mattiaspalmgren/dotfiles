@@ -21,6 +21,7 @@ function create_pr() {
 
   PR_TITLE=$(get_pr_title)
   PR_BODY=$(get_pr_body)
+  PR_BODY+="$PR_FOOTER_TEMPLATE"
 
   if [[ $PR_TITLE && $PR_BODY ]]; then
     gh pr create --title "$PR_TITLE" --body "$PR_BODY" --draft
