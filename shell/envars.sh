@@ -16,3 +16,4 @@ export LANG="en_US.UTF-8"
 
 # Custom
 export DOTFILES_DIR=~/dev/dotfiles/
+export GITHUB_NAME=mattiaspalmgren
