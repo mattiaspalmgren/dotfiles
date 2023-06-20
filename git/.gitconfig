@@ -33,6 +33,7 @@
 	co = !NAME=`git branch -r | head -n 50 | fzf` && git checkout --track `echo ${NAME} | awk '{ print $1 }'`
 	di = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
 	fe = "!git fetch"
+	fu = !zsh -c 'source $DOTFILES_DIR/git/functions.sh && fixup'
 	po = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
 	rb = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
 	rev = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
