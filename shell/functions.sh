@@ -1,7 +1,5 @@
 # Functions
 
-source $DOTFILES_SHELL_DIR/docker-functions.sh
-
 function kubl() {
   POD=$(kubectl get pods --output name | fzf)
   kubectl logs $POD

@@ -12,6 +12,7 @@ brew "bat"
 brew "neovim"
 brew "ripgrep"
 brew "tldr"
+brew "lazydocker"
 
 cask "1password"
 cask "appcleaner"
