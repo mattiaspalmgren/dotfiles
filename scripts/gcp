@@ -1,166 +1,42 @@
-usage() {
-  echo "Usage: gcp [
-      -s <staging project>
-      -f <open firestore>
-      -c <open cloud run>
-      -k <open kubernetes engine>
-      -p <open pubsub>
-      -l <open runtime logs>
-      -v <open vertex dashboard>
-      -o <open traces>
-      -e <show only error logs>
-      -d <dry run, print url>
-  ]
-  "
+source "$DOTFILES_SHELL_DIR/alva.sh"
+
+open_in_chrome() {
+    open -a "Google Chrome" "$1"
 }
 
-STAGE=false
-FIRESTORE=false
-CLOUD_RUN=false
-DRY_RUN=false
-KUBERNETES=false
-PUBSUB=false
-VERTEX=false
-TRACES=false
-LOGS=false
-ERRORS=false
-
-while getopts ":sfrktplvoedh" opt; do
-  case "$opt" in
-  's') STAGE=true ;;
-  'f') FIRESTORE=true ;;
-  'r') CLOUD_RUN=true ;;
-  'k') KUBERNETES=true ;;
-  't') CLOUD_TASKS=true ;;
-  'p') PUBSUB=true ;;
-  'l') LOGS=true ;;
-  'v') VERTEX=true ;;
-  'o') TRACES=true ;;
-  'e') ERRORS=true ;;
-  'd') DRY_RUN=true ;;
-  'h')
-    usage
-    exit
-    ;;
-  '?')
-    echo "Invalid option $OPTARG" >&2
-    usage >&2
-    exit 1
-    ;;
-  esac
-done
-
-is_kubernetes_service() {
-  if grep --quiet "kubernetes" "${PWD}/${INFRA_PATH}"; then
-    echo true
-  else
-    echo false
-  fi
+exit_if_not_set() {
+    local VARIABLE="$1"
+    if [ -z "$VARIABLE" ]; then
+      exit 1
+    fi
 }
 
-IS_KUBERNETES_SERVICE=$(is_kubernetes_service)
 
-project() {
-  [[ $STAGE == true ]] && VARIABLES_FILE=$TERRAFORM_STAGING_VARIABLES || VARIABLES_FILE=$TERRAFORM_PRODUCTION_VARIABLES
-  PROJECT_NAME=$(find $PWD -name $VARIABLES_FILE | xargs grep --extended-regexp "^project_id" | cut -f3 -d' ' |  tr -d '"')
+PROJECT=$(printf "%s\n" "${GCP_PROJECTS[@]}" | fzf)
+exit_if_not_set $PROJECT
+SERVICE=$(printf "%s\n" "${GCP_SERVICES[@]}" | fzf)
+exit_if_not_set $SERVICE
 
-  if [[ $KUBERNETES == true || $LOGS == true && $IS_KUBERNETES_SERVICE == true ]]; then
-    [[ $STAGE == true ]] && PROJECT_NAME="$KUBERNETES_PROJECT-staging" || PROJECT_NAME="$KUBERNETES_PROJECT"
-  fi
-
-  echo $PROJECT_NAME
-}
-
-service_name() {
-  SERVICE_NAME=$(find $PWD -name $CONFIG_FILE | xargs grep --extended-regexp --max-count 1 --no-filename "^.*SERVICE_NAME" | xargs echo | cut -f3 -d' ' | tr -d '"' )
-  echo $SERVICE_NAME
-}
-
-region() {
-  REGION=$(find $PWD -name $CONFIG_FILE | xargs grep --extended-regexp "^.*GCP_REGION" | xargs echo | cut -f3 -d' ' | tr -d '"' )
-  echo $REGION
-}
-
-log_resource_url_parameters() {
-  SERVICE_NAME=$1
-  [[ $STAGE == true ]] && CONTAINER_POSTFIX="staging" || CONTAINER_POSTFIX="production"
-  KUBERNETES_RESOURCE="resource.labels.container_name%3D%22${SERVICE_NAME}-${CONTAINER_POSTFIX}%22%0A"
-  CLOUD_RUN_RESOURCE="resource.labels.service_name%20%3D%20%22${SERVICE_NAME}%22%0A"
-  if [[ $IS_KUBERNETES_SERVICE == true ]]; then
-    echo $KUBERNETES_RESOURCE
-  else
-    echo $CLOUD_RUN_RESOURCE
-  fi
-}
-
-url_path() {
-  URL_PATH="home/dashboard"
-  SERVICE_NAME=$1
-  REGION=$2
-
-  if [[ $FIRESTORE == true ]]; then
-    URL_PATH="firestore/data"
-  fi
-
-  if [[ $CLOUD_RUN == true ]]; then
-    URL_PATH="run"
-  fi
-
-  if [[ $KUBERNETES == true ]]; then
-    URL_PATH="kubernetes"
-  fi
-
-  if [[ $CLOUD_TASKS == true ]]; then
-    URL_PATH="cloudtasks"
-  fi
-
-  if [[ $PUBSUB == true ]]; then
-    URL_PATH="cloudpubsub"
-  fi
-
-  if [[ $VERTEX == true ]]; then
-    URL_PATH="vertex-ai"
-  fi
-
-  if [[ $TRACES == true ]]; then
-    URL_PATH="traces"
-  fi
-
-  if [[ $LOGS == true ]]; then
-    [[ $ERRORS == true ]] && SEVERITY="severity%3E%3D%22ERROR%22" || SEVERITY="severity%3E%3DDEFAULT"
-    RESOURCE=$(log_resource_url_parameters $SERVICE_NAME)
-    URL_PATH="logs/query;query=${RESOURCE}${SEVERITY}"
-  fi
-
-  echo $URL_PATH
-}
-
-params() {
-  PARAMS=""
-
-  if [[ $TRACES == true ]]; then
-    SPAN_NAME=$(cat $TRACES_FILE | fzf)
-    LATENCY="1000"
-    PARAMS=(
-      "&pageState=(%22traceFilter%22:(%22chips%22:%22%255B%257B_22k_22_3A_22"
-      "SpanName_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22${SPAN_NAME}_5C_22_22%257D_2C%257B_22k_22_3A_22"
-      "MinLatency_22_2C_22t_22_3A10_2C_22v_22_3A_22_5C_22${LATENCY}_5C_22_22%257D%255D%22))"
-    )
-  fi
-
-  echo $(IFS=; echo "${PARAMS[*]}")
-}
-
-PROJECT=$(project)
-SERVICE_NAME=$(service_name)
-REGION=$(region)
-PARAMS=$(params)
-URL_PATH=$(url_path $SERVICE_NAME $REGION)
-URL="${GCP_URL}${URL_PATH}?project=$PROJECT$PARAMS"
-
-if [[ $DRY_RUN == true ]]; then
-  echo $URL
-  exit 0
+if [ "$SERVICE" == "logs" ] && is_kubernetes_project "$PROJECT"; then
+    ENVIRONMENT=$(get_environment_from_kubernetes_project "$PROJECT")
+    DEPLOYMENT_NAME=$(printf "%s\n" "${KUBERNETES_DEPLOYMENTS[@]}" | fzf)
+    RESOURCE="resource.labels.container_name%3D%22${DEPLOYMENT_NAME}-${ENVIRONMENT}%22%0A"
+    SEVERITY="severity%3E%3DDEFAULT"
+    PARAMETERS="query;query=${RESOURCE}${SEVERITY}"
+    URL="${GCP_URL}/logs/${PARAMETERS}?project=${PROJECT}"
+    open_in_chrome "$URL"
+    exit 0
 fi
 
-open -a "Google Chrome" $URL
+if [ "$SERVICE" == "logs" ]; then
+    SERVICE_NAME=$(gcloud run services list --project=$PROJECT --platform managed --format="value(name)" | fzf)
+    RESOURCE="resource.labels.service_name%20%3D%20%22${SERVICE_NAME}%22%0A"
+    SEVERITY="severity%3E%3DDEFAULT"
+    PARAMETERS="query;query=${RESOURCE}${SEVERITY}"
+    URL="${GCP_URL}/logs/${PARAMETERS}?project=${PROJECT}"
+    open_in_chrome "$URL"
+    exit 0
+fi
+
+URL="${GCP_URL}/${SERVICE}?project=$PROJECT"
+open_in_chrome "$URL"
