@@ -26,11 +26,12 @@ function create_pr() {
   if [[ $PR_TITLE && $PR_BODY ]]; then
     gh pr create --title "$PR_TITLE" --body "$PR_BODY" --draft
     > $PR_CONTENT_FILE
-    exit 0
   else
     gh pr create --draft
-    exit 0
   fi
+
+    gh pr view --web
+    exit 0
 }
 
 function pr_url() {
