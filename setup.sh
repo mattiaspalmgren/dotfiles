@@ -24,6 +24,7 @@ ln -s ~/dev/dotfiles/visual-studio-code/keybindings.json ~/Library/Application S
 ln -s ~/dev/dotfiles/visual-studio-code/settings.json ~/Library/Application Support/Code/User/
 ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/.ideavimrc
 ln -s ~/dev/dotfiles/git/gh/config.yml ~/.config/gh
+ln -s ~/dev/dotfiles/git/lazygit/config.yml ~/Library/Application\ Support/lazygit
 
 # Create dirs
 mkdir ~/.nvm

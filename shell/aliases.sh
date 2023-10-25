@@ -7,3 +7,4 @@ alias ws="webstorm ."
 alias ch="charm ."
 alias ~="cd ~"
 unalias gcp
+alias lg="lazygit"

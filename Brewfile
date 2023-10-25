@@ -13,6 +13,7 @@ brew "neovim"
 brew "ripgrep"
 brew "tldr"
 brew "lazydocker"
+brew "lazygit"
 
 cask "1password"
 cask "appcleaner"
