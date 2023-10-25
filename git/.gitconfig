@@ -45,7 +45,7 @@
 	publish = "!git push -u origin $(git branch-name)"
 	browse = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && browse-log'
 	message = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && git show --no-patch --format=%B `echo ${HASH} | awk '{ print $1 }'` | pbcopy
-	size = !SIZE=`git diff master..HEAD --stat | tail -1` && echo ${SIZE}
+	size = !zsh -c 'source $DOTFILES_DIR/git/functions.sh && size'
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
