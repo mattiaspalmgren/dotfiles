@@ -25,6 +25,7 @@ ln -s ~/dev/dotfiles/visual-studio-code/settings.json ~/Library/Application Supp
 ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/.ideavimrc
 ln -s ~/dev/dotfiles/git/gh/config.yml ~/.config/gh
 ln -s ~/dev/dotfiles/git/lazygit/config.yml ~/Library/Application\ Support/lazygit
+ln -s ~/dev/dotfiles/docker/lazydocker/config.yml ~/Library/Application\ Support/lazydocker
 
 # Create dirs
 mkdir ~/.nvm

@@ -8,3 +8,4 @@ alias ch="charm ."
 alias ~="cd ~"
 unalias gcp
 alias lg="lazygit"
+alias ld="lazydocker"
