@@ -5,3 +5,8 @@ customCommands:
       attach: true
       command: "docker image inspect --format '{{printf \"{{.Os}}/{{.Architecture}}\"}}' {{ .Image.ID }}"
       serviceNames: []
+  services:
+    - name: pull
+      attach: true
+      command: "docker-compose pull {{ .Service.Name }}"
+      serviceNames: []
