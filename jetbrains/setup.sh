@@ -8,7 +8,6 @@ echo "Configuring: $PRODUCT"
 
 DIRS=(
   codestyles
-  colors
   keymaps
   options
   templates
