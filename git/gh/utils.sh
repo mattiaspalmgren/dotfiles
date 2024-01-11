@@ -15,7 +15,7 @@ function get_pr_body() {
 function create_pr() {
   [[ -e $PR_CONTENT_FILE ]] && HAS_CONTENT_FILE=true || HAS_CONTENT_FILE=false
   if [[ $HAS_CONTENT_FILE == false ]]; then
-    gh pr create --draft
+    gh pr create --draft "$@"
     exit 0
   fi
 
@@ -24,10 +24,10 @@ function create_pr() {
   PR_BODY+="$PR_FOOTER_TEMPLATE"
 
   if [[ $PR_TITLE && $PR_BODY ]]; then
-    gh pr create --title "$PR_TITLE" --body "$PR_BODY" --draft
+    gh pr create --title "$PR_TITLE" --body "$PR_BODY" --draft "$@"
     > $PR_CONTENT_FILE
   else
-    gh pr create --draft
+    gh pr create --draft "$@"
   fi
 
     gh pr view --web
