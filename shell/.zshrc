@@ -19,3 +19,5 @@ SHELL_FILES=(
 for FILE in $SHELL_FILES; do
     source $DOTFILES_SHELL_DIR/$FILE
 done
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
