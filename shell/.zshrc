@@ -14,7 +14,6 @@ SHELL_FILES=(
     vendor.zsh
     aliases.sh
     functions.sh
-    arm.sh
     alva.sh
 )
 
