@@ -2,62 +2,45 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>AllowClipboardAccess</key>
-	<true/>
-	<key>CopySelection</key>
-	<false/>
 	<key>Default Bookmark Guid</key>
 	<string>EFD9C648-DCD3-474B-BDE7-859A14A2DF32</string>
-	<key>DimBackgroundWindows</key>
-	<false/>
-	<key>DisableFullscreenTransparency</key>
-	<false/>
 	<key>EnableDivisionView</key>
-	<true/>
-	<key>EnableProxyIcon</key>
-	<false/>
-	<key>FlashTabBarInFullscreen</key>
 	<true/>
 	<key>GlobalKeyMap</key>
 	<dict>
-		<key>0x19-0x60000</key>
+		<key>0x19-0x60000-0x30</key>
 		<dict>
 			<key>Action</key>
 			<integer>2</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x5b-0x100000-0x21</key>
-		<dict>
-			<key>Action</key>
-			<integer>31</integer>
 			<key>Label</key>
 			<string></string>
 			<key>Text</key>
 			<string></string>
+			<key>Version</key>
+			<integer>0</integer>
 		</dict>
-		<key>0x5d-0x100000-0x1e</key>
-		<dict>
-			<key>Action</key>
-			<integer>30</integer>
-			<key>Label</key>
-			<string></string>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x68-0x40000-0x4</key>
-		<dict>
-			<key>Action</key>
-			<integer>33</integer>
-			<key>Label</key>
-			<string></string>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0x9-0x40000</key>
+		<key>0x9-0x40000-0x30</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>0</integer>
+		</dict>
+		<key>0xf702-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
+		<key>0xf703-0x320000</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -66,32 +49,16 @@
 	<false/>
 	<key>HideActivityIndicator</key>
 	<true/>
-	<key>HideFromDockAndAppSwitcher</key>
-	<false/>
 	<key>HideMenuBarInFullscreen</key>
 	<false/>
 	<key>HideScrollbar</key>
 	<true/>
 	<key>HideTab</key>
 	<false/>
-	<key>HideTabCloseButton</key>
-	<true/>
 	<key>HideTabNumber</key>
-	<false/>
-	<key>Hotkey</key>
-	<false/>
-	<key>HotkeyChar</key>
-	<integer>167</integer>
-	<key>HotkeyCode</key>
-	<integer>10</integer>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
-	<key>HotkeyModifiers</key>
-	<integer>256</integer>
-	<key>IRMemory</key>
-	<integer>4</integer>
-	<key>MaxVertically</key>
-	<false/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -102,18 +69,18 @@
 			<key>Ansi 0 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 1 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Red Component</key>
 				<real>0.73333334922790527</real>
 			</dict>
@@ -122,7 +89,7 @@
 				<key>Blue Component</key>
 				<real>0.3333333432674408</real>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
 				<real>0.3333333432674408</real>
 			</dict>
@@ -131,14 +98,14 @@
 				<key>Blue Component</key>
 				<real>0.3333333432674408</real>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Ansi 12 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
 				<real>0.3333333432674408</real>
 				<key>Red Component</key>
@@ -147,43 +114,43 @@
 			<key>Ansi 13 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
 				<real>0.3333333432674408</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Ansi 14 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
 				<real>0.3333333432674408</real>
 			</dict>
 			<key>Ansi 15 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Ansi 2 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
 				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 3 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
 				<real>0.73333334922790527</real>
 				<key>Red Component</key>
@@ -192,7 +159,7 @@
 			<key>Ansi 4 Color</key>
 			<dict>
 				<key>Alpha Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Blue Component</key>
 				<real>0.93725490196078431</real>
 				<key>Color Space</key>
@@ -207,7 +174,7 @@
 				<key>Blue Component</key>
 				<real>0.73333334922790527</real>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Red Component</key>
 				<real>0.73333334922790527</real>
 			</dict>
@@ -218,7 +185,7 @@
 				<key>Green Component</key>
 				<real>0.73333334922790527</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Ansi 7 Color</key>
 			<dict>
@@ -245,18 +212,18 @@
 				<key>Green Component</key>
 				<real>0.3333333432674408</real>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>BM Growl</key>
 			<false/>
 			<key>Background Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Background Image Location</key>
 			<string></string>
@@ -273,11 +240,11 @@
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Bound Hosts</key>
 			<array/>
@@ -301,11 +268,11 @@
 			<key>Cursor Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Red Component</key>
-				<real>1</real>
+				<integer>1</integer>
 			</dict>
 			<key>Custom Command</key>
 			<string>Yes</string>
@@ -335,7 +302,7 @@
 			<key>Has Hotkey</key>
 			<false/>
 			<key>Horizontal Spacing</key>
-			<real>1</real>
+			<integer>1</integer>
 			<key>HotKey Activated By Modifier</key>
 			<false/>
 			<key>HotKey Alternate Shortcuts</key>
@@ -600,16 +567,16 @@ New Tab with Current Profile</string>
 			<key>Selected Text Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Green Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<integer>0</integer>
 			</dict>
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>1</real>
+				<integer>1</integer>
 				<key>Green Component</key>
 				<real>0.8353000283241272</real>
 				<key>Red Component</key>
@@ -636,7 +603,7 @@ New Tab with Current Profile</string>
 			<key>Title Components</key>
 			<integer>1</integer>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<integer>0</integer>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -661,18 +628,8 @@ New Tab with Current Profile</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
-	<key>OpenBookmark</key>
-	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<false/>
-	<key>OpenTmuxWindowsIn</key>
-	<integer>0</integer>
-	<key>PMPrintingExpandedStateForPrint2</key>
-	<false/>
-	<key>PasteTabToStringTabStopSize</key>
-	<integer>4</integer>
-	<key>PerPaneBackgroundImage</key>
-	<true/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -683,7 +640,7 @@ New Tab with Current Profile</string>
 		<key>Button,2,1,,</key>
 		<dict>
 			<key>Action</key>
-			<string>kPasteFromSelectionPointerAction</string>
+			<string>kPasteFromClipboardPointerAction</string>
 		</dict>
 		<key>Gesture,ThreeFingerSwipeDown,,</key>
 		<dict>
@@ -706,49 +663,19 @@ New Tab with Current Profile</string>
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
-	<key>Print In Black And White</key>
-	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
-	<key>SeparateStatusBarsPerPane</key>
-	<false/>
-	<key>ShowFullScreenTabBar</key>
-	<true/>
-	<key>ShowNewOutputIndicator</key>
-	<true/>
-	<key>ShowPaneTitles</key>
-	<true/>
-	<key>Size Changes Affect Profile</key>
-	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.49769800841578182</real>
-	<key>StretchTabsToFillBar</key>
-	<false/>
-	<key>SwitchPaneModifier</key>
-	<integer>5</integer>
-	<key>SwitchTabModifier</key>
-	<integer>9</integer>
-	<key>TabStyle</key>
-	<integer>1</integer>
+	<real>0.50000000000000011</real>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>1</integer>
-	<key>TabViewType</key>
-	<integer>0</integer>
 	<key>UseLionStyleFullscreen</key>
 	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WindowNumber</key>
-	<false/>
-	<key>WordCharacters</key>
-	<string>/-+\~_.</string>
-	<key>findMode_iTerm</key>
-	<integer>0</integer>
-	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
-	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>
 </plist>
