@@ -11,7 +11,6 @@ export DOTFILES_SHELL_DIR=~/dev/dotfiles/shell
 SHELL_FILES=(
     envars.sh
     config.zsh
-    vendor.zsh
     aliases.sh
     functions.sh
     alva.sh
