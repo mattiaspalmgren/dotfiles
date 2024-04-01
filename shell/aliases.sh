@@ -1,11 +1,10 @@
 # Aliases
 
 alias vim='nvim'
-alias linked="find node_modules -type l -maxdepth 3 | grep -v .bin"
-alias copy="history | tail -1 | cut -c8-999 | pbcopy"
-alias ws="webstorm ."
 alias ch="charm ."
 alias ~="cd ~"
 unalias gcp
 alias lg="lazygit"
 alias ld="lazydocker"
+alias oldbrew='arch --x86_64 /usr/local/Homebrew/bin/brew'
+alias python="python3"

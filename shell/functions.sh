@@ -1,29 +1,5 @@
 # Functions
 
-function kubl() {
-  POD=$(kubectl get pods --output name | fzf)
-  kubectl logs $POD
-}
-
-function browse-log() {
-    local LOG PREVIEW FZF
-
-    LOG=$(git log --format='%C(auto)%h %s' --color=always "$@")
-    PREVIEW='f() { set -- $(echo -- "$@" | grep -o "[a-f0-9]\{7\}"); [ $# -eq 0 ] || git show --color=always $1; }; f {}'
-    FZF=(
-        fzf
-        --ansi
-        --reverse
-        --tiebreak=index
-        --no-sort
-        --bind=ctrl-j:preview-down
-        --bind=ctrl-k:preview-up
-        --preview "$PREVIEW"
-    )
-
-    echo $LOG | $FZF
-}
-
 function add-file() {
     local UNSTAGED_FILES FILE PREVIEW
 
@@ -62,34 +38,4 @@ function get-unstaged-files() {
 
 function get-commit-titles-and-body() {
   git log --format="* %s%n%b" master..HEAD src | pbcopy
-}
-
-function pylint-ch() {
-  pipenv run pylint src --msg-template='{path}' | grep '^src.*$' | xargs charm
-}
-
-function pytest-local() {
-  pipenv run pytest $(git diff --diff-filter=AMR --name-only master..HEAD src)
-}
-
-function pylint-local() {
-  pipenv run pylint $(git diff --diff-filter=AMR --name-only master..HEAD src)
-}
-
-function pylint-local-ch() {
-  ERRORS=$(pipenv run pylint $(git diff --name-only master..HEAD src))
-  PATHS=$(echo $ERRORS | grep -oE '^src.*.py')
-  echo $PATHS | xargs charm
-  echo $ERRORS
-}
-
-function prettier-local() {
-  ISSUES=$(prettier --check $(git diff --diff-filter=AMR --name-only master..HEAD src))
-  echo $ISSUES
-}
-
-function prettier-local-ch() {
-  ISSUES=$(prettier --list-different $(git diff --diff-filter=AMR --name-only master..HEAD src))
-  echo $ISSUES | xargs charm
-  echo $ISSUES
 }
