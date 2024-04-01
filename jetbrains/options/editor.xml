@@ -2,42 +2,77 @@
   <component name="CodeInsightSettings">
     <option name="AUTO_POPUP_PARAMETER_INFO" value="false" />
     <option name="REFORMAT_ON_PASTE" value="1" />
-    <option name="INDENT_TO_CARET_ON_PASTE" value="true" />
     <option name="HIGHLIGHT_BRACES" value="false" />
     <option name="HIGHLIGHT_IDENTIFIER_UNDER_CARET" value="false" />
   </component>
   <component name="CodeVisionSettings">
+    <option name="codeVisionGroupToPosition">
+      <map>
+        <entry key="inheritors" value="Default" />
+        <entry key="llm" value="Default" />
+        <entry key="references" value="Default" />
+        <entry key="vcs.code.vision" value="Default" />
+      </map>
+    </option>
+    <option name="disabledCodeVisionProviderIds">
+      <set>
+        <option value="inheritors" />
+        <option value="llm" />
+        <option value="references" />
+        <option value="vcs.code.vision" />
+      </set>
+    </option>
     <option name="enabled" value="false" />
   </component>
   <component name="DeclarativeInlayHintsSettings">
+    <option name="disabledOptions">
+      <set>
+        <option value="js.type.hints#function.returns" />
+        <option value="js.type.hints#non.paren.single.param" />
+        <option value="js.type.hints#parameters.in.parens" />
+        <option value="js.type.hints#variables.and.fields" />
+        <option value="ts.type.hints#function.returns" />
+        <option value="ts.type.hints#non.paren.single.param" />
+        <option value="ts.type.hints#parameters.in.parens" />
+        <option value="ts.type.hints#variables.and.fields" />
+      </set>
+    </option>
     <option name="providerIdToEnabled">
       <map>
+        <entry key="js.chain.hints" value="false" />
         <entry key="js.type.hints" value="false" />
+        <entry key="qodana.yaml.inspection.descriptions" value="false" />
+        <entry key="ts.chain.hints" value="false" />
+        <entry key="ts.enum.hints" value="false" />
         <entry key="ts.type.hints" value="false" />
       </map>
     </option>
   </component>
-  <component name="DefaultFont">
-    <option name="FONT_SIZE" value="11" />
-    <option name="FONT_REGULAR_SUB_FAMILY" value="Regular" />
-    <option name="FONT_BOLD_SUB_FAMILY" value="Bold" />
-    <option name="LINE_SPACING" value="1.7" />
-  </component>
   <component name="EditorSettings">
-    <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR:PREVIEW" />
-    <option name="STRIP_TRAILING_SPACES" value="Whole" />
-    <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
+    <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR" />
+    <option name="SOFT_WRAP_FILE_MASKS" value="*.md; *.txt; *.rst; *.adoc" />
+    <option name="SHOW_QUICK_DOC_ON_MOUSE_OVER_ELEMENT" value="false" />
     <option name="SHOW_INTENTION_BULB" value="false" />
     <option name="IS_RIGHT_MARGIN_SHOWN" value="false" />
     <option name="ARE_LINE_NUMBERS_SHOWN" value="false" />
     <option name="ARE_GUTTER_ICONS_SHOWN" value="false" />
     <option name="IS_FOLDING_OUTLINE_SHOWN" value="false" />
+    <option name="IS_FOLDING_OUTLINE_SHOWN_ONLY_ON_HOVER" value="false" />
     <option name="SHOW_BREADCRUMBS" value="false" />
+    <option name="SHOW_INTENTION_PREVIEW" value="false" />
     <option name="IS_INDENT_GUIDES_SHOWN" value="false" />
+    <option name="PRESELECT_RENAME" value="false" />
+    <option name="SHOW_INLINE_DIALOG" value="false" />
   </component>
   <component name="InlayHintsSettings">
-    <option name="enabled" value="false" />
-    <option name="lastViewedProviderKeyId" value="parameter.hints.old" />
+    <option name="disabledHintProviderIds">
+      <set>
+        <option value="Dockerfile.docker.inlay.hints" />
+        <option value="Markdown.MarkdownTableInlayProviderSettingsKey" />
+        <option value="SQL.sql.join.cardinality.hints" />
+      </set>
+    </option>
+    <option name="lastViewedProviderKeyId" value=".inheritors" />
   </component>
   <component name="XmlEditorOptions">
     <option name="tagTreeHighlightingEnabled" value="false" />

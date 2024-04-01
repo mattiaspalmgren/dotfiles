@@ -2,10 +2,10 @@
   <template name="rcomp" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;export const $ComponentName$ = (props) =&gt; {&#10;    const { id } = props;&#10;&#10;    return (&#10;        &lt;&gt;{id}&lt;/&gt;&#10;    );&#10;};&#10;&#10;$ComponentName$.propTypes = {&#10;    id: PropTypes.number.isRequired&#10;};&#10;" description="" toReformat="true" toShortenFQNames="true">
     <variable name="ComponentName" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
-      <option name="ES6_STATEMENT" value="true" />
-      <option name="ES6_TOP_LEVEL_STATEMENT" value="true" />
       <option name="JS_STATEMENT" value="true" />
       <option name="JS_TOP_LEVEL_STATEMENT" value="true" />
+      <option name="TS_STATEMENT" value="true" />
+      <option name="TS_TOP_LEVEL_STATEMENT" value="true" />
     </context>
   </template>
   <template name="backfill" value="import asyncio&#10;import os&#10;&#10;&#10;async def $FILE_NAME$():&#10;    pass&#10;&#10;&#10;async def main():&#10;    environment = 'local'&#10;    os.environ['ENVIRONMENT'] = environment&#10;    config = get_config()&#10;    coroutines = [$FILE_NAME$()]&#10;    await asyncio.gather(*coroutines)&#10;&#10;&#10;if __name__ == '__main__':&#10;    loop = asyncio.get_event_loop()&#10;    loop.run_until_complete(main())" description="Boilerplate for backfill script" toReformat="false" toShortenFQNames="true">
@@ -72,6 +72,7 @@
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="boot" value="from sanic import Sanic&#10;&#10;&#10;def initialize_$FILE_NAME$_service(app: Sanic) -&gt; $PASCAL_CASE_FILE_NAME$Service:&#10;    app.$FILE_NAME$_service = $PASCAL_CASE_FILE_NAME$Service()&#10;    return app.$FILE_NAME$_service&#10;&#10;&#10;__all__ = [&#10;    'initialize_$FILE_NAME$_service'&#10;]&#10;" description="Create custom bootstrap" toReformat="false" toShortenFQNames="true">
@@ -90,6 +91,7 @@
     <variable name="FILE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>

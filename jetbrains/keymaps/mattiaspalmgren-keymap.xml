@@ -229,6 +229,7 @@
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
+  <action id="copilot.disposeInlays" />
   <action id="momomo.com.Intellij.MoveTab.actions.MoveTabLeft">
     <keyboard-shortcut first-keystroke="shift ctrl alt down" />
     <keyboard-shortcut first-keystroke="shift ctrl page_down" />
