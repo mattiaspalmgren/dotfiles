@@ -1,4 +1,5 @@
-gui.returnImmediately: true
+gui:
+  returnImmediately: true
 customCommands:
   images:
     - name: os
