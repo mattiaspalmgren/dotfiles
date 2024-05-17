@@ -21,3 +21,5 @@ for FILE in $SHELL_FILES; do
 done
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
