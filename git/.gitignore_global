@@ -2,6 +2,7 @@
 .idea
 .traces
 scratch_*
+scratch-*
 scratch
 PR.md
 deploy-to-staging.diff
