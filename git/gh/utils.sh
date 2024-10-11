@@ -36,11 +36,12 @@ function create_pr() {
 
 function pr_url() {
   PR_INFO=$(gh search prs --author ${GITHUB_NAME} --json id,repository,url,title | jq -r '@json')
-  PR_ITEMS=$(echo "$PR_INFO" | jq -r '.[] | (.repository.name + " - " + .title)')
+  PR_ITEMS=$(echo "$PR_INFO" | jq -r '.[] | (.repository.name + " - " + .title + " - " + .id)')
   SELECTED=$(echo "$PR_ITEMS" | fzf)
   REPOSITORY=$(echo "$SELECTED" | awk -F ' - ' '{print $1}')
   TITLE=$(echo "$SELECTED" | awk -F ' - ' '{print $2}')
-  URL=$(echo "$PR_INFO" | jq -r --arg repository "$REPOSITORY" --arg title "$TITLE" 'map(select(.repository.name==$repository and .title==$title)) | .[].url')
+  ID=$(echo "$SELECTED" | awk -F ' - ' '{print $3}')
+  URL=$(echo "$PR_INFO" | jq -r --arg id "$ID" 'map(select(.id==$id)) | .[].url')
   echo $URL
 }
 
@@ -53,6 +54,7 @@ function open_pr() {
 
 function copy_pr_content() {
   URL=$(pr_url)
+  echo $URL
   CONTENT=$(gh pr view $URL --json title,body --jq '.title, .body')
   LINE_COUNT=$(echo "$CONTENT" | wc -l)
   WITHOUT_FOOTER=$(echo "$CONTENT" | head -n $((LINE_COUNT - 3)))
