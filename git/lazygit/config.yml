@@ -1,1 +1,4 @@
 promptToReturnFromSubprocess: false
+keybinding:
+  universal:
+    createPatchOptionsMenu: <c-k>
