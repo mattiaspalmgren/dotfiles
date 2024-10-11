@@ -11,3 +11,7 @@ customCommands:
       attach: true
       command: "docker-compose pull {{ .Service.Name }}"
       serviceNames: []
+    - name: toggle-local
+      attach: true
+      command: "zsh -c 'source $DOTFILES_DOCKER_DIR/functions.sh && toggle-local-image {{ .Service.Name }}'"
+      serviceNames: []

@@ -7,6 +7,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 export DOTFILES_SHELL_DIR=~/dev/dotfiles/shell
+export DOTFILES_DOCKER_DIR=~/dev/dotfiles/docker
 
 SHELL_FILES=(
     envars.sh
