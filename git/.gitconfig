@@ -22,29 +22,7 @@
 	path = .gitconfig-alva
 
 [alias]
-	af = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file'
-	afp = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && add-file -p'
-	app = !STASH=`git stash list | fzf | awk '{ print $1 }' | sed 's/://'` && git stash apply ${STASH}
-	ca = !git commit --amend
-	can = !git commit --amend --no-edit
-	dbra = !BRANCH=`git branch | head -n 50 | fzf` && git branch `echo ${BRANCH} | awk '{ print $1 }'` -D
-	drtag = !TAG=`git tag --list | tail | fzf` && git push origin :refs/tags/${TAG}
-	dtag = !TAG=`git tag --list | tail | fzf` && git tag -d ${TAG}
-	co = !NAME=`git branch -r | head -n 50 | fzf` && git checkout --track `echo ${NAME} | awk '{ print $1 }'`
-	di = !FILES=`git status -s | awk '{ print $2 }' | fzf -x -m` && git diff ${FILES}
-	fe = "!git fetch"
-	fu = !zsh -c 'source $DOTFILES_DIR/git/functions.sh && fixup'
-	po = !NAME=`git stash list | fzf | awk '{ print substr($1, 1, length($1)-1) }'` && git stash pop ${NAME}
-	rb = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git rebase -i `echo ${HASH} | awk '{ print $1 }'`^
-	rev = !HASH=`git log --pretty=oneline | head -n 50 | fzf` && git revert `echo ${HASH} | awk '{ print $1 }'`
-	rf = !FILE=`git status --short | awk '{ print $2 }' | fzf` && git checkout ${FILE}
-	sh = !HASH=`git log --pretty=oneline | head -n 100 | fzf` && git show `echo ${HASH} | awk '{ print $1 }'`
-	sw = !BRANCH=`git branch | head -n 50 | fzf` && git switch `echo ${BRANCH} | awk '{ print $1 }'`
-	hash = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && printf ${HASH} | awk '{ printf $1 }' | pbcopy
-	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish = "!git push -u origin $(git branch-name)"
-	browse = !zsh -c 'source $DOTFILES_SHELL_DIR/functions.sh && browse-log'
-	message = !HASH=`git log --pretty=oneline | head -n 300 | fzf` && git show --no-patch --format=%B `echo ${HASH} | awk '{ print $1 }'` | pbcopy
 	size = !zsh -c 'source $DOTFILES_DIR/git/functions.sh && size'
 
 [filter "lfs"]

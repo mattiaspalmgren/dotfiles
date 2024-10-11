@@ -12,7 +12,6 @@ SHELL_FILES=(
     envars.sh
     config.zsh
     aliases.sh
-    functions.sh
     alva.sh
 )
 
