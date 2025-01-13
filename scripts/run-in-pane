@@ -1,0 +1,14 @@
+#!/bin/bash
+COMMAND=$1
+
+osascript <<EOF
+tell application "iTerm2"
+  tell current session of current window
+    set newSession to split vertically with default profile
+  end tell
+  tell newSession
+    select
+    write text "$COMMAND && exit"
+  end tell
+end tell
+EOF

@@ -24,6 +24,7 @@
 [alias]
 	publish = "!git push -u origin $(git branch-name)"
 	size = !zsh -c 'source $DOTFILES_DIR/git/functions.sh && size'
+    reword = "!f() {\n  GIT_SEQUENCE_EDITOR=\"sed -i '' 1s/^pick/reword/\" git rebase -i \"$1^\";\n}; f"
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f

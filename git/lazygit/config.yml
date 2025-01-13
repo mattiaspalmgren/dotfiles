@@ -2,3 +2,15 @@ promptToReturnFromSubprocess: false
 keybinding:
   universal:
     createPatchOptionsMenu: <c-k>
+  files:
+    commitChangesWithEditor: null
+  commits:
+    renameCommitWithEditor: null
+customCommands:
+  - key: 'C'
+    context: 'global'
+    command: 'run-in-pane "git commit"'
+    subprocess: false
+  - key: 'R'
+    context: 'commits'
+    command: 'run-in-pane "git reword {{.SelectedLocalCommit.Sha}}"'
