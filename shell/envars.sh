@@ -1,7 +1,6 @@
 # Environment variables
 
 # Path
-export PATH=~/.nvm/versions/node/v18.9.0/bin:$PATH
 export PATH=~/dev/dotfiles/scripts:$PATH
 export PATH=/usr/local/opt/openjdk/bin:$PATH
 export PATH=~/go/bin:$PATH
@@ -17,3 +16,8 @@ export LANG="en_US.UTF-8"
 # Custom
 export DOTFILES_DIR=~/dev/dotfiles/
 export GITHUB_NAME=mattiaspalmgren
+
+# Node
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
