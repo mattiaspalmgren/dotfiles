@@ -14,3 +14,11 @@ customCommands:
   - key: 'R'
     context: 'commits'
     command: 'run-in-pane "git reword {{.SelectedLocalCommit.Sha}}"'
+  - key: "G"
+    command: "gh pr view -w {{.SelectedLocalBranch.Name}}"
+    context: "localBranches"
+    stream: true
+  - key: "c"
+    command: "git push --set-upstream origin {{.SelectedLocalBranch.Name}} && gh c"
+    context: "localBranches"
+    stream: true
