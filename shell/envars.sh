@@ -5,6 +5,7 @@ export PATH=~/dev/dotfiles/scripts:$PATH
 export PATH=/usr/local/opt/openjdk/bin:$PATH
 export PATH=~/go/bin:$PATH
 export PATH=~/.local/bin:$PATH
+export PATH=~/.codeium/windsurf/bin:$PATH
 
 # Settings
 export LC_ALL=en_US.UTF-8
