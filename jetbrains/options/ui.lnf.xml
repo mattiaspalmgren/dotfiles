@@ -7,6 +7,7 @@
     <option name="SHOW_ICONS_IN_MENUS" value="false" />
     <option name="SHOW_NAVIGATION_BAR_MEMBERS" value="false" />
     <option name="SHOW_NAVIGATION_BAR" value="false" />
+    <option name="SHOW_NEW_MAIN_TOOLBAR" value="false" />
     <option name="SHOW_STATUS_BAR" value="false" />
   </component>
 </application>

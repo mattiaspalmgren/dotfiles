@@ -2,6 +2,12 @@
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
+  <action id="ActivateCascadeToolWindow">
+    <keyboard-shortcut first-keystroke="meta 8" />
+  </action>
+  <action id="ActivateContinueToolWindow">
+    <keyboard-shortcut first-keystroke="meta 8" />
+  </action>
   <action id="ActivateServicesToolWindow" />
   <action id="ActivateSonarLintToolWindow">
     <keyboard-shortcut first-keystroke="meta 0" />
@@ -38,6 +44,9 @@
     <keyboard-shortcut first-keystroke="shift meta alt f" />
     <keyboard-shortcut first-keystroke="f19" />
   </action>
+  <action id="Console.TableResult.ToggleFilters">
+    <keyboard-shortcut first-keystroke="meta 2" />
+  </action>
   <action id="CopyAbsolutePath" />
   <action id="CopyPaths" />
   <action id="CopySourceRootPath">
@@ -47,17 +56,21 @@
   <action id="DatabaseView.CopyDdlAction">
     <keyboard-shortcut first-keystroke="shift meta alt g" />
   </action>
+  <action id="DatabaseView.PropertiesAction" />
   <action id="Debugger.EditTypeSource" />
   <action id="DecrementWindowHeight" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="DuplicatesForm.SendToLeft" />
+  <action id="DuplicatesForm.SendToRight" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
   <action id="EditSourceInNewWindow" />
+  <action id="EditWithSupermaven" />
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="meta y" />
   </action>
+  <action id="EditorChooseLookupItemReplace" />
   <action id="EditorDuplicate" />
   <action id="EditorLineEnd">
     <keyboard-shortcut first-keystroke="meta right" />
@@ -91,6 +104,7 @@
   <action id="EmmetPreviousEditPoint" />
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.GotoHome" />
+  <action id="FileChooser.GotoProject" />
   <action id="Forward">
     <keyboard-shortcut first-keystroke="meta alt right" />
     <mouse-shortcut keystroke="button5" />
@@ -106,6 +120,9 @@
   <action id="Images.ShowThumbnails" />
   <action id="IncrementWindowHeight" />
   <action id="IncrementWindowWidth" />
+  <action id="InsertLiveTemplate" />
+  <action id="Jdbc.OpenConsole.New" />
+  <action id="Jdbc.OpenConsole.New.Generate" />
   <action id="JumpToLastWindow" />
   <action id="Macro.Jump 10 down">
     <keyboard-shortcut first-keystroke="alt down" />
@@ -129,11 +146,15 @@
   </action>
   <action id="MoveStatementDown" />
   <action id="MoveStatementUp" />
+  <action id="NewScratchFile" />
   <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="meta close_bracket" />
   </action>
   <action id="NextTab">
     <keyboard-shortcut first-keystroke="ctrl tab" />
+  </action>
+  <action id="NextTemplateVariable">
+    <keyboard-shortcut first-keystroke="enter" />
   </action>
   <action id="PrevSplitter">
     <keyboard-shortcut first-keystroke="meta open_bracket" />
@@ -240,4 +261,5 @@
   </action>
   <action id="openAssertEqualsDiff" />
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction" />
+  <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleItalicAction" />
 </keymap>
