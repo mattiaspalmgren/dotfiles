@@ -1,29 +1,42 @@
 {
-    // WORKBENCH
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.activityBar.visible": false,
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.editor.enablePreview": false,
     "workbench.tree.renderIndentGuides": "none",
     "workbench.editor.centeredLayoutAutoResize": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.orientation": "vertical",
+    "workbench.statusBar.visible": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.preferredHighContrastLightColorTheme": "Visual Studio Dark",
+    "workbench.colorCustomizations": {
+        "editor.background": "#252525",
+        "sideBar.background": "#252525",
+        "titleBar.activeBackground": "#252525",
+        "editorOverviewRuler.border": "#0000",
+        "minimap.errorHighlight": "#252525",
+        "minimap.warningHighlight": "#252525",
+        "gitDecoration.modifiedResourceForeground": "#6897BB",
+        "scrollbar.shadow": "#00000000"
 
-    // EDITOR
+    },
+    "editor.lineDecorationsWidth": 150,
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.showFoldingControls": "never",
+    "editor.fontLigatures": true,
     "editor.fontSize": 11,
     "editor.tabSize": 2,
-    "editor.minimap.enabled": false,
     "editor.lineHeight": 22,
     "editor.renderControlCharacters": false,
-    "editor.renderIndentGuides": false,
-    "editor.highlightActiveIndentGuide": false,
     "editor.matchBrackets": "never",
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": "off",
     "editor.renderLineHighlight": "none",
     "editor.selectionHighlight": false,
     "editor.detectIndentation": false,
     "editor.parameterHints.cycle": true,
     "editor.parameterHints.enabled": false,
     "editor.smoothScrolling": false,
-    "editor.lightbulb.enabled": false,
+    "editor.lightbulb.enabled": "off",
     "editor.codeLens": true,
     "editor.foldingStrategy": "indentation",
     "editor.gotoLocation.multipleDefinitions": "goto",
@@ -33,24 +46,25 @@
     "editor.gotoLocation.multipleReferences": "goto",
     "editor.stablePeek": false,
     "editor.foldingHighlight": false,
+    "editor.guides.indentation": false,
+    "editor.guides.highlightActiveIndentation": false,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
 
-    // EXPLORER
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
-
-    // WINDOW
-    "window.zoomLevel": 0,
-
-    // MACROS
+    "explorer.decorations.badges": false,
+    "explorer.fileNesting.expand": false,
+    "explorer.decorations.colors": true,
+    
     "macros": {
       "selectAndCloseExplorer": [
         "list.select",
-        "workbench.action.toggleSidebarVisibility",
-      ],
+        "workbench.action.toggleSidebarVisibility"
+      ]
     },
 
-    // VIM
     "vim.foldfix": true,
     "vim.useSystemClipboard": true,
     "vim.sneak": true,
@@ -166,22 +180,18 @@
       {
         "before": ["<leader>","a"],
         "commands": ["workbench.action.showCommands"]
-      },
+      }
     ],
     "vim.handleKeys": {
       "<C-u>": true,
       "<C-d>": true,
-      "<C-r>": true,
+      "<C-r>": true
     },
-
-    // ZEN
     "zenMode.hideLineNumbers": false,
     "zenMode.fullScreen": false,
     "zenMode.hideStatusBar": false,
-    "zenMode.hideTabs": false,
     "breadcrumbs.enabled": false,
-
-    // GIT
+    "git.decorations.enabled": true,
     "gitlens.menus": false,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
@@ -199,34 +209,21 @@
     "gitlens.views.lineHistory.location": "scm",
     "gitlens.views.compare.location": "scm",
     "gitlens.views.search.location": "scm",
-
-    // TEST
-    "jestrunner.configPath": "./packages/svtlib-videoplayer-react/package.json",
-    // "jestrunner.configPath": "./packages/svtlib-videoplayer-api-client/package.json",
-    // "jestrunner.configPath": "./packages/svt-videoplayer-examples/package.json",
-    // "jestrunner.configPath": "./packages/svtlib-videoplayer-device/package.json",
-    // "jestrunner.configPath": "./packages/svtlib-videoplayer-utils/package.json",
-    // "jestrunner.configPath": "./packages/svtlib-videoplayer-statistics/package.json",
-    // "jestrunner.configPath": "./package.json",
-
-    // SEARCH
-    "search.exclude": {
-      "**/node_modules": true,
-      "_scratch": true,
-      "**/dist": true
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "scm.diffDecorations": "gutter",
+    "diffEditor.experimental.showEmptyDecorations": false,
+    "workbench.editor.decorations.colors": false,
+    "workbench.editor.decorations.badges": false,
+    "search.decorations.badges": false,
+    "search.decorations.colors": false,
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "chat.commandCenter.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "supermaven.enable": {
+      "*": true
     },
-
-    // OTHER
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "css.validate": false,
-    "files.trimTrailingWhitespace": true,
-    "outline.icons": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "terminal.external.osxExec": "iTerm.app",
-    "telemetry.enableTelemetry": false,
-    "html.mirrorCursorOnMatchingTag": false,
-    "emmet.showExpandedAbbreviation": "never",
-    "python.dataScience.askForKernelRestart": false,
-    "gitlens.mode.active": "zen",
-    "telemetry.enableCrashReporter": false,
+    "continue.showInlineTip": false
   }
