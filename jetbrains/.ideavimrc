@@ -38,12 +38,14 @@ map / <Plug>(easymotion-s)
 map <leader>a :action GotoAction<CR>
 nmap <leader>w :action SaveAll<CR>
 map <leader>q :action CloseEditor<CR>
-nmap <leader>en :action GotoNextError<CR>
-nmap <leader>ep :action GotoPreviousError<CR>
+nmap [d :action GotoNextError<CR>
+nmap ]d :action GotoPreviousError<CR>
 nmap <leader>n :action Macro.next-change<CR>
 nmap <leader>p :action Macro.previous-change<CR>
-nmap <leader>v :action SelectInProjectView<CR>
-nmap <leader>f :action FindInPath<CR>
+nmap <leader>- :action SelectInProjectView<CR>
+nmap <leader>/ :action FindInPath<CR>
+nmap <leader>o :action GotoSymbol<CR>
+nmap <leader>f :action GotoFile<CR>
 nmap <leader>r :action Macro.run-context-test<CR>
 nmap <leader>s :action Stop<CR>
 nmap <leader>b :action Back<CR>
@@ -51,12 +53,19 @@ nmap <leader>c :action Vcs.Show.Local.Changes<CR>
 nmap <leader>l :action ToggleLineBreakpoint<CR>
 nmap <leader>d :action DebugClass<CR>
 nmap <leader>u :action FindUsages<CR>
+nmap <leader>k :action ShowErrorDescription<CR>
+nmap <leader>e :action ActivateProjectToolWindow<CR>
+nmap <S-k> :action NextTab<CR>
+nmap <S-j> :action PreviousTab<CR>
 
 nmap tl :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
 nmap tr :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
+nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
+nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
 nmap gp :action ReformatWithPrettierAction<CR>
 nmap gb :action Tool_External Tools_Darker<CR>
+nnoremap gd :action GotoDeclaration<CR>
 
 nmap QQ :action StartStopMacroRecording<CR>
 
@@ -82,12 +91,8 @@ nmap ,i :action Macro.init-import<CR>
 nmap ,r :action Replace<CR>
 nmap ,w :action EditorNextWordInDifferentHumpsMode<CR>
 vmap ,w :action EditorNextWordInDifferentHumpsModeWithSelection<CR>
-nmap ,h :action ShowErrorDescription<CR>
 
 nmap @f :g/def/t$<CR>
-
-nmap ˙ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Left<CR>
-nmap ¬ :action momomo.com.intellij.plugins.Move.actions.MoveTab.MoveTab$Right<CR>
 
 nmap <leader>m :action GotoNextBookmark<CR>
 nmap ma :action ToggleBookmark<CR>
