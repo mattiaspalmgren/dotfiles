@@ -11,6 +11,9 @@ customCommands:
     context: 'global'
     command: 'run-in-pane "git commit"'
     subprocess: false
+  - key: 'O'
+    context: 'global'
+    command: 'charm .'
   - key: 'R'
     context: 'commits'
     command: 'run-in-pane "git reword {{.SelectedLocalCommit.Sha}}"'
