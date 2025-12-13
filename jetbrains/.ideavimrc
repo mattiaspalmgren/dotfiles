@@ -54,7 +54,8 @@ nmap <leader>l :action ToggleLineBreakpoint<CR>
 nmap <leader>d :action DebugClass<CR>
 nmap <leader>u :action FindUsages<CR>
 nmap <leader>k :action ShowErrorDescription<CR>
-nmap <leader>e :action ActivateProjectToolWindow<CR>
+nmap <leader>ef :action ActivateProjectToolWindow<CR>
+nmap <leader>ep :action ManageRecentProjects<CR>
 nmap <S-k> :action NextTab<CR>
 nmap <S-j> :action PreviousTab<CR>
 
