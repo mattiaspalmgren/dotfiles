@@ -60,10 +60,14 @@ PROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $ '
 
 # Title
 DISABLE_AUTO_TITLE="true"
-precmd() {
-  # Sets the tab title to current dir
-  echo -ne "\e]1;${PWD##*/}\a"
+autoload -Uz add-zsh-hook
+
+__title_pwd() {
+  print -Pn "\e]0;${PWD##*/}\a"
 }
+
+add-zsh-hook precmd __title_pwd
+add-zsh-hook chpwd  __title_pwd
 
 # Options
 unsetopt AUTO_CD
