@@ -1,8 +1,8 @@
 # Configs for zsh
 
 function zle-keymap-select zle-line-init {
-    local BLOCK_CURSOR="\E]50;CursorShape=0\C-G"
-    local LINE_CURSOR="\E]50;CursorShape=1\C-G"
+    local BLOCK_CURSOR="\e[2 q"
+    local LINE_CURSOR="\e[6 q"
 
     case $KEYMAP in
         vicmd)      print -n -- $BLOCK_CURSOR;;
@@ -13,7 +13,7 @@ function zle-keymap-select zle-line-init {
 }
 
 function zle-line-finish {
-    local BLOCK_CURSOR="\E]50;CursorShape=0\C-G"
+    local BLOCK_CURSOR="\e[2 q"
     print -n -- $BLOCK_CURSOR
 }
 
