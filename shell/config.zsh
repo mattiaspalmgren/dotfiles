@@ -68,3 +68,4 @@ precmd() {
 # Options
 unsetopt AUTO_CD
 ulimit -n 1000
+setopt nobeep
