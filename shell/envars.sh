@@ -12,6 +12,7 @@ export KEYTIMEOUT=1
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export LANG="en_US.UTF-8"
+export CLAUDE_CODE_DISABLE_TERMINAL_TITLE=1
 
 # Custom
 export DOTFILES_DIR=~/dev/dotfiles/
