@@ -4,10 +4,6 @@
 Symlinc vim run config:
 `ln -s ~/dev/dotfiles/jetbrains/.ideavimrc ~/`
 
-## Product
-Symlinc config files via running:
-`bash setup.sh` in this directory
-
 ## Add plugins 
 Plugins:
 - IdeaVim, 

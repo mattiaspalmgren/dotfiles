@@ -1,15 +1,3 @@
-jetbrains/options/*
-!jetbrains/options/editor.xml
-!jetbrains/options/ide.general.xml
-!jetbrains/options/macros.xml
-!jetbrains/options/stringManipulation.xml
-!jetbrains/options/ui.lnf.xml
-!jetbrains/options/notifications.xml
-jetbrains/templates/*
-!jetbrains/templates/user.xml
-
-jetbrains/.excluded-files
-
 scripts/svt
 scripts/.drrc
 git/.gitconfig-alva
