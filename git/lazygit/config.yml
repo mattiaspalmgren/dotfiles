@@ -3,14 +3,13 @@ keybinding:
   universal:
     createPatchOptionsMenu: <c-k>
   files:
-    commitChangesWithEditor: null
+    commitChangesWithEditor: <disabled>
   commits:
-    renameCommitWithEditor: null
+    renameCommitWithEditor: <disabled>
 customCommands:
   - key: 'C'
     context: 'global'
     command: 'run-in-pane "git commit"'
-    subprocess: false
   - key: 'O'
     context: 'global'
     command: 'charm .'
@@ -20,8 +19,8 @@ customCommands:
   - key: "G"
     command: "gh pr view -w {{.SelectedLocalBranch.Name}}"
     context: "localBranches"
-    stream: true
+    output: log
   - key: "c"
     command: "git push --set-upstream origin {{.SelectedLocalBranch.Name}} && gh c"
     context: "localBranches"
-    stream: true
+    output: log
