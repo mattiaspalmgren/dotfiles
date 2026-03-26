@@ -1,4 +1,6 @@
 promptToReturnFromSubprocess: false
+git:
+  autoFetch: false
 keybinding:
   universal:
     createPatchOptionsMenu: <c-k>
