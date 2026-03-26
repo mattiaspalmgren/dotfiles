@@ -9,3 +9,4 @@ deploy-to-staging.diff
 images.yml
 CLAUDE.local.md
 .claude/*
+plans/
