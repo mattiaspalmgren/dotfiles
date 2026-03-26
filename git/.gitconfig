@@ -38,6 +38,7 @@
 
 [rebase]
 	autostash = true
+	updateRefs = true
 
 [remote "origin"]
 	prune = true
