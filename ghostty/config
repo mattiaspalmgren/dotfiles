@@ -9,6 +9,7 @@ shell-integration = zsh
 shell-integration-features = no-title
 window-inherit-working-directory = true
 keybind = shift+enter=text:\n
+keybind = cmd+shift+h=new_split:left
 split-divider-color = dimgray
 background = #000000
 foreground = #eeeeee
