@@ -12,6 +12,7 @@ brew "lazydocker"
 brew "lazygit"
 brew "gh"
 brew "jq"
+brew "zoxide"
 
 cask "1password"
 cask "appcleaner"

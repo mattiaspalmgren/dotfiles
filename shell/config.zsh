@@ -51,11 +51,24 @@ bindkey '^R' history-incremental-search-backward
 bindkey '^[[Z' reverse-menu-complete # Reverse cycle
 
 # Prompt
-ZSH_THEME="geoffgarside"
 ZSH_THEME_GIT_PROMPT_PREFIX=" on %{$fg[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%} *"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
+
+git_prompt_info() {
+  local branch
+  branch=$(git symbolic-ref --short HEAD 2>/dev/null) || \
+    branch=$(git rev-parse --short HEAD 2>/dev/null) || return 0
+  local dirty=$ZSH_THEME_GIT_PROMPT_CLEAN
+  if ! git diff --no-ext-diff --quiet --ignore-submodules=dirty 2>/dev/null || \
+     ! git diff --no-ext-diff --cached --quiet --ignore-submodules=dirty 2>/dev/null; then
+    dirty=$ZSH_THEME_GIT_PROMPT_DIRTY
+  fi
+  echo "${ZSH_THEME_GIT_PROMPT_PREFIX}${branch}${dirty}${ZSH_THEME_GIT_PROMPT_SUFFIX}"
+}
+
+setopt PROMPT_SUBST
 PROMPT='%{$fg[blue]%}%~%{$reset_color%}$(git_prompt_info) $ '
 
 # Title

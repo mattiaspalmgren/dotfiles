@@ -1,10 +1,5 @@
-export ZSH=/Users/mattiaspalmgren/.oh-my-zsh
-
-plugins=(
-    git
-    z
-)
-source $ZSH/oh-my-zsh.sh
+autoload -U colors && colors
+autoload -Uz compinit && compinit
 
 export DOTFILES_SHELL_DIR=~/dev/dotfiles/shell
 export DOTFILES_DOCKER_DIR=~/dev/dotfiles/docker
@@ -21,5 +16,7 @@ for FILE in $SHELL_FILES; do
 done
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$(zoxide init --cmd z zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
