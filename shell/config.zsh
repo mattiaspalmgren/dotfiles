@@ -63,8 +63,19 @@ DISABLE_AUTO_TITLE="true"
 autoload -Uz add-zsh-hook
 
 __title_pwd() {
-  print -Pn "\e]0;${PWD##*/}\a"
+  if [[ -n $__title_override ]]; then
+    print -Pn "\e]0;${__title_override}\a"
+    return
+  fi
+  local repository_root title
+  repository_root=$(git rev-parse --show-toplevel 2>/dev/null)
+  title=${repository_root:+${repository_root##*/}}
+  title=${title:-${PWD##*/}}
+  print -Pn "\e]0;${title}\a"
 }
+
+title() { __title_override="$*"; __title_pwd; }
+untitle() { unset __title_override; __title_pwd; }
 
 add-zsh-hook precmd __title_pwd
 add-zsh-hook chpwd  __title_pwd
